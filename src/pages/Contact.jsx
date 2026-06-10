@@ -1,4 +1,29 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("sending");
+    const data = Object.fromEntries(new FormData(e.target));
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/19awburris88@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setStatus("success");
+        e.target.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <div className="page-container">
       <div className="page-header">
@@ -30,20 +55,28 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" />
+            <input id="name" name="name" type="text" placeholder="Your name" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="your@email.com" />
+            <input id="email" name="email" type="email" placeholder="your@email.com" required />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>
-            <textarea id="message" rows={6} placeholder="Tell me about your project..." />
+            <textarea id="message" name="message" rows={6} placeholder="Tell me about your project..." required />
           </div>
-          <button type="submit" className="btn-primary">Send Message →</button>
+          {status === "success" && (
+            <p className="form-success">Message sent! I'll be in touch soon.</p>
+          )}
+          {status === "error" && (
+            <p className="form-error">Something went wrong. Try emailing me directly.</p>
+          )}
+          <button type="submit" className="btn-primary" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send Message →"}
+          </button>
         </form>
       </div>
     </div>

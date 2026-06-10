@@ -842,6 +842,18 @@ main {
   gap: 20px;
 }
 
+.form-success {
+  color: #42d36b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.form-error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
