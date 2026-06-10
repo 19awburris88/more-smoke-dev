@@ -2,6 +2,19 @@ import imgFitTogether from "../assets/preview-fittogether.png";
 import imgCRHS from "../assets/preview-crhs07.png";
 import imgClub520 from "../assets/preview-club520.png";
 import imgFamilyTree from "../assets/preview-familytree.png";
+import imgBiteRight from "../assets/preview-biteright.png";
+import imgCigarMatch from "../assets/preview-cigar-match.png";
+import imgMoreSmoke from "../assets/preview-moresmoke.png";
+import imgMoneyMill from "../assets/preview-the-money-mill.png";
+import imgPressedAged from "../assets/preview-pressed-aged-lounge.png";
+import imgVirtualCare from "../assets/preview-virtualcarenow.png";
+import imgDFProfile from "../assets/preview-df-profile.png";
+import imgWheresmikeg from "../assets/preview-wheresmikeg.png";
+import imgSmokeCask from "../assets/preview-smoke-cask-barrel.png";
+import imgJordanColeman from "../assets/preview-jordan-coleman-campaign.png";
+import imgChickenBeer from "../assets/preview-chicken-beer-festival.png";
+import imgLastCall from "../assets/preview-last-call-landing.png";
+import imgBenignity from "../assets/preview-benignity.png";
 
 export const projects = [
   {
@@ -43,6 +56,7 @@ export const projects = [
       "Match history and user preference tracking",
       "Mobile-first responsive design",
     ],
+    image: imgBiteRight,
     github: "",
     live: "",
     featured: false,
@@ -85,6 +99,7 @@ export const projects = [
       "Lounge discovery and check-ins",
       "Planned: retailer inventory integration",
     ],
+    image: imgCigarMatch,
     github: "",
     live: "",
     featured: false,
@@ -127,6 +142,7 @@ export const projects = [
       "Customer acquisition funnels",
       "Mobile-optimized responsive design",
     ],
+    image: imgMoreSmoke,
     github: "",
     live: "",
     featured: false,
@@ -167,6 +183,7 @@ export const projects = [
       "Donation integration",
       "Community engagement and call-to-action sections",
     ],
+    image: imgJordanColeman,
     github: "https://github.com/19awburris88/jordan-coleman-campaign",
     live: "https://jordan-coleman-campaign.netlify.app",
     featured: false,
@@ -190,6 +207,7 @@ export const projects = [
       "Deployed on Netlify",
     ],
     github: "https://github.com/19awburris88/chicken-beer-festival-indy",
+    image: imgChickenBeer,
     live: "https://chickenbeen.netlify.app",
     featured: false,
   },
@@ -208,6 +226,7 @@ export const projects = [
       "Service pages and educational resources",
       "Clean UI focused on credibility and conversion",
     ],
+    image: imgMoneyMill,
     github: "",
     live: "",
     featured: false,
@@ -229,6 +248,7 @@ export const projects = [
       "Luxury dark aesthetic with responsive layout",
     ],
     github: "https://github.com/19awburris88/last-call-landing",
+    image: imgLastCall,
     live: "https://last-call-landing.vercel.app",
     featured: false,
   },
@@ -299,6 +319,7 @@ export const projects = [
       "Multi-page routing across home, donation, and events",
     ],
     github: "https://github.com/19awburris88/benignity",
+    image: imgBenignity,
     live: "https://benignity.org",
     featured: false,
   },
@@ -343,6 +364,7 @@ export const projects = [
       "Reservation request form via FormSubmit",
       "Scroll-driven reveal animations",
     ],
+    image: imgPressedAged,
     github: "https://github.com/19awburris88/pressed-aged-lounge",
     live: "",
     featured: false,
@@ -365,6 +387,7 @@ export const projects = [
       "Patient testimonials and FAQ",
       "Responsive contact form",
     ],
+    image: imgVirtualCare,
     github: "https://github.com/19awburris88/virtualcarenow",
     live: "",
     featured: false,
@@ -387,6 +410,7 @@ export const projects = [
       "Career and leadership timeline",
       "Scroll-reveal animations with custom hook",
     ],
+    image: imgDFProfile,
     github: "https://github.com/19awburris88/df-profile",
     live: "",
     featured: false,
@@ -409,6 +433,7 @@ export const projects = [
       "Smooth scroll-reveal animations",
       "Film grain texture overlay for premium aesthetic",
     ],
+    image: imgWheresmikeg,
     github: "https://github.com/19awburris88/wheresmikeg",
     live: "",
     featured: false,
@@ -428,6 +453,7 @@ export const projects = [
       "Product and pairing showcases",
       "Mobile-optimized responsive design",
     ],
+    image: imgSmokeCask,
     github: "https://github.com/19awburris88/smoke-cask-barrel",
     live: "",
     featured: false,

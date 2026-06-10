@@ -20,7 +20,10 @@ export default function Work() {
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
             <div className="project-image">
-              <span className="project-placeholder">{project.title[0]}</span>
+              {project.image
+                ? <img src={project.image} alt={project.title} />
+                : <span className="project-placeholder">{project.title[0]}</span>
+              }
             </div>
             <div className="project-card-body">
               <div className="project-card-top">
