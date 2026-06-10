@@ -18,28 +18,6 @@ import imgBenignity from "../assets/preview-benignity.png";
 
 export const projects = [
   {
-    id: "barrel-exchange",
-    title: "Barrel Exchange",
-    type: "Full Stack",
-    tagline: "Bourbon Marketplace Platform",
-    description:
-      "A full-stack marketplace enabling users to buy, sell, and manage bourbon collections, combining e-commerce functionality with social marketplace features. Built with authentication, Stripe payments, admin tools, and optimized product discovery.",
-    problem:
-      "Bourbon collectors had no dedicated platform to trade rare bottles with verified listings, secure payments, and seller storefronts in one place.",
-    tech: ["React", "Express", "PostgreSQL", "Prisma", "Material UI", "Stripe", "JWT Auth", "Vite"],
-    features: [
-      "User authentication & profile management",
-      "Marketplace listings with search & filtering",
-      "Seller storefronts and product management",
-      "Stripe payment integration",
-      "Admin dashboard for platform management",
-      "REST APIs with optimized product discovery workflows",
-    ],
-    github: "",
-    live: "",
-    featured: false,
-  },
-  {
     id: "biteright",
     title: "BiteRight",
     type: "Full Stack",
@@ -57,27 +35,6 @@ export const projects = [
       "Mobile-first responsive design",
     ],
     image: imgBiteRight,
-    github: "",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "biblefit",
-    title: "BibleFit",
-    type: "Frontend",
-    tagline: "Personalized Bible Study Platform",
-    description:
-      "A mobile-first Bible study platform delivering personalized study plans through a dynamic onboarding quiz. Integrates external scripture APIs to create a customized and scalable content experience focused on engagement and retention.",
-    problem:
-      "New and seasoned believers alike struggle to find Bible studies matched to their current season, struggles, and spiritual goals.",
-    tech: ["React", "Vite", "API Integration"],
-    features: [
-      "Dynamic onboarding quiz based on user preferences and experience level",
-      "Personalized study plan recommendations",
-      "External scripture API integration",
-      "Progress tracking and user profiles",
-      "Engagement-focused features to improve daily retention",
-    ],
     github: "",
     live: "",
     featured: false,
@@ -143,26 +100,6 @@ export const projects = [
       "Mobile-optimized responsive design",
     ],
     image: imgMoreSmoke,
-    github: "",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "jay-orner-billiard",
-    title: "Jay Orner & Son Billiard Co",
-    type: "Frontend",
-    tagline: "Small Business Website",
-    description:
-      "Designed and developed a responsive business website to establish a professional digital presence, generate inbound inquiries, and centralize service offerings for a local billiard company.",
-    problem:
-      "The client lacked a digital presence to capture leads and communicate their services to customers searching online.",
-    tech: ["React", "Responsive Design"],
-    features: [
-      "Responsive design optimized for conversion",
-      "Centralized service offerings and contact pathways",
-      "Brand positioning and credibility-focused UI",
-      "Lead generation and inbound inquiry funnels",
-    ],
     github: "",
     live: "",
     featured: false,
