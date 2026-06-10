@@ -1,3 +1,8 @@
+import imgFitTogether from "../assets/preview-fittogether.png";
+import imgCRHS from "../assets/preview-crhs07.png";
+import imgClub520 from "../assets/preview-club520.png";
+import imgFamilyTree from "../assets/preview-familytree.png";
+
 export const projects = [
   {
     id: "barrel-exchange",
@@ -19,7 +24,7 @@ export const projects = [
     ],
     github: "",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     id: "biteright",
@@ -40,7 +45,7 @@ export const projects = [
     ],
     github: "",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     id: "biblefit",
@@ -61,7 +66,7 @@ export const projects = [
     ],
     github: "",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     id: "cigar-match",
@@ -82,7 +87,7 @@ export const projects = [
     ],
     github: "",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     id: "fittogether",
@@ -101,9 +106,10 @@ export const projects = [
       "AI-driven recommendations for fitness and wellness goals",
       "Scalable frontend architecture",
     ],
+    image: imgFitTogether,
     github: "",
     live: "",
-    featured: false,
+    featured: true,
   },
   {
     id: "more-smoke",
@@ -206,8 +212,6 @@ export const projects = [
     live: "",
     featured: false,
   },
-];
-
   {
     id: "last-call-landing",
     title: "The Last Call",
@@ -248,9 +252,10 @@ export const projects = [
       "Full registration and RSVP form",
       "Floating Spotify player with 2007 playlist",
     ],
+    image: imgCRHS,
     github: "https://github.com/19awburris88/crhs07",
     live: "",
-    featured: false,
+    featured: true,
   },
   {
     id: "familytree",
@@ -271,9 +276,10 @@ export const projects = [
       "Family document vault (recipes, legal docs, etc.)",
       "Chronological family timeline by decade",
     ],
+    image: imgFamilyTree,
     github: "https://github.com/19awburris88/familytree",
     live: "",
-    featured: false,
+    featured: true,
   },
   {
     id: "benignity",
@@ -314,9 +320,10 @@ export const projects = [
       "Parallax hero and scroll progress bar",
       "Continuous marquee ticker and merch section",
     ],
+    image: imgClub520,
     github: "https://github.com/19awburris88/club520",
     live: "",
-    featured: false,
+    featured: true,
   },
   {
     id: "pressed-aged-lounge",
