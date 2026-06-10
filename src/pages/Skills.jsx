@@ -1,15 +1,15 @@
 const skillGroups = [
   {
     category: "Front End",
-    skills: ["React", "JavaScript", "TypeScript", "HTML", "CSS", "Vite", "Material UI", "Tailwind CSS", "Responsive Design", "Mobile-First Design"],
+    skills: ["React", "JavaScript", "TypeScript", "HTML", "CSS", "Vite", "Material UI", "Tailwind CSS", "Framer Motion", "Responsive Design", "Mobile-First Design"],
   },
   {
     category: "Back End",
-    skills: ["Node.js", "Express", "REST APIs", "JWT Authentication", "API Integration", "API Design"],
+    skills: ["Node.js", "Express", "Python", "FastAPI", "REST APIs", "JWT Authentication", "API Integration", "API Design"],
   },
   {
     category: "Databases & Data",
-    skills: ["PostgreSQL", "Prisma ORM", "Data Modeling", "Query Optimization", "Business Intelligence", "Financial Analysis", "Data Visualization"],
+    skills: ["PostgreSQL", "Supabase", "SQLite", "Prisma ORM", "Data Modeling", "Query Optimization", "Business Intelligence", "Financial Analysis", "Data Visualization"],
   },
   {
     category: "Payments & Commerce",
@@ -21,7 +21,7 @@ const skillGroups = [
   },
   {
     category: "Deployment & Tools",
-    skills: ["Netlify", "Render", "GitHub", "Git", "Postman", "VS Code"],
+    skills: ["Netlify", "Vercel", "Render", "GitHub", "Git", "Postman", "VS Code", "FormSubmit"],
   },
   {
     category: "Business & Strategy",
