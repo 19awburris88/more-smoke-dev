@@ -208,4 +208,223 @@ export const projects = [
   },
 ];
 
+  {
+    id: "last-call-landing",
+    title: "The Last Call",
+    type: "Frontend",
+    tagline: "Cigar Pre-Launch Landing Page",
+    description:
+      "A luxury pre-launch experience for the fifth cigar in the More Smoke portfolio. Built around anticipation — a live countdown to the September 2026 drop, blend reveal, and email capture connected to Google Sheets.",
+    problem:
+      "The brand needed to generate buzz and collect leads before the product hit shelves, without a full e-commerce build.",
+    tech: ["React", "Vite", "Material UI", "Vercel", "Google Forms"],
+    features: [
+      "Live countdown timer to launch date",
+      "Email signup integrated with Google Forms / Sheets",
+      "Blend details and tasting profile reveal",
+      "Luxury dark aesthetic with responsive layout",
+    ],
+    github: "https://github.com/19awburris88/last-call-landing",
+    live: "https://last-call-landing.vercel.app",
+    featured: false,
+  },
+  {
+    id: "crhs07",
+    title: "CRHS Class of '07",
+    type: "Full Stack",
+    tagline: "20-Year Class Reunion Platform",
+    description:
+      "A full-featured reunion website for Cardinal Ritter High School's Class of 2007, built to reconnect 200+ alumni ahead of their July 2027 weekend in Indianapolis. Combines Supabase, Framer Motion, and interactive mapping into a rich community experience.",
+    problem:
+      "A class reunion needed more than a Facebook event — it needed a real digital home for classmate directories, memories, voting, registration, and event coordination.",
+    tech: ["React", "Vite", "Framer Motion", "Supabase", "React Router", "react-simple-maps", "Netlify"],
+    features: [
+      "Live countdown timer to reunion weekend",
+      "Searchable classmate directory with social links",
+      "Draggable before/after 'Then & Now' photo slider",
+      "Interactive US map showing where classmates live",
+      "Senior superlatives nomination and voting system",
+      "In Memoriam tribute page",
+      "Full registration and RSVP form",
+      "Floating Spotify player with 2007 playlist",
+    ],
+    github: "https://github.com/19awburris88/crhs07",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "familytree",
+    title: "Family Tree",
+    type: "Full Stack",
+    tagline: "Interactive Family Archive Platform",
+    description:
+      "A modern digital archive for the Burris family designed to feel like a social platform, not a genealogy database. Features a Python/FastAPI backend with a graph-based relationship engine, social memory feed, and visual family tree.",
+    problem:
+      "Traditional genealogy tools are cold and clinical. This platform makes family history feel alive — searchable, visual, and shareable across generations.",
+    tech: ["React", "Vite", "Python", "FastAPI", "SQLite", "React Router", "Lucide React"],
+    features: [
+      "Member profiles with relationship finder",
+      "Social-style memory feed with likes and categories",
+      "Visual family tree grouped by generation",
+      "Python BFS graph engine for computing exact relationships",
+      "Photo gallery with lightbox and filters",
+      "Family document vault (recipes, legal docs, etc.)",
+      "Chronological family timeline by decade",
+    ],
+    github: "https://github.com/19awburris88/familytree",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "benignity",
+    title: "Benignity",
+    type: "Full Stack",
+    tagline: "Nonprofit Vacation Lodging Platform",
+    description:
+      "Website and donation platform for Benignity, Inc., a 501(c)(3) providing free vacation lodging for patients with life-limiting illness and their unpaid caregivers. Includes donation flows, event ticketing, and impact-driven storytelling.",
+    problem:
+      "The nonprofit needed a credible, conversion-focused digital presence that could collect donations, sell event tickets, and communicate their mission to new supporters.",
+    tech: ["React", "Vite", "React Router", "Eventbrite", "CSS"],
+    features: [
+      "Donation page with preset amounts and monthly giving toggle",
+      "Impact tiers with dynamic donor messaging",
+      "Eventbrite embedded checkout for gala ticketing",
+      "Frosted-glass sticky nav with animated mobile menu",
+      "Multi-page routing across home, donation, and events",
+    ],
+    github: "https://github.com/19awburris88/benignity",
+    live: "https://benignity.org",
+    featured: false,
+  },
+  {
+    id: "club520",
+    title: "Club 520 Podcast",
+    type: "Frontend",
+    tagline: "NBA Podcast Brand Website",
+    description:
+      "Official website for the Club 520 Podcast hosted by former NBA All-Star Jeff Teague, DJ Wells, and B Hen. Built for culture — live episode feeds, a sticky Spotify player, YouTube lightbox, sponsor grid, and a custom basketball cursor.",
+    problem:
+      "The show needed a digital home that matched its NBA-level energy, surfaced episodes easily, and gave sponsors and guests proper visibility.",
+    tech: ["React", "Vite", "YouTube RSS", "CSS", "Google Fonts"],
+    features: [
+      "YouTube RSS video feed with in-page lightbox player",
+      "Sticky Spotify podcast player",
+      "Notable guests grid and sponsor showcase",
+      "Custom basketball cursor with trailing glow",
+      "Parallax hero and scroll progress bar",
+      "Continuous marquee ticker and merch section",
+    ],
+    github: "https://github.com/19awburris88/club520",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "pressed-aged-lounge",
+    title: "Pressed & Aged",
+    type: "Frontend",
+    tagline: "Luxury Cigar & Vinyl Lounge",
+    description:
+      "Website for a luxury cigar and vinyl lounge in Nashville, TN. Communicates the full Pressed & Aged experience — curated humidor, vinyl programming, membership tiers, and signature recurring events — through a rich, scroll-driven design.",
+    problem:
+      "A premium lifestyle lounge needed a website as refined as the space itself, with clear pathways to membership and reservations.",
+    tech: ["React", "Vite", "FormSubmit", "CSS"],
+    features: [
+      "Three membership tiers (The Listener, The Collector, The Patron)",
+      "Curated humidor and cigar offerings showcase",
+      "Signature events: Vinyl & Vices, Smoke & Sinatra, Bourbon & B-Sides",
+      "Animated vinyl marquee ticker",
+      "Reservation request form via FormSubmit",
+      "Scroll-driven reveal animations",
+    ],
+    github: "https://github.com/19awburris88/pressed-aged-lounge",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "virtualcarenow",
+    title: "Virtual Care Now",
+    type: "Frontend",
+    tagline: "Telehealth Practice Website",
+    description:
+      "Marketing website for Virtual Care Now, a virtual urgent care practice led by Dr. Jeni Grundy. Designed to convert first-time visitors into patients through clear service communication, trust-building content, and a frictionless contact experience.",
+    problem:
+      "A new telehealth practice needed a professional web presence that built patient trust, communicated availability, and drove appointment requests.",
+    tech: ["React", "Vite", "CSS"],
+    features: [
+      "Services grid with conditions treated",
+      "Provider bio and credibility section",
+      "Benefits comparison and how-it-works walkthrough",
+      "Insurance and payment information",
+      "Patient testimonials and FAQ",
+      "Responsive contact form",
+    ],
+    github: "https://github.com/19awburris88/virtualcarenow",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "df-profile",
+    title: "Daniel Farr",
+    type: "Frontend",
+    tagline: "Executive Personal Brand Website",
+    description:
+      "Premium personal brand website for Daniel Farr — Builder, Strategist, Servant Leader — serving as his digital headquarters for leadership positioning, community impact, and speaking opportunities in Atlanta and beyond.",
+    problem:
+      "An executive leader needed a high-credibility digital presence that communicated his story, highlighted community recognition, and generated speaking and partnership inquiries.",
+    tech: ["React", "Vite", "CSS", "Behold.so"],
+    features: [
+      "Full-viewport hero with executive bio",
+      "Leadership pillars and Emerging 100 of Atlanta highlights",
+      "Speaking topics with inquiry CTA",
+      "Instagram feed embed via Behold.so",
+      "Career and leadership timeline",
+      "Scroll-reveal animations with custom hook",
+    ],
+    github: "https://github.com/19awburris88/df-profile",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "wheresmikeg",
+    title: "Where's Mike G",
+    type: "Frontend",
+    tagline: "Personal Brand Website",
+    description:
+      "Personal brand website for Mike Gillis, Indianapolis-based digital marketer, food and lifestyle content creator, and event host with 10+ years in the industry. Showcases collaborations, events, wine partnerships, and brand services.",
+    problem:
+      "A multi-hyphenate creator needed a single digital destination that surfaced all his work, partnerships, and services in one polished experience.",
+    tech: ["React", "Vite", "CSS", "Google Fonts"],
+    features: [
+      "Custom animated loader and scroll progress bar",
+      "Drag-to-scroll moments photo strip",
+      "Animated stats counter and marquee ticker",
+      "Floating CTA button and custom cursor with lag effect",
+      "Smooth scroll-reveal animations",
+      "Film grain texture overlay for premium aesthetic",
+    ],
+    github: "https://github.com/19awburris88/wheresmikeg",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "smoke-cask-barrel",
+    title: "Smoke, Cask & Barrel",
+    type: "Frontend",
+    tagline: "Cigar & Spirits Lifestyle Brand",
+    description:
+      "A brand website at the intersection of premium cigars and craft spirits — designed to capture the culture, community, and experience of pairing two of life's great pleasures.",
+    problem:
+      "The brand needed a digital home that communicated its identity and lifestyle positioning to an audience of enthusiasts.",
+    tech: ["React", "Vite"],
+    features: [
+      "Brand storytelling and lifestyle content",
+      "Product and pairing showcases",
+      "Mobile-optimized responsive design",
+    ],
+    github: "https://github.com/19awburris88/smoke-cask-barrel",
+    live: "",
+    featured: false,
+  },
+];
+
 export const featuredProjects = projects.filter((p) => p.featured);
