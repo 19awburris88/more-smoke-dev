@@ -65,6 +65,28 @@ export default function Contact() {
             <input id="email" name="email" type="email" placeholder="your@email.com" required />
           </div>
           <div className="form-group">
+            <label htmlFor="project-type">Project Type</label>
+            <select id="project-type" name="project_type" required>
+              <option value="">Select a project type...</option>
+              <option value="New Web App">New Web App</option>
+              <option value="Website / Landing Page">Website / Landing Page</option>
+              <option value="Consulting">Consulting</option>
+              <option value="Full-Time Opportunity">Full-Time Opportunity</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="budget">Budget Range</label>
+            <select id="budget" name="budget_range" required>
+              <option value="">Select a budget range...</option>
+              <option value="Under $1K">Under $1K</option>
+              <option value="$1K – $5K">$1K – $5K</option>
+              <option value="$5K – $10K">$5K – $10K</option>
+              <option value="$10K+">$10K+</option>
+              <option value="Let's Talk">Let's Talk</option>
+            </select>
+          </div>
+          <div className="form-group">
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message" rows={6} placeholder="Tell me about your project..." required />
           </div>
