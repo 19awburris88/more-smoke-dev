@@ -225,6 +225,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MORE SMOKE BRAND */}
+      <section className="section section--light">
+        <div className="brand-home-grid">
+          <div className="brand-home-text">
+            <p className="section-label">THE BRAND</p>
+            <h2 className="brand-home-headline">More Smoke</h2>
+            <p className="brand-home-tagline">A premium cigar lifestyle brand built on culture, community, and craft.</p>
+            <p className="brand-home-bio">
+              Before More Smoke Dev, there was More Smoke — the premium cigar
+              lifestyle brand I founded and scaled in Dallas. I built it from
+              scratch: the product line, the retail partnerships, the events,
+              and the identity. The same drive and entrepreneurial mindset
+              behind that brand is what powers this dev shop. Same name. Same
+              standard. Different industry.
+            </p>
+            <div className="brand-stats">
+              <div className="brand-stat">
+                <span className="brand-stat-num">13+</span>
+                <span className="brand-stat-label">Products & SKUs</span>
+              </div>
+              <div className="brand-stat">
+                <span className="brand-stat-num">15+</span>
+                <span className="brand-stat-label">Retail Partners</span>
+              </div>
+              <div className="brand-stat">
+                <span className="brand-stat-num">6+</span>
+                <span className="brand-stat-label">Brand Events</span>
+              </div>
+            </div>
+          </div>
+          <div className="brand-home-card">
+            <p className="brand-quote">"The name means something. It's not a gimmick — it's the standard I hold myself to in everything I build."</p>
+            <p className="brand-card-attr">— Austin Burris, Founder</p>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURED WORK */}
       <section className="section" id="work">
         <div className="section-header">

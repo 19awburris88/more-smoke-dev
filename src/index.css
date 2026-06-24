@@ -928,6 +928,89 @@ main {
   margin: 0;
 }
 
+/* ─── MORE SMOKE BRAND ────────────────────────────────── */
+
+.brand-home-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.brand-home-headline {
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+  color: #0b0b0b;
+  margin: 10px 0 16px;
+}
+
+.brand-home-tagline {
+  color: #42d36b;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.brand-home-bio {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 40px;
+  max-width: 560px;
+}
+
+.brand-stats {
+  display: flex;
+  gap: 48px;
+}
+
+.brand-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brand-stat-num {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #0b0b0b;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+.brand-stat-label {
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brand-home-card {
+  background: #0b0b0b;
+  border-radius: 20px;
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+.brand-card-attr {
+  color: #42d36b;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 /* ─── ABOUT ───────────────────────────────────────────── */
 
 .about-grid {
@@ -1553,7 +1636,8 @@ main {
   .services-grid,
   .testimonials-grid,
   .contact-home-grid,
-  .about-home-grid {
+  .about-home-grid,
+  .brand-home-grid {
     grid-template-columns: 1fr;
   }
 
