@@ -1,8 +1,8 @@
 const experience = [
   {
     role: "Full Stack Developer",
-    company: "Freelance — Business & Technology Solutions",
-    period: "Apr 2025 – Present",
+    company: "More Smoke Dev",
+    period: "Apr 2024 – Present",
     location: "Remote (Dallas, TX)",
     bullets: [
       "Partner with founders, small businesses, and personal ventures to design and build technology-driven solutions that improve user experience, drive engagement, and support business growth",
