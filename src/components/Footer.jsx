@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/msd-logo.png";
 
 export default function Footer() {
@@ -16,9 +15,9 @@ export default function Footer() {
             More Smoke Dev is my brand, my hustle, and my commitment to
             building high-quality software that makes a difference.
           </p>
-          <Link to="/contact" className="btn-outline footer-cta">
+          <a href="/#contact" className="btn-outline footer-cta">
             Let's Work Together →
-          </Link>
+          </a>
         </div>
 
         <div className="footer-col">

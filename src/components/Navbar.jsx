@@ -6,7 +6,6 @@ const navItems = [
   { label: "About", to: "/about" },
   { label: "Work", to: "/work" },
   { label: "Skills", to: "/skills" },
-  { label: "Contact", to: "/contact" },
 ];
 
 export default function Navbar() {
@@ -27,6 +26,7 @@ export default function Navbar() {
             {label}
           </NavLink>
         ))}
+        <a href="/#contact">Contact</a>
       </div>
 
       <div className="nav-actions">
