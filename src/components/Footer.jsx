@@ -1,11 +1,10 @@
-import logo from "../assets/msd-logo.png";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-grid">
         <div className="footer-brand">
-          <img src={logo} alt="More Smoke Dev" className="footer-logo" />
+          <img src="/msd-logo.png" alt="More Smoke Dev" className="footer-logo" />
           <p>© {new Date().getFullYear()} More Smoke Dev. All rights reserved.</p>
         </div>
 

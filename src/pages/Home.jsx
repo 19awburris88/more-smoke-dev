@@ -194,10 +194,12 @@ export default function Home() {
             <h2 className="about-home-name">Austin Burris</h2>
             <p className="about-home-role">Full Stack Developer · Indianapolis, IN</p>
             <p className="about-home-bio">
-              I'm a developer who loves turning ideas into impactful digital
-              experiences. I focus on clean design, performance, and building
-              things that deliver real value — for businesses, founders, and
-              communities that deserve great software.
+              I'm a full-stack developer and entrepreneur. I build digital
+              experiences with real intent — and I've lived the founder journey
+              firsthand as the owner of More Smoke, a premium cigar lifestyle
+              brand I built from scratch. That experience gives me a perspective
+              most developers don't have: I know what it costs to build something
+              real, and I bring that same standard to every project I take on.
             </p>
             <Link to="/about" className="btn-outline">More About Me →</Link>
           </div>
@@ -254,6 +256,15 @@ export default function Home() {
                 <span className="brand-stat-label">Brand Events</span>
               </div>
             </div>
+            <a
+              href="https://moresmoke.co"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+              style={{ marginTop: "32px", display: "inline-block" }}
+            >
+              Visit moresmoke.co →
+            </a>
           </div>
           <div className="brand-home-card">
             <p className="brand-quote">"The name means something. It's not a gimmick — it's the standard I hold myself to in everything I build."</p>

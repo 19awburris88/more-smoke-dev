@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/msd-logo.png";
 
 const navItems = [
   { label: "Home", to: "/" },
@@ -12,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <NavLink to="/" className="logo">
-        <img src={logo} alt="More Smoke Dev" className="nav-logo" />
+        <img src="/msd-logo.png" alt="More Smoke Dev" className="nav-logo" />
       </NavLink>
 
       <div className="nav-links">
