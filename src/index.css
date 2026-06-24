@@ -467,6 +467,7 @@ main {
   border-bottom: 1px solid #e8e8e8;
 }
 
+.section--light h1,
 .section--light h2 {
   color: #0b0b0b;
 }
@@ -475,7 +476,8 @@ main {
   color: #42d36b;
 }
 
-.section--light .section-desc {
+.section--light .section-desc,
+.section--light .page-desc {
   color: #555;
 }
 

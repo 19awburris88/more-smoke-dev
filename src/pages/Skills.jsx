@@ -31,29 +31,33 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <div className="page-container">
-      <div className="page-header">
-        <p className="section-label">TECH STACK</p>
-        <h1>Tools I Use</h1>
-        <p className="page-desc">
-          Full-stack developer with a business background. I combine technical
-          depth with product thinking, entrepreneurship, and AI integration to
-          build things that actually work.
-        </p>
-      </div>
+    <>
+      <section className="section section--light">
+        <div className="page-header" style={{ marginBottom: 0 }}>
+          <p className="section-label">TECH STACK</p>
+          <h1>Tools I Use</h1>
+          <p className="page-desc">
+            Full-stack developer with a business background. I combine technical
+            depth with product thinking, entrepreneurship, and AI integration to
+            build things that actually work.
+          </p>
+        </div>
+      </section>
 
-      <div className="skills-groups">
-        {skillGroups.map(({ category, skills }) => (
-          <div key={category} className="skill-group">
-            <h3>{category}</h3>
-            <div className="skills-grid">
-              {skills.map((skill) => (
-                <div key={skill} className="skill-card">{skill}</div>
-              ))}
+      <section className="section">
+        <div className="skills-groups">
+          {skillGroups.map(({ category, skills }) => (
+            <div key={category} className="skill-group">
+              <h3>{category}</h3>
+              <div className="skills-grid">
+                {skills.map((skill) => (
+                  <div key={skill} className="skill-card">{skill}</div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
