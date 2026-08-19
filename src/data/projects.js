@@ -15,8 +15,80 @@ import imgJordanColeman from "../assets/preview-jordan-coleman-campaign.png";
 import imgChickenBeer from "../assets/preview-chicken-beer-festival.png";
 import imgLastCall from "../assets/preview-last-call-landing.png";
 import imgBenignity from "../assets/preview-benignity.png";
+import imgEmerging100 from "../assets/preview-emerging100.png";
+import imgOpenCourt from "../assets/preview-open-court.png";
+import imgHireLocal from "../assets/preview-hirelocal.png";
 
 export const projects = [
+  {
+    id: "emerging100",
+    title: "Emerging 100 ATL",
+    type: "Frontend",
+    tagline: "Internal Committee Playbook Platform",
+    description:
+      "The official internal playbook for Emerging 100 Atlanta \u2014 the young professionals auxiliary of the 100 Black Men of Atlanta, Inc. Consolidates every committee's goals, responsibilities, and operating documents into one searchable hub for the 2025\u20132027 term.",
+    problem:
+      "Committee knowledge lived in scattered documents and left with each outgoing chair. The playbook makes operating procedure a single source of truth and turns leadership transition into a guided handoff instead of a rediscovery.",
+    tech: ["React", "Vite", "React Router"],
+    features: [
+      "15 committee pages with goals, RACI charts, timelines, and checklists",
+      "23 standalone HTML playbooks served alongside the app",
+      "Resources hub: event checklists, 141 transition questions, and a new chair guide",
+      "Live committee search and sticky in-page tab navigation with active section tracking",
+      "Program calendar generated at build time from committee data",
+      "Open Graph and Twitter Card metadata for shared links",
+    ],
+    image: imgEmerging100,
+    github: "https://github.com/19awburris88/emerging100-",
+    live: "",
+    featured: true,
+  },
+  {
+    id: "open-court",
+    title: "The Open Court",
+    type: "Full Stack",
+    tagline: "Basketball Runs & Wellness Registration Platform",
+    description:
+      "Marketing site and registration system for The Open Court \u2014 men's basketball runs and wellness pathways in Dallas. Public event pages drive sign-ups, while an authenticated admin dashboard gives the organizer roster visibility and registration insights.",
+    problem:
+      "Sign-ups, waivers, and emergency contacts were being collected ad hoc with no reliable roster. The platform captures registrations in one place and enforces access to that personal data at the database layer rather than in the frontend.",
+    tech: ["React", "Vite", "Supabase", "CSS Modules"],
+    features: [
+      "Event listings, detail pages, and post-run recaps",
+      "Registration flow with waiver signature and emergency contact capture",
+      "Admin dashboard gated by Supabase Auth plus an explicit admin allowlist",
+      "Row-level security so the public anon key cannot read registrant data",
+      "Registration insights and charts for the organizer",
+      "Light/dark theme toggle and a published privacy policy",
+    ],
+    image: imgOpenCourt,
+    github: "",
+    live: "",
+    featured: true,
+  },
+  {
+    id: "hirelocal",
+    title: "HireLocal",
+    type: "Frontend",
+    tagline: "Local Jobs, People & Career Events",
+    description:
+      "A Dallas\u2013Fort Worth job platform built around proximity rather than volume. HireLocal surfaces the roles, professionals, and career events within a few miles of the user and scores each one against their profile to show what is actually worth their time.",
+    problem:
+      "National job boards bury local opportunities under thousands of irrelevant listings. HireLocal narrows the field to one metro and uses profile-based match scoring so a smaller result set carries more signal.",
+    tech: ["React", "Vite", "React Router"],
+    features: [
+      "Profile-based match scoring with a visual match ring on every card",
+      "Guided onboarding that builds the profile driving recommendations",
+      "Browse jobs, companies, professionals, and career events with full detail pages",
+      "Personalized \u201cFor You\u201d feed and saved-items list",
+      "Client-side persistence so a session survives a refresh",
+      "Mobile-first responsive design",
+    ],
+    image: imgHireLocal,
+    github: "",
+    live: "",
+    featured: false,
+  },
   {
     id: "biteright",
     title: "BiteRight",
