@@ -30,8 +30,9 @@ export default function Contact() {
         <p className="section-label">GET IN TOUCH</p>
         <h1>Let's Build Something Great</h1>
         <p className="page-desc">
-          Available for freelance development, consulting, startup projects,
-          and full-time opportunities.
+          Open to full-time software engineering, business development, and
+          product roles — and available for contract, consulting, and client
+          project work.
         </p>
       </div>
 
@@ -67,18 +68,21 @@ export default function Contact() {
           <div className="form-group">
             <label htmlFor="project-type">Project Type</label>
             <select id="project-type" name="project_type" required>
-              <option value="">Select a project type...</option>
+              <option value="">What's this about?</option>
+              <option value="Full-Time Role">Full-Time Role</option>
+              <option value="Contract / Contract-to-Hire">Contract / Contract-to-Hire</option>
               <option value="New Web App">New Web App</option>
               <option value="Website / Landing Page">Website / Landing Page</option>
               <option value="Consulting">Consulting</option>
-              <option value="Full-Time Opportunity">Full-Time Opportunity</option>
               <option value="Other">Other</option>
             </select>
           </div>
           <div className="form-group">
-            <label htmlFor="budget">Budget Range</label>
-            <select id="budget" name="budget_range" required>
-              <option value="">Select a budget range...</option>
+            <label htmlFor="budget">
+              Budget Range <span className="form-optional">(project work only)</span>
+            </label>
+            <select id="budget" name="budget_range">
+              <option value="">Not applicable — I'm hiring</option>
               <option value="Under $1K">Under $1K</option>
               <option value="$1K – $5K">$1K – $5K</option>
               <option value="$5K – $10K">$5K – $10K</option>

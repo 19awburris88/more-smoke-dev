@@ -22,7 +22,10 @@ export default function CaseStudy() {
 
       <div className="case-hero">
         <div className="case-image">
-          <span className="project-placeholder large">{project.title[0]}</span>
+          {project.image
+            ? <img src={project.image} alt={`${project.title} preview`} />
+            : <span className="project-placeholder large">{project.title[0]}</span>
+          }
         </div>
         <div className="case-intro">
           <span className="badge">{project.type}</span>

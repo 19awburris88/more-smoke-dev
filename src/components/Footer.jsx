@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="footer-col">
           <p className="footer-heading">ABOUT MORE SMOKE DEV</p>
           <p className="footer-body">
-            More Smoke Dev is my brand, my hustle, and my commitment to
-            building high-quality software that makes a difference.
+            More Smoke Dev is the home for my engineering work — client
+            projects, my own products, and the portfolio behind my job search.
           </p>
-          <a href="/#contact" className="btn-outline footer-cta">
-            Let's Work Together →
+          <a href="/resume" className="btn-outline footer-cta">
+            View My Résumé →
           </a>
         </div>
 
@@ -30,14 +30,17 @@ export default function Footer() {
             <span>Prisma</span>
             <span>Vite</span>
             <span>Tailwind</span>
+            <span>Claude API</span>
+            <span>Stripe</span>
+            <span>AWS S3</span>
           </div>
         </div>
 
         <div className="footer-col">
           <p className="footer-heading">LET'S CONNECT</p>
           <p className="footer-body">
-            I'm always open to new opportunities and collaborations. Let's
-            build something great.
+            Open to full-time engineering, product, and business development
+            roles — and to new client projects. Let's build something great.
           </p>
           <div className="footer-social">
             <a href="mailto:19awburris88@gmail.com" aria-label="Email">

@@ -18,8 +18,34 @@ import imgBenignity from "../assets/preview-benignity.png";
 import imgEmerging100 from "../assets/preview-emerging100.png";
 import imgOpenCourt from "../assets/preview-open-court.png";
 import imgHireLocal from "../assets/preview-hirelocal.png";
+import imgLavishRetreats from "../assets/preview-lavish-retreats.jpg";
 
 export const projects = [
+  {
+    id: "more-smoke-os",
+    title: "More Smoke OS",
+    type: "Full Stack",
+    tagline: "Multi-Tenant AI Business Operating System",
+    description:
+      "A white-label CRM and business operations platform built as a TypeScript monorepo. Every client organization gets a fully isolated tenant — contacts, pipeline, tasks, calendar, files, billing, and a Claude-powered assistant — administered from a single agency-level portal.",
+    problem:
+      "Small businesses were paying for four disconnected tools and still running the important work out of a spreadsheet. More Smoke OS consolidates CRM, scheduling, files, and billing into one tenant-isolated system, with a seven-role permission model so an agency can operate every client account without clients ever seeing each other's data.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL", "Claude API", "Stripe", "AWS S3"],
+    features: [
+      "Multi-tenant data isolation with a 7-role permission model, from READ_ONLY up to SUPER_ADMIN",
+      "JWT auth with 15-minute access tokens, 7-day refresh tokens, rotation, and a silent-refresh Axios interceptor",
+      "Claude-powered assistant: contact summarizer, lead scorer, and note drafter",
+      "Stripe Checkout and Customer Portal with webhook-driven plan upgrades across 3 tiers",
+      "S3 file manager using presigned upload and download URLs",
+      "7-stage pipeline Kanban, calendar with month/week/agenda views, and a KPI dashboard",
+      "TanStack Query caching, Zod-validated forms, and a persisted Zustand auth store",
+      "npm-workspaces monorepo; Helmet, CORS, and rate limiting on every route",
+    ],
+    image: null,
+    github: "https://github.com/19awburris88/moresmokeos",
+    live: "",
+    featured: true,
+  },
   {
     id: "emerging100",
     title: "Emerging 100 ATL",
@@ -87,6 +113,75 @@ export const projects = [
     image: imgHireLocal,
     github: "",
     live: "",
+    featured: false,
+  },
+  {
+    id: "love-ledger",
+    title: "Love Ledger",
+    type: "Full Stack",
+    tagline: "Personal Relationship CRM",
+    description:
+      "A CRM for the people who matter most rather than for a sales pipeline. Love Ledger tracks important dates, stores memories, manages gift ideas through a Kanban board, and surfaces nudges when someone has gone too long without hearing from you.",
+    problem:
+      "Staying intentional with people is a memory problem, not a caring problem. The app turns relationship upkeep into tracked state — dates, last contact, gift gaps — and pushes the reminder before the occasion passes rather than after.",
+    tech: ["React", "Express", "Prisma", "PostgreSQL", "Clerk", "Material UI"],
+    features: [
+      "Thoughtfulness Engine: dashboard nudges for upcoming occasions, gift gaps, and lapsed contact",
+      "Relationship profiles with love language, sizes, favorites, and notes",
+      "Memory vault with full-text search, year grouping, and tag editing",
+      "Gift tracker as a Kanban board: Idea → Saved → Purchased → Wrapped → Given",
+      "Clerk-authenticated REST API with per-user data scoping",
+      "Split deploy — Netlify frontend, Render API, Neon serverless Postgres",
+    ],
+    image: null,
+    github: "https://github.com/19awburris88/becoming",
+    live: "",
+    featured: true,
+  },
+  {
+    id: "lavish-retreats",
+    title: "Lavish Retreats DR",
+    type: "Frontend",
+    tagline: "Luxury Villa Booking & Marketing Site",
+    description:
+      "Marketing and booking site for two luxury villas in the gated Sosúa Ocean Village community in Puerto Plata, Dominican Republic. Built to carry an international audience from first look to a completed Lodgify booking without friction.",
+    problem:
+      "The owners were losing international guests between discovery and checkout. The site meets guests in their own language and currency, answers the availability question before the handoff, and passes the selected dates and currency straight through to the Lodgify booking flow.",
+    tech: ["React", "Vite", "React Router", "JSON-LD", "Netlify"],
+    features: [
+      "Full English/Spanish translation of every string",
+      "Multi-currency selector (USD, EUR, CAD, GBP, DOP) passed through to Lodgify",
+      "Per-villa availability calendar with a sticky check-in / check-out / guests booking bar",
+      "SEO build-out: JSON-LD LodgingBusiness structured data, per-route titles, sitemap, robots",
+      "Photo galleries with lightbox and an interactive community map",
+      "Hand-written CSS with no UI framework, and full prefers-reduced-motion support",
+    ],
+    image: imgLavishRetreats,
+    github: "https://github.com/19awburris88/lavish-retreats",
+    live: "",
+    featured: false,
+  },
+  {
+    id: "trips-pwa",
+    title: "Trips",
+    type: "Frontend",
+    tagline: "Offline-First Installable Itinerary PWA",
+    description:
+      "An installable travel itinerary app with no build step and no dependencies — one HTML file, a service worker, and a manifest. Every trip lives as a data object; the app renders the day-by-day view, generates calendar files in the browser, and merges checklists shared between two phones.",
+    problem:
+      "Travel is exactly when connectivity fails. The service worker precaches the page, icons, and self-hosted fonts on install, so a single load on wifi is enough — and the app makes zero third-party requests after that.",
+    tech: ["JavaScript", "Service Workers", "PWA", "Web Share API", "GitHub Pages"],
+    features: [
+      "Offline-first service worker precaching the app shell, icons, and 5 self-hosted woff2 subsets",
+      "In-browser .ics generation with real VTIMEZONE blocks, so multi-timezone flights stay correct",
+      "Stable calendar event IDs so re-importing updates events instead of duplicating them",
+      "Checklist sharing over the Web Share API, with newest-wins per-field merge on the receiving phone",
+      "Hash routing that opens straight to a trip that is in progress today",
+      "Zero dependencies and zero build step — push to main, Pages redeploys",
+    ],
+    image: null,
+    github: "https://github.com/19awburris88/itinerary",
+    live: "https://19awburris88.github.io/itinerary/",
     featured: false,
   },
   {

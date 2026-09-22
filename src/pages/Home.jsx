@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { featuredProjects } from "../data/projects";
+import { featuredProjects, projects } from "../data/projects";
+import { highlights, pursuing } from "../data/resume";
 import heroImg from "../assets/hero.png";
 
 const FAQS = [
@@ -105,18 +106,58 @@ export default function Home() {
             <span>BETTER SOLUTIONS.</span>
           </h1>
           <p className="hero-sub">
-            More Smoke Dev is my development company and creative outlet. I
-            build modern, scalable web applications and solve real problems
-            with clean code and intent.
+            I'm Austin Burris — a full stack engineer with an MBA and a
+            founder's track record. More Smoke Dev is where I build production
+            web applications for clients and ship my own products. I'm currently
+            open to full-time roles and to new client work.
           </p>
           <div className="hero-buttons">
             <Link to="/work" className="btn-primary">View My Work →</Link>
-            <a href="#contact" className="btn-outline">Work With Me</a>
+            <Link to="/resume" className="btn-outline">Résumé</Link>
           </div>
         </div>
 
         <div className="hero-center">
           <img src={heroImg} alt="More Smoke Dev" className="hero-img" />
+        </div>
+      </section>
+
+
+      {/* OPEN TO WORK */}
+      <section className="section section--alt hiring-band" id="hiring">
+        <div className="hiring-grid">
+          <div className="hiring-intro">
+            <p className="section-label">
+              <span className="hiring-dot" aria-hidden="true" />
+              OPEN TO OPPORTUNITIES
+            </p>
+            <h2>Hiring? Start Here.</h2>
+            <p className="section-desc">
+              {projects.length} shipped projects, an MBA, and ten years of
+              operating experience behind the code. I write the software and I
+              understand the business it has to serve — requirements,
+              stakeholders, roadmap, and revenue.
+            </p>
+            <div className="hiring-roles">
+              {pursuing.map((role) => (
+                <span key={role} className="role-tag">{role}</span>
+              ))}
+            </div>
+            <div className="hiring-actions">
+              <Link to="/resume" className="btn-primary">View Résumé →</Link>
+              <Link to="/skills" className="btn-outline">Technical Skills</Link>
+            </div>
+          </div>
+
+          <div className="hiring-stats">
+            {highlights.map((h) => (
+              <div key={h.label} className="hiring-stat">
+                <span className="hiring-stat-num">{h.stat}</span>
+                <span className="hiring-stat-label">{h.label}</span>
+                <span className="hiring-stat-detail">{h.detail}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -192,7 +233,7 @@ export default function Home() {
           <div className="about-home-text">
             <p className="intro-label">HEY, I'M</p>
             <h2 className="about-home-name">Austin Burris</h2>
-            <p className="about-home-role">Full Stack Developer · Indianapolis, IN</p>
+            <p className="about-home-role">Full Stack Engineer · Dallas, TX · Open to Remote</p>
             <p className="about-home-bio">
               I'm a full-stack developer and entrepreneur. I build digital
               experiences with real intent — and I've lived the founder journey
@@ -405,13 +446,14 @@ export default function Home() {
       {/* CONTACT + CALENDLY */}
       <section className="section section--alt" id="contact">
         <div className="section-header">
-          <p className="section-label">LET'S WORK TOGETHER</p>
+          <p className="section-label">LET'S TALK</p>
           <div className="section-header-row">
             <div>
-              <h2>Work With Me</h2>
+              <h2>Hire Me or Work With Me</h2>
               <p className="section-desc">
-                Book a quick call or send a message. Either way, I'll get back
-                to you fast.
+                Recruiters and hiring managers: book a call or send a note — I
+                reply within 24 hours. Clients: same two options, and we'll scope
+                your project on the call.
               </p>
             </div>
           </div>
@@ -421,8 +463,8 @@ export default function Home() {
           <div className="contact-home-col">
             <h3 className="contact-home-subhead">Book a 30-min call</h3>
             <p className="contact-home-meta">
-              Let's talk through your project, timeline, and budget. No
-              commitment — just a conversation.
+              An intro conversation, a role walkthrough, or a project scoping
+              session — whichever you need. No commitment.
             </p>
             <CalendlyEmbed />
           </div>
@@ -445,18 +487,21 @@ export default function Home() {
               <div className="form-group">
                 <label htmlFor="project-type">Project Type</label>
                 <select id="project-type" name="project_type" required>
-                  <option value="">Select a project type...</option>
+                  <option value="">What's this about?</option>
+                  <option value="Full-Time Role">Full-Time Role</option>
+                  <option value="Contract / Contract-to-Hire">Contract / Contract-to-Hire</option>
                   <option value="New Web App">New Web App</option>
                   <option value="Website / Landing Page">Website / Landing Page</option>
                   <option value="Consulting">Consulting</option>
-                  <option value="Full-Time Opportunity">Full-Time Opportunity</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="budget">Budget Range</label>
-                <select id="budget" name="budget_range" required>
-                  <option value="">Select a budget range...</option>
+                <label htmlFor="budget">
+                  Budget Range <span className="form-optional">(project work only)</span>
+                </label>
+                <select id="budget" name="budget_range">
+                  <option value="">Not applicable — I'm hiring</option>
                   <option value="Under $1K">Under $1K</option>
                   <option value="$1K – $5K">$1K – $5K</option>
                   <option value="$5K – $10K">$5K – $10K</option>

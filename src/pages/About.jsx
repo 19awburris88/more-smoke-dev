@@ -1,81 +1,5 @@
-const experience = [
-  {
-    role: "Full Stack Developer",
-    company: "More Smoke Dev",
-    period: "Apr 2024 – Present",
-    location: "Remote (Dallas, TX)",
-    bullets: [
-      "Partner with founders, small businesses, and personal ventures to design and build technology-driven solutions that improve user experience, drive engagement, and support business growth",
-      "Build frontend interfaces, backend APIs, authentication systems, and payment integrations using React, Express, PostgreSQL, and Prisma",
-      "Translate real-world problems into scalable digital products focused on usability and retention",
-    ],
-  },
-  {
-    role: "Founder & Operator",
-    company: "More Smoke (formerly Cultured King Cigars)",
-    period: "2023 – Present",
-    location: "Dallas, TX",
-    bullets: [
-      "Built and scaled a premium cigar lifestyle brand, expanding into 15+ retail/lounge partnerships across the market",
-      "Launched 13+ cigar products/SKUs, aligning product design, branding, and storytelling to drive repeat purchases and brand loyalty",
-      "Developed and executed a go-to-market strategy introducing a revenue-sharing retail model that reduced upfront cost barriers for partners",
-      "Led 6+ brand activations and events, driving event-based sales and new customer acquisition",
-      "Managed end-to-end operations: supply chain, vendor relationships, inventory, and digital presence",
-    ],
-  },
-  {
-    role: "Co-Founder, CFO & CTO",
-    company: "EatHere",
-    period: "2015 – 2023",
-    location: "Indianapolis, IN",
-    bullets: [
-      "Co-founded and scaled a subscription-based digital media platform to 1M+ monthly users across 27 markets nationwide",
-      "Drove 357% year-over-year growth and generated over $150K in recurring revenue",
-      "Directed product strategy, platform development, and technology roadmap as CFO & CTO simultaneously",
-      "Built strategic partnerships with major brands including McDonald's, Indy Chamber, and Visit Indy",
-      "Organized large-scale activations (3,000+ attendees), integrating digital product engagement with real-world experiences",
-    ],
-  },
-];
-
-const education = [
-  {
-    school: "Fullstack Academy – University of Texas at Dallas",
-    degree: "Certificate, Software Engineering (Full-Stack & AI Focus)",
-    year: "2025",
-  },
-  {
-    school: "Anderson University",
-    degree: "MBA, Marketing",
-    year: "2013",
-  },
-  {
-    school: "Rutgers University",
-    degree: "Mini MBA, Digital Marketing",
-    year: "2012",
-  },
-  {
-    school: "Anderson University",
-    degree: "B.A., Entrepreneurship",
-    year: "2011",
-  },
-];
-
-const certifications = [
-  { name: "Certified ScrumMaster (CSM)", status: "earned", year: "2026" },
-  { name: "Claude Certified Architect – Anthropic", status: "in-progress" },
-  { name: "Relationship Management & Business Development – Coursera", status: "in-progress" },
-  { name: "Google IT Support Professional – Coursera", status: "in-progress" },
-];
-
-const pursuing = [
-  "Business Analysis",
-  "Product Management & Development",
-  "Software Engineering",
-  "Business Development",
-  "Technology Consulting",
-  "Customer Success & Solutions Engineering",
-];
+import { Link } from "react-router-dom";
+import { experience, education, certifications, pursuing } from "../data/resume";
 
 export default function About() {
   return (
@@ -88,6 +12,10 @@ export default function About() {
             A builder at the intersection of business strategy, entrepreneurship,
             and technology — with a track record that goes well beyond the IDE.
           </p>
+          <div className="page-header-actions">
+            <Link to="/resume" className="btn-primary">View Full Résumé →</Link>
+            <a href="/#contact" className="btn-outline">Get in Touch</a>
+          </div>
         </div>
       </section>
 
@@ -178,9 +106,17 @@ export default function About() {
               <ul>
                 {certifications.map((c) => (
                   <li key={c.name} className="cert-item">
-                    <span>{c.name}</span>
-                    {c.status === "in-progress" && (
+                    <span className="cert-text">
+                      {c.name}
+                      <span className="cert-issuer">
+                        {c.issuer}
+                        {c.year ? ` \u00b7 ${c.year}` : ""}
+                      </span>
+                    </span>
+                    {c.status === "in-progress" ? (
                       <span className="cert-badge">In Progress</span>
+                    ) : (
+                      <span className="cert-badge cert-badge--earned">Earned</span>
                     )}
                   </li>
                 ))}
@@ -191,20 +127,23 @@ export default function About() {
               <h3>TECHNICAL SKILLS</h3>
               <div className="skills-inline">
                 <p className="skills-cat">Frontend</p>
-                <p className="skills-list">React, Vite, JavaScript, Material UI, Responsive Design</p>
+                <p className="skills-list">React, TypeScript, JavaScript, Vite, Tailwind CSS, Material UI, TanStack Query, Zustand, Framer Motion</p>
                 <p className="skills-cat">Backend</p>
-                <p className="skills-list">Node.js, Express, REST APIs, JWT Auth, API Integrations</p>
-                <p className="skills-cat">Databases</p>
-                <p className="skills-list">PostgreSQL, Prisma, Data Modeling</p>
-                <p className="skills-cat">Tools</p>
-                <p className="skills-list">Git, GitHub, Stripe, Postman, VS Code</p>
-                <p className="skills-cat">Business</p>
-                <p className="skills-list">Agile/Scrum, Product Development, UI/UX, Stakeholder Management</p>
+                <p className="skills-list">Node.js, Express, Python, FastAPI, REST APIs, JWT Auth &amp; Token Rotation, Webhooks</p>
+                <p className="skills-cat">Data</p>
+                <p className="skills-list">PostgreSQL, Prisma, Supabase, SQLite, Data Modeling, Row-Level Security, Multi-Tenant Architecture</p>
+                <p className="skills-cat">AI &amp; Platform</p>
+                <p className="skills-list">Claude API, AI Feature Design, Stripe, AWS S3, Clerk, PWAs &amp; Service Workers</p>
+                <p className="skills-cat">Tools &amp; Delivery</p>
+                <p className="skills-list">Git, GitHub, Postman, Netlify, Vercel, Render, Agile/Scrum, Stakeholder Management</p>
               </div>
             </div>
 
-            <a href="/#contact" className="btn-primary" style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>
-              Work With Me →
+            <Link to="/resume" className="btn-primary" style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>
+              View Full Résumé →
+            </Link>
+            <a href="/#contact" className="btn-outline" style={{ display: "flex", justifyContent: "center" }}>
+              Get in Touch
             </a>
           </div>
         </div>
