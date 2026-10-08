@@ -2196,3 +2196,261 @@ main {
     color: #555 !important;
   }
 }
+
+/* ─── HERO PROOF + TERTIARY CTA ───────────────────────── */
+
+.hero-tertiary {
+  margin-top: 18px;
+  color: #777;
+  font-size: 0.875rem;
+}
+
+.hero-tertiary a {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.hero-tertiary a:hover {
+  color: #42d36b;
+  border-bottom-color: #42d36b;
+}
+
+.hero-proof {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid #1e1e1e;
+}
+
+.hero-proof li {
+  color: #888;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-proof strong {
+  color: #42d36b;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* ─── HOW I WORK ──────────────────────────────────────── */
+
+.process-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  counter-reset: none;
+}
+
+.process-card {
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 28px;
+  position: relative;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.process-card:hover {
+  border-color: #42d36b;
+  transform: translateY(-3px);
+}
+
+.process-step {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #42d36b;
+  background: #eefaf1;
+  border: 1px solid #cfeeda;
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+}
+
+.process-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ─── CASE STUDY: ROLE, OUTCOME, PRIVATE BUILDS ───────── */
+
+.case-role {
+  margin-top: 14px;
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding-left: 14px;
+  border-left: 2px solid #42d36b;
+}
+
+.case-role-label {
+  display: block;
+  color: #42d36b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.case-section--outcome p {
+  color: #d8d8d8;
+}
+
+.case-section--outcome {
+  background: #0f1a12;
+  border: 1px solid #1d3a26;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.case-private {
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.footer-inline-link {
+  color: #42d36b;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer-inline-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-proof {
+    gap: 20px;
+  }
+
+  .hero-proof strong {
+    font-size: 1.25rem;
+  }
+}
+
+/* ─── PRICING: OFFER CARDS, SUPPORT BAND ──────────────── */
+
+.service-price {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #2f7a47;
+  background: #eefaf1;
+  border: 1px solid #cfeeda;
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin-bottom: 14px;
+  letter-spacing: 0.01em;
+}
+
+.service-price strong {
+  font-weight: 800;
+  color: #1b7a3c;
+}
+
+.service-card--highlight .service-price {
+  background: #0f1f13;
+  border-color: #1d3a26;
+  color: #8fe0a9;
+}
+
+.service-card--highlight .service-price strong {
+  color: #42d36b;
+}
+
+.support-band {
+  margin-top: 24px;
+  background: #0f0f0f;
+  border: 1px solid #1e1e1e;
+  border-radius: 16px;
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.support-band-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #42d36b;
+  margin-bottom: 8px;
+}
+
+.support-band-main {
+  flex: 1 1 460px;
+}
+
+.support-band-main h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.support-band-main p {
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  max-width: 620px;
+}
+
+.support-band-cta {
+  flex-shrink: 0;
+}
+
+.services-footnote {
+  margin-top: 24px;
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+@media (max-width: 680px) {
+  .support-band {
+    padding: 24px;
+  }
+
+  .support-band-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

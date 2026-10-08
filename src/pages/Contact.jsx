@@ -83,11 +83,12 @@ export default function Contact() {
             </label>
             <select id="budget" name="budget_range">
               <option value="">Not applicable — I'm hiring</option>
-              <option value="Under $1K">Under $1K</option>
-              <option value="$1K – $5K">$1K – $5K</option>
-              <option value="$5K – $10K">$5K – $10K</option>
-              <option value="$10K+">$10K+</option>
-              <option value="Let's Talk">Let's Talk</option>
+              <option value="Support retainer ($1K/mo)">Support retainer ($1K/mo)</option>
+              <option value="Assessment first ($250)">Assessment first ($250)</option>
+              <option value="$3.5K – $7.5K">$3.5K – $7.5K</option>
+              <option value="$7.5K – $15K">$7.5K – $15K</option>
+              <option value="$15K+">$15K+</option>
+              <option value="Not sure yet">Not sure yet</option>
             </select>
           </div>
           <div className="form-group">

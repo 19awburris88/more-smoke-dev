@@ -7,23 +7,27 @@ import heroImg from "../assets/hero.png";
 const FAQS = [
   {
     q: "How much does a project cost?",
-    a: "Most sites and landing pages run $500–$3,000. Full-stack web apps start at $3,000 and scale with complexity. I'll give you a flat quote after our first conversation — no hourly billing surprises.",
+    a: "Websites and redesigns start at $3,500. Portal and workflow applications start at $9,000. App rescues begin with a $250 assessment, credited toward the repair, and the repair is quoted once I know what I'm looking at. Every project gets a fixed quote against a written scope before work starts — no hourly billing, no surprise invoices.",
+  },
+  {
+    q: "What does the $250 assessment get me?",
+    a: "A focused review of your codebase and setup, written findings, and a prioritized fix list — yours to keep and take anywhere, even if you never hire me. If the honest answer is \"don't fix this, rebuild it\" or \"you don't need me,\" that's what you'll get. If you do move forward, the $250 comes off the repair. It's priced to be an easy yes, so it's a bounded review rather than open-ended consulting.",
   },
   {
     q: "How long does a project take?",
-    a: "A landing page or brand site is typically 1–2 weeks. A full-stack app takes 3–6 weeks depending on scope. I give you a realistic timeline upfront, not a stretch goal.",
+    a: "A website or redesign is typically 3–5 weeks. A portal or workflow application runs 8–12 weeks to a first release. Rescues depend entirely on what the assessment finds. I give you a realistic date upfront and tell you early if it moves.",
   },
   {
     q: "Do I own the code when we're done?",
-    a: "Yes — 100%. The code, the domain, the hosting. Everything is yours at completion. No lock-in, no licensing fees.",
+    a: "Yes — 100%. The code, the domain, and the hosting accounts are yours, set up in your name from day one. No lock-in and no licensing fees. Production hosting, external API usage, and any third-party licenses are billed to your accounts at cost and approved before I turn them on.",
+  },
+  {
+    q: "Do you offer ongoing support?",
+    a: "Yes — $1,000/month for up to six combined service hours covering monitoring, small changes, and maintenance, with business-hours response. Most clients add it at launch. It's a written agreement with stated terms, not unlimited development and not 24/7 coverage.",
   },
   {
     q: "What do you need from me to get started?",
-    a: "A clear idea of what you're building, any branding assets (logos, colors, fonts), and content if it's a marketing site. I'll handle the rest and guide you through anything that's missing.",
-  },
-  {
-    q: "Do you offer ongoing maintenance?",
-    a: "Yes. I offer retainer arrangements for updates, bug fixes, and feature additions after launch. We can work out what makes sense for your project.",
+    a: "A decision maker who can approve a scope and a budget, a clear sense of what the software has to accomplish, any branding assets you have, and content if it's a marketing site. I'll guide you through whatever is missing.",
   },
 ];
 
@@ -46,6 +50,45 @@ const TESTIMONIALS = [
       "Austin captured my brand better than I could have described it. The animations, the vibe, the details — everything was on point.",
     name: "Mike Gillis",
     role: "Digital Creator · Indianapolis",
+  },
+];
+
+const PROCESS = [
+  {
+    step: "01",
+    name: "Discovery",
+    body:
+      "We start with your goals, your users, and your constraints — not a feature list. I ask what the software has to accomplish and what happens today without it. Inherited or half-finished code starts with a paid technical review, because quoting what I haven't read helps neither of us.",
+  },
+  {
+    step: "02",
+    name: "Product Planning",
+    body:
+      "I turn that conversation into scoped requirements, a build order, and a fixed quote with milestone billing. You see what's in, what's out, and what's deliberately deferred before any code is written.",
+  },
+  {
+    step: "03",
+    name: "UX Design",
+    body:
+      "Structure before styling: the screens, the flows, and the decisions a user has to make. I design the path through the product, then make it look like your brand.",
+  },
+  {
+    step: "04",
+    name: "Development",
+    body:
+      "Full-stack build — interface, API, database, authentication, and integrations. You get working software to click through as it goes, not a reveal at the end.",
+  },
+  {
+    step: "05",
+    name: "Launch",
+    body:
+      "Deployment, domain, and hosting set up in your name from day one. I hand over the accounts, the repository, and documentation so nothing is locked to me.",
+  },
+  {
+    step: "06",
+    name: "Support",
+    body:
+      "Updates, fixes, and new features after launch on a retainer that fits the project — or a clean handoff to your own team. Your call, either way.",
   },
 ];
 
@@ -112,9 +155,17 @@ export default function Home() {
             open to full-time roles and to new client work.
           </p>
           <div className="hero-buttons">
-            <Link to="/work" className="btn-primary">View My Work →</Link>
-            <Link to="/resume" className="btn-outline">Résumé</Link>
+            <a href="#contact" className="btn-primary">Start a Project →</a>
+            <Link to="/work" className="btn-outline">View My Work</Link>
           </div>
+          <p className="hero-tertiary">
+            Hiring instead? <Link to="/resume">See my résumé →</Link>
+          </p>
+          <ul className="hero-proof">
+            <li><strong>{projects.length}</strong> projects shipped</li>
+            <li><strong>1M+</strong> users reached</li>
+            <li><strong>10+</strong> years operating</li>
+          </ul>
         </div>
 
         <div className="hero-center">
@@ -123,54 +174,17 @@ export default function Home() {
       </section>
 
 
-      {/* OPEN TO WORK */}
-      <section className="section section--alt hiring-band" id="hiring">
-        <div className="hiring-grid">
-          <div className="hiring-intro">
-            <p className="section-label">
-              <span className="hiring-dot" aria-hidden="true" />
-              OPEN TO OPPORTUNITIES
-            </p>
-            <h2>Hiring? Start Here.</h2>
-            <p className="section-desc">
-              {projects.length} shipped projects, an MBA, and ten years of
-              operating experience behind the code. I write the software and I
-              understand the business it has to serve — requirements,
-              stakeholders, roadmap, and revenue.
-            </p>
-            <div className="hiring-roles">
-              {pursuing.map((role) => (
-                <span key={role} className="role-tag">{role}</span>
-              ))}
-            </div>
-            <div className="hiring-actions">
-              <Link to="/resume" className="btn-primary">View Résumé →</Link>
-              <Link to="/skills" className="btn-outline">Technical Skills</Link>
-            </div>
-          </div>
-
-          <div className="hiring-stats">
-            {highlights.map((h) => (
-              <div key={h.label} className="hiring-stat">
-                <span className="hiring-stat-num">{h.stat}</span>
-                <span className="hiring-stat-label">{h.label}</span>
-                <span className="hiring-stat-detail">{h.detail}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* SERVICES */}
-      <section className="section section--light">
+      <section className="section section--light" id="services">
         <div className="section-header">
           <p className="section-label">WHAT I BUILD</p>
           <div className="section-header-row">
             <div>
-              <h2>Find Your Fit</h2>
+              <h2>Three Ways to Work Together</h2>
               <p className="section-desc">
-                Whether you need a brand presence, a web app, or a full-stack
-                platform — I've built it.
+                Bounded offers with a defined scope, a fixed quote, and a launch
+                date — for small businesses, nonprofits, membership
+                organizations, and growing teams.
               </p>
             </div>
           </div>
@@ -178,53 +192,77 @@ export default function Home() {
 
         <div className="services-grid">
           <div className="service-card">
-            <div className="service-icon">🏢</div>
-            <h3>Businesses & Brands</h3>
+            <div className="service-icon">🖥️</div>
+            <h3>Website or Redesign</h3>
+            <p className="service-price">from <strong>$3,500</strong></p>
             <p>
-              Landing pages, event sites, and brand experiences that look the
-              part and convert.
+              A bounded business site that earns its keep — for small
+              businesses, nonprofits, and personal brands.
             </p>
             <ul className="service-list">
-              <li>Brand & marketing websites</li>
-              <li>Event & campaign pages</li>
-              <li>Lead generation funnels</li>
-              <li>Nonprofit & donation platforms</li>
+              <li>Agreed page count and responsive layouts</li>
+              <li>Content migration from your current site</li>
+              <li>Contact forms and analytics setup</li>
+              <li>Launch and handoff in your own accounts</li>
             </ul>
             <a href="#contact" className="link-green">Start a project →</a>
           </div>
 
           <div className="service-card">
-            <div className="service-icon">🎙️</div>
-            <h3>Founders & Creators</h3>
+            <div className="service-icon">🔧</div>
+            <h3>App Rescue &amp; Integration</h3>
+            <p className="service-price">assessment <strong>$250</strong> · credited to the repair</p>
             <p>
-              Personal brands, podcasts, and platforms that establish authority
-              and grow with you.
+              Half-finished, inherited, or unreliable? I review it, tell you
+              honestly what it needs, then quote the repair.
             </p>
             <ul className="service-list">
-              <li>Personal brand websites</li>
-              <li>Podcast & media platforms</li>
-              <li>Portfolio & profile sites</li>
-              <li>Content & community hubs</li>
+              <li>A focused review of your codebase and setup</li>
+              <li>Written findings and a prioritized fix list you keep</li>
+              <li>A fixed quote for the repair, or an honest "don't"</li>
+              <li>Larger rebuilds scoped and quoted separately</li>
             </ul>
-            <a href="#contact" className="link-green">Start a project →</a>
+            <a href="#contact" className="link-green">Book an assessment →</a>
           </div>
 
           <div className="service-card service-card--highlight">
             <div className="service-icon">⚙️</div>
-            <h3>Full-Stack Builds</h3>
+            <h3>Portal or Workflow App</h3>
+            <p className="service-price">from <strong>$9,000</strong></p>
             <p>
-              Complex apps with real backends, databases, and custom logic —
-              built to scale.
+              A focused first release for membership organizations and growing
+              teams — built to replace the spreadsheet everyone is tired of.
             </p>
             <ul className="service-list">
-              <li>React + Node.js web apps</li>
-              <li>Python / FastAPI backends</li>
-              <li>PostgreSQL & Supabase</li>
-              <li>Auth, admin panels & APIs</li>
+              <li>Member access, intake flows, and dashboards</li>
+              <li>Internal workflows and admin tooling</li>
+              <li>Authentication and data access defined up front</li>
+              <li>Acceptance criteria agreed before quoting</li>
             </ul>
-            <a href="#contact" className="link-green">Start a project →</a>
+            <a href="#contact" className="link-green">Scope a build →</a>
           </div>
         </div>
+
+        <div className="support-band">
+          <div className="support-band-main">
+            <p className="support-band-label">AFTER LAUNCH</p>
+            <h3>Ongoing Support — $1,000/month</h3>
+            <p>
+              Up to six combined service hours a month for monitoring, small
+              changes, and maintenance. Business-hours response and a named
+              point of contact. Not unlimited development and not 24/7 coverage
+              — the terms are written down before you sign.
+            </p>
+          </div>
+          <a href="#contact" className="btn-primary support-band-cta">Add Support →</a>
+        </div>
+
+        <p className="services-footnote">
+          Starting prices, not quotes. Every project is scoped and fixed-quoted
+          before work begins. Production hosting, external API usage, and
+          third-party licenses are set up in your accounts and billed at cost,
+          approved in advance.
+        </p>
       </section>
 
       {/* ABOUT AUSTIN */}
@@ -268,50 +306,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MORE SMOKE BRAND */}
-      <section className="section section--light">
-        <div className="brand-home-grid">
-          <div className="brand-home-text">
-            <p className="section-label">THE BRAND</p>
-            <h2 className="brand-home-headline">More Smoke</h2>
-            <p className="brand-home-tagline">A premium cigar lifestyle brand built on culture, community, and craft.</p>
-            <p className="brand-home-bio">
-              Before More Smoke Dev, there was More Smoke — the premium cigar
-              lifestyle brand I founded and scaled in Dallas. I built it from
-              scratch: the product line, the retail partnerships, the events,
-              and the identity. The same drive and entrepreneurial mindset
-              behind that brand is what powers this dev shop. Same name. Same
-              standard. Different industry.
-            </p>
-            <div className="brand-stats">
-              <div className="brand-stat">
-                <span className="brand-stat-num">13+</span>
-                <span className="brand-stat-label">Products & SKUs</span>
-              </div>
-              <div className="brand-stat">
-                <span className="brand-stat-num">15+</span>
-                <span className="brand-stat-label">Retail Partners</span>
-              </div>
-              <div className="brand-stat">
-                <span className="brand-stat-num">6+</span>
-                <span className="brand-stat-label">Brand Events</span>
-              </div>
+      {/* HOW I WORK */}
+      <section className="section section--light" id="process">
+        <div className="section-header">
+          <p className="section-label">HOW I WORK</p>
+          <div className="section-header-row">
+            <div>
+              <h2>From Idea to Supported</h2>
+              <p className="section-desc">
+                I lead every project through the same six stages — so you
+                always know where we are, what's next, and what it costs.
+              </p>
             </div>
-            <a
-              href="https://moresmoke.co"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-outline"
-              style={{ marginTop: "32px", display: "inline-block" }}
-            >
-              Visit moresmoke.co →
-            </a>
-          </div>
-          <div className="brand-home-card">
-            <p className="brand-quote">"The name means something. It's not a gimmick — it's the standard I hold myself to in everything I build."</p>
-            <p className="brand-card-attr">— Austin Burris, Founder</p>
+            <a href="#contact" className="btn-outline">Start at Step One →</a>
           </div>
         </div>
+
+        <ol className="process-grid">
+          {PROCESS.map(({ step, name, body }) => (
+            <li className="process-card" key={step}>
+              <span className="process-step">{step}</span>
+              <h3>{name}</h3>
+              <p>{body}</p>
+            </li>
+          ))}
+        </ol>
       </section>
 
       {/* FEATURED WORK */}
@@ -365,6 +384,90 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* OPEN TO WORK */}
+      <section className="section section--alt hiring-band" id="hiring">
+        <div className="hiring-grid">
+          <div className="hiring-intro">
+            <p className="section-label">
+              <span className="hiring-dot" aria-hidden="true" />
+              OPEN TO OPPORTUNITIES
+            </p>
+            <h2>Hiring? Start Here.</h2>
+            <p className="section-desc">
+              {projects.length} shipped projects, an MBA, and ten years of
+              operating experience behind the code. I write the software and I
+              understand the business it has to serve — requirements,
+              stakeholders, roadmap, and revenue.
+            </p>
+            <div className="hiring-roles">
+              {pursuing.map((role) => (
+                <span key={role} className="role-tag">{role}</span>
+              ))}
+            </div>
+            <div className="hiring-actions">
+              <Link to="/resume" className="btn-primary">View Résumé →</Link>
+              <Link to="/skills" className="btn-outline">Technical Skills</Link>
+            </div>
+          </div>
+
+          <div className="hiring-stats">
+            {highlights.map((h) => (
+              <div key={h.label} className="hiring-stat">
+                <span className="hiring-stat-num">{h.stat}</span>
+                <span className="hiring-stat-label">{h.label}</span>
+                <span className="hiring-stat-detail">{h.detail}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MORE SMOKE BRAND */}
+      <section className="section section--light">
+        <div className="brand-home-grid">
+          <div className="brand-home-text">
+            <p className="section-label">THE BRAND</p>
+            <h2 className="brand-home-headline">More Smoke</h2>
+            <p className="brand-home-tagline">A premium cigar lifestyle brand built on culture, community, and craft.</p>
+            <p className="brand-home-bio">
+              Before More Smoke Dev, there was More Smoke — the premium cigar
+              lifestyle brand I founded and scaled in Dallas. I built it from
+              scratch: the product line, the retail partnerships, the events,
+              and the identity. The same drive and entrepreneurial mindset
+              behind that brand is what powers this dev shop. Same name. Same
+              standard. Different industry.
+            </p>
+            <div className="brand-stats">
+              <div className="brand-stat">
+                <span className="brand-stat-num">13+</span>
+                <span className="brand-stat-label">Products & SKUs</span>
+              </div>
+              <div className="brand-stat">
+                <span className="brand-stat-num">15+</span>
+                <span className="brand-stat-label">Retail Partners</span>
+              </div>
+              <div className="brand-stat">
+                <span className="brand-stat-num">6+</span>
+                <span className="brand-stat-label">Brand Events</span>
+              </div>
+            </div>
+            <a
+              href="https://moresmoke.co"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+              style={{ marginTop: "32px", display: "inline-block" }}
+            >
+              Visit moresmoke.co →
+            </a>
+          </div>
+          <div className="brand-home-card">
+            <p className="brand-quote">"The name means something. It's not a gimmick — it's the standard I hold myself to in everything I build."</p>
+            <p className="brand-card-attr">— Austin Burris, Founder</p>
+          </div>
         </div>
       </section>
 
@@ -451,9 +554,10 @@ export default function Home() {
             <div>
               <h2>Hire Me or Work With Me</h2>
               <p className="section-desc">
-                Recruiters and hiring managers: book a call or send a note — I
-                reply within 24 hours. Clients: same two options, and we'll scope
-                your project on the call.
+                Clients: book a call and we'll scope the work, talk budget
+                against the starting prices above, and agree a date. Recruiters
+                and hiring managers: same two options — I reply within 24
+                hours either way.
               </p>
             </div>
           </div>
@@ -502,11 +606,12 @@ export default function Home() {
                 </label>
                 <select id="budget" name="budget_range">
                   <option value="">Not applicable — I'm hiring</option>
-                  <option value="Under $1K">Under $1K</option>
-                  <option value="$1K – $5K">$1K – $5K</option>
-                  <option value="$5K – $10K">$5K – $10K</option>
-                  <option value="$10K+">$10K+</option>
-                  <option value="Let's Talk">Let's Talk</option>
+                  <option value="Support retainer ($1K/mo)">Support retainer ($1K/mo)</option>
+                  <option value="Assessment first ($250)">Assessment first ($250)</option>
+                  <option value="$3.5K – $7.5K">$3.5K – $7.5K</option>
+                  <option value="$7.5K – $15K">$7.5K – $15K</option>
+                  <option value="$15K+">$15K+</option>
+                  <option value="Not sure yet">Not sure yet</option>
                 </select>
               </div>
               <div className="form-group">

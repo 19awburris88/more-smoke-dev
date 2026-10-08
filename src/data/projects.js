@@ -26,6 +26,8 @@ export const projects = [
     title: "More Smoke OS",
     type: "Full Stack",
     tagline: "Multi-Tenant AI Business Operating System",
+    role:
+      "Sole engineer and product owner — architecture, multi-tenant data model, API, UI, billing, and AI features.",
     description:
       "A white-label CRM and business operations platform built as a TypeScript monorepo. Every client organization gets a fully isolated tenant — contacts, pipeline, tasks, calendar, files, billing, and a Claude-powered assistant — administered from a single agency-level portal.",
     problem:
@@ -51,10 +53,14 @@ export const projects = [
     title: "Emerging 100 ATL",
     type: "Frontend",
     tagline: "Internal Committee Playbook Platform",
+    role:
+      "Lead developer, working directly with the executive board — platform architecture, passwordless auth, the attendance system, and admin tooling.",
     description:
       "The official internal playbook for Emerging 100 Atlanta \u2014 the young professionals auxiliary of the 100 Black Men of Atlanta, Inc. Consolidates every committee's goals, responsibilities, and operating documents into one searchable hub for the 2025\u20132027 term.",
     problem:
       "Committee knowledge lived in scattered documents and left with each outgoing chair. The playbook makes operating procedure a single source of truth and turns leadership transition into a guided handoff instead of a rediscovery.",
+    outcome:
+      "Launched to 160 members for the 2025–2027 term. Leadership now updates committee content, documents, and the roster themselves, without developer involvement.",
     tech: ["React", "Vite", "React Router"],
     features: [
       "15 committee pages with goals, RACI charts, timelines, and checklists",
@@ -74,10 +80,14 @@ export const projects = [
     title: "The Open Court",
     type: "Full Stack",
     tagline: "Basketball Runs & Wellness Registration Platform",
+    role:
+      "Sole developer and product partner — discovery with the founder, registration system, admin dashboard, and insights screen; scoped and reconciled the client's formal requirements document.",
     description:
       "Marketing site and registration system for The Open Court \u2014 men's basketball runs and wellness pathways in Dallas. Public event pages drive sign-ups, while an authenticated admin dashboard gives the organizer roster visibility and registration insights.",
     problem:
       "Sign-ups, waivers, and emergency contacts were being collected ad hoc with no reliable roster. The platform captures registrations in one place and enforces access to that personal data at the database layer rather than in the frontend.",
+    outcome:
+      "Seven pages, the registration system, admin dashboard, and insights screen delivered. Image payload cut from 4.1MB to roughly 520KB and the app shell to under 100KB compressed; the app installs to the home screen and every page works offline.",
     tech: ["React", "Vite", "Supabase", "CSS Modules"],
     features: [
       "Event listings, detail pages, and post-run recaps",
@@ -97,6 +107,8 @@ export const projects = [
     title: "HireLocal",
     type: "Frontend",
     tagline: "Local Jobs, People & Career Events",
+    role:
+      "Designer and frontend developer — match-scoring logic, onboarding flow, and the full interface.",
     description:
       "A Dallas\u2013Fort Worth job platform built around proximity rather than volume. HireLocal surfaces the roles, professionals, and career events within a few miles of the user and scores each one against their profile to show what is actually worth their time.",
     problem:
@@ -120,6 +132,8 @@ export const projects = [
     title: "Love Ledger",
     type: "Full Stack",
     tagline: "Personal Relationship CRM",
+    role:
+      "Sole engineer and product owner — schema, API, authentication, and UI.",
     description:
       "A CRM for the people who matter most rather than for a sales pipeline. Love Ledger tracks important dates, stores memories, manages gift ideas through a Kanban board, and surfaces nudges when someone has gone too long without hearing from you.",
     problem:
@@ -143,6 +157,8 @@ export const projects = [
     title: "Lavish Retreats DR",
     type: "Frontend",
     tagline: "Luxury Villa Booking & Marketing Site",
+    role:
+      "Designer and developer, working with the villa owners — bilingual content system, booking integration, and SEO build-out.",
     description:
       "Marketing and booking site for two luxury villas in the gated Sosúa Ocean Village community in Puerto Plata, Dominican Republic. Built to carry an international audience from first look to a completed Lodgify booking without friction.",
     problem:
@@ -166,10 +182,14 @@ export const projects = [
     title: "Trips",
     type: "Frontend",
     tagline: "Offline-First Installable Itinerary PWA",
+    role:
+      "Sole engineer — offline architecture, in-browser calendar generation, and share-merge logic.",
     description:
       "An installable travel itinerary app with no build step and no dependencies — one HTML file, a service worker, and a manifest. Every trip lives as a data object; the app renders the day-by-day view, generates calendar files in the browser, and merges checklists shared between two phones.",
     problem:
       "Travel is exactly when connectivity fails. The service worker precaches the page, icons, and self-hosted fonts on install, so a single load on wifi is enough — and the app makes zero third-party requests after that.",
+    outcome:
+      "Live on GitHub Pages, installed and in use on the phones it was built for.",
     tech: ["JavaScript", "Service Workers", "PWA", "Web Share API", "GitHub Pages"],
     features: [
       "Offline-first service worker precaching the app shell, icons, and 5 self-hosted woff2 subsets",
@@ -189,6 +209,8 @@ export const projects = [
     title: "BiteRight",
     type: "Full Stack",
     tagline: "Restaurant & Food Discovery Platform",
+    role:
+      "Full-stack developer — recommendation and filtering logic, backend APIs, and the swipe interface.",
     description:
       "A swipe-based discovery app that helps users quickly decide where to eat, reducing decision fatigue through real-time recommendations. Designed a Tinder-style interface with filtering logic to enhance user engagement and session time.",
     problem:
@@ -211,6 +233,8 @@ export const projects = [
     title: "Cigar Match",
     type: "Full Stack",
     tagline: "Cigar Recommendation & Community Platform",
+    role:
+      "Founder and lead developer — product definition, recommendation logic, and UI.",
     description:
       "A recommendation engine helping users discover cigars based on preferences, past behavior, and flavor profiles — similar to a swipe-based matching experience. Addresses the industry gap where customers lack consistent in-store guidance.",
     problem:
@@ -233,6 +257,8 @@ export const projects = [
     title: "FitTogether",
     type: "Full Stack",
     tagline: "Couples Fitness & Wellness Platform",
+    role:
+      "Full-stack developer — frontend architecture, habit tracking, and shared goal logic.",
     description:
       "A wellness and accountability platform combining habit tracking, gamification, and shared goal-setting for couples. Designed to increase user accountability and retention through partner interaction and AI-driven recommendations.",
     problem:
@@ -248,13 +274,15 @@ export const projects = [
     image: imgFitTogether,
     github: "",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     id: "more-smoke",
     title: "More Smoke",
     type: "Frontend",
     tagline: "Luxury Lifestyle Brand Platform",
+    role:
+      "Founder, designer, and developer.",
     description:
       "The digital home for Austin's premium cigar brand. Focused on brand storytelling, product showcases, event promotion, and mobile-optimized experiences that match the premium feel of the product.",
     problem:
@@ -276,6 +304,8 @@ export const projects = [
     title: "Jordan Coleman Campaign",
     type: "Frontend",
     tagline: "Political Campaign Website",
+    role:
+      "Designer and developer, working directly with the candidate on messaging and build.",
     description:
       "A professional political campaign website for a local candidate featuring responsive design, donation integration, and community engagement tools to mobilize support.",
     problem:
@@ -297,6 +327,8 @@ export const projects = [
     title: "Chicken & Beer Festival",
     type: "Frontend",
     tagline: "6th Annual Indy Event Website",
+    role:
+      "Designer and developer, working with the festival organizers — site build and ticketing integration.",
     description:
       "Official website for the 6th Annual Chicken & Beer Festival in Indianapolis — a summer celebration of bold flavor, cold drinks, local restaurants, live music, games, and community energy at University Park.",
     problem:
@@ -320,6 +352,8 @@ export const projects = [
     title: "The Money Mill",
     type: "Frontend",
     tagline: "Financial Education Platform",
+    role:
+      "Designer and developer — site build and lead-generation funnels.",
     description:
       "A business website focused on financial literacy, education, and entrepreneurship — built to establish authority, generate leads, and funnel visitors into educational resources.",
     problem:
@@ -340,6 +374,8 @@ export const projects = [
     title: "The Last Call",
     type: "Frontend",
     tagline: "Cigar Pre-Launch Landing Page",
+    role:
+      "Designer and developer — countdown, lead capture, and launch page for my own brand.",
     description:
       "A luxury pre-launch experience for the fifth cigar in the More Smoke portfolio. Built around anticipation — a live countdown to the September 2026 drop, blend reveal, and email capture connected to Google Sheets.",
     problem:
@@ -361,6 +397,8 @@ export const projects = [
     title: "CRHS Class of '07",
     type: "Full Stack",
     tagline: "20-Year Class Reunion Platform",
+    role:
+      "Sole developer and organizer-side product owner — Supabase backend, classmate directory, voting, and registration.",
     description:
       "A full-featured reunion website for Cardinal Ritter High School's Class of 2007, built to reconnect 200+ alumni ahead of their July 2027 weekend in Indianapolis. Combines Supabase, Framer Motion, and interactive mapping into a rich community experience.",
     problem:
@@ -386,6 +424,8 @@ export const projects = [
     title: "Family Tree",
     type: "Full Stack",
     tagline: "Interactive Family Archive Platform",
+    role:
+      "Sole engineer — Python graph engine, FastAPI backend, and React frontend.",
     description:
       "A modern digital archive for the Burris family designed to feel like a social platform, not a genealogy database. Features a Python/FastAPI backend with a graph-based relationship engine, social memory feed, and visual family tree.",
     problem:
@@ -410,10 +450,14 @@ export const projects = [
     title: "Benignity",
     type: "Full Stack",
     tagline: "Nonprofit Vacation Lodging Platform",
+    role:
+      "Designer and developer, working with the nonprofit's board — donation flows, event ticketing, and site build.",
     description:
       "Website and donation platform for Benignity, Inc., a 501(c)(3) providing free vacation lodging for patients with life-limiting illness and their unpaid caregivers. Includes donation flows, event ticketing, and impact-driven storytelling.",
     problem:
       "The nonprofit needed a credible, conversion-focused digital presence that could collect donations, sell event tickets, and communicate their mission to new supporters.",
+    outcome:
+      "Live at benignity.org, taking donations and gala ticket sales.",
     tech: ["React", "Vite", "React Router", "Eventbrite", "CSS"],
     features: [
       "Donation page with preset amounts and monthly giving toggle",
@@ -425,13 +469,15 @@ export const projects = [
     github: "https://github.com/19awburris88/benignity",
     image: imgBenignity,
     live: "https://benignity.org",
-    featured: false,
+    featured: true,
   },
   {
     id: "club520",
     title: "Club 520 Podcast",
     type: "Frontend",
     tagline: "NBA Podcast Brand Website",
+    role:
+      "Designer and developer — RSS episode pipeline, player integrations, and the full interface.",
     description:
       "Official website for the Club 520 Podcast hosted by former NBA All-Star Jeff Teague, DJ Wells, and B Hen. Built for culture — live episode feeds, a sticky Spotify player, YouTube lightbox, sponsor grid, and a custom basketball cursor.",
     problem:
@@ -455,6 +501,8 @@ export const projects = [
     title: "Pressed & Aged",
     type: "Frontend",
     tagline: "Luxury Cigar & Vinyl Lounge",
+    role:
+      "Designer and developer — brand site, membership tiers, and reservation flow.",
     description:
       "Website for a luxury cigar and vinyl lounge in Nashville, TN. Communicates the full Pressed & Aged experience — curated humidor, vinyl programming, membership tiers, and signature recurring events — through a rich, scroll-driven design.",
     problem:
@@ -478,6 +526,8 @@ export const projects = [
     title: "Virtual Care Now",
     type: "Frontend",
     tagline: "Telehealth Practice Website",
+    role:
+      "Designer and developer, working directly with the practice's founding physician — site build and conversion structure.",
     description:
       "Marketing website for Virtual Care Now, a virtual urgent care practice led by Dr. Jeni Grundy. Designed to convert first-time visitors into patients through clear service communication, trust-building content, and a frictionless contact experience.",
     problem:
@@ -501,6 +551,8 @@ export const projects = [
     title: "Daniel Farr",
     type: "Frontend",
     tagline: "Executive Personal Brand Website",
+    role:
+      "Designer and developer, working directly with the client — positioning, content structure, and build.",
     description:
       "Premium personal brand website for Daniel Farr — Builder, Strategist, Servant Leader — serving as his digital headquarters for leadership positioning, community impact, and speaking opportunities in Atlanta and beyond.",
     problem:
@@ -524,6 +576,8 @@ export const projects = [
     title: "Where's Mike G",
     type: "Frontend",
     tagline: "Personal Brand Website",
+    role:
+      "Designer and developer — brand site, motion design, and build.",
     description:
       "Personal brand website for Mike Gillis, Indianapolis-based digital marketer, food and lifestyle content creator, and event host with 10+ years in the industry. Showcases collaborations, events, wine partnerships, and brand services.",
     problem:
@@ -547,6 +601,8 @@ export const projects = [
     title: "Smoke, Cask & Barrel",
     type: "Frontend",
     tagline: "Cigar & Spirits Lifestyle Brand",
+    role:
+      "Founder, designer, and developer.",
     description:
       "A brand website at the intersection of premium cigars and craft spirits — designed to capture the culture, community, and experience of pairing two of life's great pleasures.",
     problem:

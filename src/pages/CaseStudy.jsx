@@ -31,6 +31,12 @@ export default function CaseStudy() {
           <span className="badge">{project.type}</span>
           <h1>{project.title}</h1>
           <p className="case-tagline">{project.tagline}</p>
+          {project.role && (
+            <p className="case-role">
+              <span className="case-role-label">My role</span>
+              {project.role}
+            </p>
+          )}
           <div className="case-actions">
             {project.live && (
               <a href={project.live} target="_blank" rel="noreferrer" className="btn-primary">
@@ -41,6 +47,12 @@ export default function CaseStudy() {
               <a href={project.github} target="_blank" rel="noreferrer" className="btn-outline">
                 GitHub Repo
               </a>
+            )}
+            {!project.live && !project.github && (
+              <p className="case-private">
+                Private build — code and deployment are the client's.{" "}
+                <a href="/#contact" className="link-green">Ask me for a walkthrough →</a>
+              </p>
             )}
           </div>
         </div>
@@ -56,6 +68,13 @@ export default function CaseStudy() {
           <h2>The Solution</h2>
           <p>{project.description}</p>
         </div>
+
+        {project.outcome && (
+          <div className="case-section case-section--outcome">
+            <h2>The Outcome</h2>
+            <p>{project.outcome}</p>
+          </div>
+        )}
 
         <div className="case-section">
           <h2>Features</h2>

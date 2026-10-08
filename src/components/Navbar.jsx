@@ -53,7 +53,7 @@ export default function Navbar() {
           </svg>
         </a>
         <a href="/#contact" className="btn-primary nav-cta">
-          Hire Me
+          Start a Project
         </a>
       </div>
     </nav>
