@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&display=swap');
+:root {
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
 
 * {
   margin: 0;
@@ -13,7 +16,9 @@ html {
 body {
   background: #0b0b0b;
   color: white;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 main {
@@ -637,6 +642,15 @@ main {
   transform: translateY(-4px);
 }
 
+.service-card .service-list {
+  margin-bottom: 4px;
+}
+
+.service-card > .link-green {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
 .service-card--highlight {
   border-color: #1e3a1e;
 }
@@ -646,8 +660,27 @@ main {
 }
 
 .service-icon {
-  font-size: 2rem;
-  line-height: 1;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f1f13;
+  border: 1px solid #1d3a26;
+  color: #42d36b;
+  flex-shrink: 0;
+}
+
+.service-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.section--light .service-icon {
+  background: #eefaf1;
+  border-color: #cfeeda;
+  color: #2f7a47;
 }
 
 .service-card h3 {
@@ -764,7 +797,6 @@ main {
   border: none;
   color: white;
   padding: 28px 36px;
-  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
@@ -797,7 +829,6 @@ main {
 .faq-answer {
   background: #111;
   color: #aaa;
-  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.05rem;
   font-style: italic;
   line-height: 1.95;
@@ -863,7 +894,6 @@ main {
 }
 
 .about-home-name {
-  font-family: 'Playfair Display', Georgia, serif;
   font-size: 4.8rem;
   font-weight: 900;
   line-height: 1.0;
@@ -998,7 +1028,6 @@ main {
 }
 
 .brand-quote {
-  font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
   font-size: 1.35rem;
   color: #ffffff;
@@ -1429,7 +1458,6 @@ main {
 }
 
 .form-group label {
-  font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
   font-size: 1rem;
   font-weight: 500;
@@ -2366,30 +2394,22 @@ main {
 /* ─── PRICING: OFFER CARDS, SUPPORT BAND ──────────────── */
 
 .service-price {
-  display: inline-block;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
   font-size: 0.8rem;
   color: #2f7a47;
   background: #eefaf1;
   border: 1px solid #cfeeda;
   border-radius: 20px;
-  padding: 5px 12px;
-  margin-bottom: 14px;
+  padding: 6px 14px;
   letter-spacing: 0.01em;
 }
 
 .service-price strong {
   font-weight: 800;
   color: #1b7a3c;
-}
-
-.service-card--highlight .service-price {
-  background: #0f1f13;
-  border-color: #1d3a26;
-  color: #8fe0a9;
-}
-
-.service-card--highlight .service-price strong {
-  color: #42d36b;
 }
 
 .support-band {
@@ -2452,5 +2472,113 @@ main {
   .support-band-cta {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ─── TYPE SYSTEM ─────────────────────────────────────── */
+/* Space Grotesk carries headings, numerals and labels.
+   Inter carries anything someone has to read a paragraph of. */
+
+h1, h2, h3, h4, h5, h6,
+.hero-headline,
+.brand-home-headline,
+.about-home-name,
+.resume-name,
+.resume-bar-title,
+.timeline-role,
+.service-card h3,
+.process-card h3,
+.support-band-main h3,
+.testimonial-quote,
+.brand-quote {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Small caps-style labels read better with the display face's wider forms */
+.section-label,
+.about-section-label,
+.resume-h,
+.support-band-label,
+.process-step,
+.skills-cat,
+.footer-heading,
+.cert-badge,
+.badge,
+.tech-tag,
+.role-tag,
+.hiring-stat-label,
+.resume-stat-label {
+  font-family: var(--font-display);
+}
+
+/* Numerals: tabular + display face so prices and stats align and hit harder */
+.service-price,
+.hero-proof strong,
+.hiring-stat-num,
+.brand-stat-num,
+.resume-stat-num,
+.edu-year,
+.timeline-period {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Buttons and nav are short labels, not reading copy */
+.btn-primary,
+.btn-outline,
+.link-green,
+.nav-links a,
+.faq-question {
+  font-family: var(--font-display);
+}
+
+/* Space Grotesk needs tighter tracking as it scales up */
+.hero-headline {
+  letter-spacing: -0.035em;
+}
+
+.page-header h1,
+.resume-bar-title {
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  letter-spacing: -0.025em;
+}
+
+/* Body copy stays Inter even inside display-font containers */
+.hero-sub,
+.section-desc,
+.page-desc,
+.faq-answer,
+.service-card > p,
+.process-card p,
+.support-band-main p,
+.about-card p,
+.about-home-bio,
+.brand-home-bio,
+.timeline-bullets li,
+.service-list li,
+.resume-summary,
+.resume-bullets li,
+.project-card-body p,
+.case-body p,
+.footer-body {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+
+@media print {
+  .resume-sheet,
+  .resume-sheet p,
+  .resume-sheet li {
+    font-family: var(--font-body);
+  }
+  .resume-name,
+  .resume-h,
+  .resume-job-role,
+  .resume-stat-num {
+    font-family: var(--font-display);
   }
 }

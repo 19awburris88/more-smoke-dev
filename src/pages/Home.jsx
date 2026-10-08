@@ -192,7 +192,11 @@ export default function Home() {
 
         <div className="services-grid">
           <div className="service-card">
-            <div className="service-icon">🖥️</div>
+            <div className="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
             <h3>Website or Redesign</h3>
             <p className="service-price">from <strong>$3,500</strong></p>
             <p>
@@ -209,7 +213,11 @@ export default function Home() {
           </div>
 
           <div className="service-card">
-            <div className="service-icon">🔧</div>
+            <div className="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14.7 6.3a4 4 0 0 1-5 5L4 17v3h3l5.7-5.7a4 4 0 0 0 5-5l-2.5 2.5-2.1-.6-.6-2.1z" />
+              </svg>
+            </div>
             <h3>App Rescue &amp; Integration</h3>
             <p className="service-price">assessment <strong>$250</strong> · credited to the repair</p>
             <p>
@@ -226,7 +234,11 @@ export default function Home() {
           </div>
 
           <div className="service-card service-card--highlight">
-            <div className="service-icon">⚙️</div>
+            <div className="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" />
+              </svg>
+            </div>
             <h3>Portal or Workflow App</h3>
             <p className="service-price">from <strong>$9,000</strong></p>
             <p>
