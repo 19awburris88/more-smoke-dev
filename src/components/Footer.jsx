@@ -5,6 +5,12 @@ export default function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <img src="/msd-logo.png" alt="More Smoke Dev" className="footer-logo" />
+          <address className="footer-nap">
+            <strong>More Smoke Dev</strong>
+            <span>Dallas, Texas · serving Dallas–Fort Worth and remote clients nationwide</span>
+            <a href="tel:+13172739330">(317) 273-9330</a>
+            <a href="mailto:19awburris88@gmail.com">19awburris88@gmail.com</a>
+          </address>
           <p>© {new Date().getFullYear()} More Smoke Dev. All rights reserved.</p>
         </div>
 

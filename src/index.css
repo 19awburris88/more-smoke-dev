@@ -2582,3 +2582,36 @@ h2 {
     font-family: var(--font-display);
   }
 }
+
+/* ─── FOOTER NAP (matches the LocalBusiness structured data) ──────── */
+
+.footer-nap {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-nap strong {
+  font-family: var(--font-display);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.footer-nap span {
+  color: #888;
+  max-width: 280px;
+}
+
+.footer-nap a {
+  color: #aaa;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.footer-nap a:hover {
+  color: #42d36b;
+}

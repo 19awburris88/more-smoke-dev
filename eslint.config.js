@@ -18,4 +18,10 @@ export default defineConfig([
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
   },
+  {
+    // Build-time scripts run in Node and are not React Fast Refresh boundaries
+    files: ['scripts/**/*.{js,jsx,mjs}'],
+    languageOptions: { globals: globals.node },
+    rules: { 'react-refresh/only-export-components': 'off' },
+  },
 ])

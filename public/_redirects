@@ -1,0 +1,3 @@
+# Prerendered routes are served as real files first; this catches anything else
+# (client-side navigation targets, future routes) so deep links never 404.
+/*    /index.html   200
