@@ -25,7 +25,7 @@ import Work from "../src/pages/Work.jsx";
 import CaseStudy from "../src/pages/CaseStudy.jsx";
 import Skills from "../src/pages/Skills.jsx";
 import Resume from "../src/pages/Resume.jsx";
-import { allRoutes, seoFor, jsonLdFor, SITE } from "../src/data/seo.js";
+import { allRoutes, seoFor, jsonLdFor, canonicalUrl, SITE } from "../src/data/seo.js";
 import { FAQS } from "../src/data/faqs.js";
 
 const DIST = path.resolve("dist");
@@ -123,7 +123,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${routes
   .map(
     (r) => `  <url>
-    <loc>${SITE.url}${r.path === "/" ? "/" : r.path}</loc>
+    <loc>${canonicalUrl(r.path)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority.toFixed(1)}</priority>

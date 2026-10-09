@@ -16,6 +16,13 @@ export const SITE = {
   ],
 };
 
+/** Netlify serves directory indexes and 301s to the trailing-slash form,
+ *  so every URL we publish uses that form to avoid listing redirects. */
+export function canonicalUrl(pathname) {
+  const clean = pathname !== "/" ? pathname.replace(/\/+$/, "") : "/";
+  return clean === "/" ? `${SITE.url}/` : `${SITE.url}${clean}/`;
+}
+
 /** Titles stay under ~60 chars, descriptions under ~155, so neither truncates in results. */
 const PAGES = {
   "/": {
@@ -104,7 +111,7 @@ export function seoFor(pathname) {
   return {
     ...base,
     title: fit(base.title, TITLE_BUDGET - BRAND_SUFFIX.length) + BRAND_SUFFIX,
-    canonical: `${SITE.url}${clean === "/" ? "/" : clean}`,
+    canonical: canonicalUrl(clean),
     image: base.image || SITE.image,
     ogType: base.ogType || "website",
   };
@@ -221,7 +228,7 @@ const person = {
   "@type": "Person",
   "@id": `${SITE.url}/#austin`,
   name: SITE.founder,
-  url: `${SITE.url}/about`,
+  url: canonicalUrl("/about"),
   jobTitle: "Full Stack Engineer",
   email: SITE.email,
   telephone: SITE.phone,
@@ -276,16 +283,16 @@ export function jsonLdFor(pathname, extra = {}) {
         name: p.title,
         headline: `${p.title} — ${p.tagline}`,
         description: p.description,
-        url: `${SITE.url}${clean}`,
+        url: canonicalUrl(clean),
         creator: { "@id": `${SITE.url}/#austin` },
         keywords: p.tech.join(", "),
       });
       graph.push({
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
-          { "@type": "ListItem", position: 2, name: "Work", item: `${SITE.url}/work` },
-          { "@type": "ListItem", position: 3, name: p.title, item: `${SITE.url}${clean}` },
+          { "@type": "ListItem", position: 1, name: "Home", item: canonicalUrl("/") },
+          { "@type": "ListItem", position: 2, name: "Work", item: canonicalUrl("/work") },
+          { "@type": "ListItem", position: 3, name: p.title, item: canonicalUrl(clean) },
         ],
       });
     }
@@ -295,11 +302,11 @@ export function jsonLdFor(pathname, extra = {}) {
     graph.push({
       "@type": "CollectionPage",
       name: "Case Studies",
-      url: `${SITE.url}/work`,
+      url: canonicalUrl("/work"),
       hasPart: projects.map((p) => ({
         "@type": "CreativeWork",
         name: p.title,
-        url: `${SITE.url}/work/${p.id}`,
+        url: canonicalUrl(`/work/${p.id}`),
       })),
     });
   }
