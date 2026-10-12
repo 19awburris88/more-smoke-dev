@@ -13,7 +13,7 @@ export default function About() {
             and technology — with a track record that goes well beyond the IDE.
           </p>
           <div className="page-header-actions">
-            <Link to="/resume" className="btn-primary">View Full Résumé →</Link>
+            <Link to="/resume/" className="btn-primary">View Full Résumé →</Link>
             <a href="/#contact" className="btn-outline">Get in Touch</a>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function About() {
               </div>
             </div>
 
-            <Link to="/resume" className="btn-primary" style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>
+            <Link to="/resume/" className="btn-primary" style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>
               View Full Résumé →
             </Link>
             <a href="/#contact" className="btn-outline" style={{ display: "flex", justifyContent: "center" }}>

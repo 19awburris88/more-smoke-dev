@@ -116,6 +116,42 @@ for (const route of routes) {
   written++;
 }
 
+/* ─── 404.html ────────────────────────────────────────────────────── */
+/* Netlify serves this for any unmatched path. It is intentionally static:
+   booting the SPA here would match no route and render an empty page. */
+const cssHref = (template.match(/href="(\/assets\/[^"]+\.css)"/) || [])[1] || "";
+fs.writeFileSync(
+  path.join(DIST, "404.html"),
+  `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <title>Page not found | ${SITE.name}</title>
+    <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    ${cssHref ? `<link rel="stylesheet" href="${cssHref}" />` : ""}
+  </head>
+  <body>
+    <main class="page-container" style="text-align:center;padding-top:96px">
+      <p class="section-label">404</p>
+      <h1 style="font-size:3rem;margin-bottom:16px">Page not found</h1>
+      <p class="page-desc" style="margin:0 auto 32px">
+        That page does not exist. It may have moved, or the link may be out of date.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="/" class="btn-primary">Go to the homepage</a>
+        <a href="/work/" class="btn-outline">See the work</a>
+      </div>
+    </main>
+  </body>
+</html>
+`
+);
+
 /* ─── sitemap.xml ─────────────────────────────────────────────────── */
 const today = new Date().toISOString().slice(0, 10);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

@@ -111,7 +111,7 @@ export default function Resume() {
           {resumeProjects.map((p) => (
             <div key={p.id} className="resume-project">
               <p className="resume-project-head">
-                <Link to={`/work/${p.id}`} className="resume-project-name">{p.title}</Link>
+                <Link to={`/work/${p.id}/`} className="resume-project-name">{p.title}</Link>
                 <span className="resume-project-tagline"> — {p.tagline}</span>
               </p>
               <p className="resume-project-desc">{p.problem}</p>
@@ -119,7 +119,7 @@ export default function Resume() {
             </div>
           ))}
           <p className="resume-more">
-            <Link to="/work" className="link-green">See all {projects.length} projects with full case studies →</Link>
+            <Link to="/work/" className="link-green">See all {projects.length} projects with full case studies →</Link>
           </p>
         </section>
 

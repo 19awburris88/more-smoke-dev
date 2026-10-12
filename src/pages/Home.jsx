@@ -133,10 +133,10 @@ export default function Home() {
           </p>
           <div className="hero-buttons">
             <a href="#contact" className="btn-primary">Start a Project →</a>
-            <Link to="/work" className="btn-outline">View My Work</Link>
+            <Link to="/work/" className="btn-outline">View My Work</Link>
           </div>
           <p className="hero-tertiary">
-            Hiring instead? <Link to="/resume">See my résumé →</Link>
+            Hiring instead? <Link to="/resume/">See my résumé →</Link>
           </p>
           <ul className="hero-proof">
             <li><strong>{projects.length}</strong> projects shipped</li>
@@ -270,7 +270,7 @@ export default function Home() {
               most developers don't have: I know what it costs to build something
               real, and I bring that same standard to every project I take on.
             </p>
-            <Link to="/about" className="btn-outline">More About Me →</Link>
+            <Link to="/about/" className="btn-outline">More About Me →</Link>
           </div>
           <div className="about-home-traits">
             <div className="trait-card">
@@ -335,7 +335,7 @@ export default function Home() {
                 challenge, a solution, and growth.
               </p>
             </div>
-            <Link to="/work" className="btn-outline">View All Projects →</Link>
+            <Link to="/work/" className="btn-outline">View All Projects →</Link>
           </div>
         </div>
 
@@ -360,7 +360,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="project-card-footer">
-                  <Link to={`/work/${project.id}`} className="link-green">
+                  <Link to={`/work/${project.id}/`} className="link-green">
                     View Project →
                   </Link>
                   {project.github && (
@@ -398,8 +398,8 @@ export default function Home() {
               ))}
             </div>
             <div className="hiring-actions">
-              <Link to="/resume" className="btn-primary">View Résumé →</Link>
-              <Link to="/skills" className="btn-outline">Technical Skills</Link>
+              <Link to="/resume/" className="btn-primary">View Résumé →</Link>
+              <Link to="/skills/" className="btn-outline">Technical Skills</Link>
             </div>
           </div>
 

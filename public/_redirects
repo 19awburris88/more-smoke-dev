@@ -1,3 +1,14 @@
-# Prerendered routes are served as real files first; this catches anything else
-# (client-side navigation targets, future routes) so deep links never 404.
-/*    /index.html   200
+# Legacy path that used to redirect client-side to the homepage anchor.
+/contact      /    301!
+/contact/     /    301!
+
+# Collapse the explicit index.html form onto the canonical directory URL.
+/index.html   /    301!
+
+# Deliberately NO SPA catch-all.
+#
+# Every real route is prerendered to a static file at build time, so Netlify
+# serves them directly. A `/* /index.html 200` rule would make every bad URL
+# return the homepage with a 200, which Google indexes as a duplicate and
+# reports as a soft 404. Without it, unmatched paths fall through to 404.html
+# and return a real 404.

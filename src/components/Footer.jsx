@@ -47,7 +47,7 @@ export default function Footer() {
           <p className="footer-body">
             Open to new client projects — and to full-time engineering,
             product, and business development roles.{" "}
-            <a href="/resume" className="footer-inline-link">View my résumé →</a>
+            <a href="/resume/" className="footer-inline-link">View my résumé →</a>
           </p>
           <div className="footer-social">
             <a href="mailto:19awburris88@gmail.com" aria-label="Email">

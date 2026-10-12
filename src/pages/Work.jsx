@@ -39,7 +39,7 @@ export default function Work() {
                   ))}
                 </div>
                 <div className="project-card-footer">
-                  <Link to={`/work/${project.id}`} className="link-green">
+                  <Link to={`/work/${project.id}/`} className="link-green">
                     View Case Study →
                   </Link>
                   {project.github && (

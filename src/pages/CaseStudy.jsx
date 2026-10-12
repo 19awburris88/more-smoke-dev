@@ -9,7 +9,7 @@ export default function CaseStudy() {
     return (
       <div className="page-container" style={{ textAlign: "center", paddingTop: "100px" }}>
         <h2>Project not found.</h2>
-        <Link to="/work" className="btn-primary" style={{ display: "inline-block", marginTop: "24px" }}>
+        <Link to="/work/" className="btn-primary" style={{ display: "inline-block", marginTop: "24px" }}>
           Back to Work
         </Link>
       </div>
@@ -18,7 +18,7 @@ export default function CaseStudy() {
 
   return (
     <div className="page-container">
-      <Link to="/work" className="back-link">← Back to All Projects</Link>
+      <Link to="/work/" className="back-link">← Back to All Projects</Link>
 
       <div className="case-hero">
         <div className="case-image">

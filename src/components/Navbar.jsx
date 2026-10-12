@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 const navItems = [
   { label: "Home", to: "/" },
-  { label: "About", to: "/about" },
-  { label: "Work", to: "/work" },
-  { label: "Skills", to: "/skills" },
-  { label: "Résumé", to: "/resume" },
+  { label: "About", to: "/about/" },
+  { label: "Work", to: "/work/" },
+  { label: "Skills", to: "/skills/" },
+  { label: "Résumé", to: "/resume/" },
 ];
 
 export default function Navbar() {
