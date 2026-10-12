@@ -3,7 +3,7 @@ import imgCRHS from "../assets/preview-crhs07.png";
 import imgClub520 from "../assets/preview-club520.png";
 import imgFamilyTree from "../assets/preview-familytree.png";
 import imgBiteRight from "../assets/preview-biteright.png";
-import imgCigarMatch from "../assets/preview-cigar-match.png";
+import imgHumidorConnect from "../assets/preview-humidor-connect.png";
 import imgMoreSmoke from "../assets/preview-moresmoke.png";
 import imgMoneyMill from "../assets/preview-the-money-mill.png";
 import imgPressedAged from "../assets/preview-pressed-aged-lounge.png";
@@ -229,27 +229,32 @@ export const projects = [
     featured: false,
   },
   {
-    id: "cigar-match",
-    title: "Cigar Match",
-    type: "Full Stack",
-    tagline: "Cigar Recommendation & Community Platform",
+    id: "humidor-connect",
+    title: "Humidor Connect",
+    type: "Frontend",
+    tagline: "Cigar Discovery, Lounges & Digital Humidor",
     role:
-      "Founder and lead developer — product definition, recommendation logic, and UI.",
+      "Founder and lead developer \u2014 product definition, the recommendation engine, the persistence layer, and the full interface.",
     description:
-      "A recommendation engine helping users discover cigars based on preferences, past behavior, and flavor profiles — similar to a swipe-based matching experience. Addresses the industry gap where customers lack consistent in-store guidance.",
+      "A mobile-first discovery platform that connects a smoker's taste to the selection actually around them. Swipe through blends, get recommendations filtered to what a specific lounge carries, track a digital humidor, and check in to see what everyone else is on.",
     problem:
-      "Inconsistent in-store expertise leaves cigar customers without guidance. Cigar Match improves purchase confidence and retail sell-through through personalized recommendations.",
-    tech: ["React", "Node.js", "PostgreSQL", "Recommendation Logic"],
+      "In-store guidance is inconsistent, so customers buy on the label and retailers lose the sell-through. Humidor Connect scores cigars against a stated palate and swipe history, then explains every match in plain language \u2014 and the same ranking can be run against one lounge's inventory so the answer is something a customer can actually walk out with.",
+    tech: ["React 19", "Vite", "Material UI", "Framer Motion", "localStorage", "Netlify"],
     features: [
-      "Preference quiz and flavor profile onboarding",
-      "Swipe-based cigar discovery interface",
-      "Personalized pairing recommendations",
-      "Lounge discovery and check-ins",
-      "Planned: retailer inventory integration",
+      "Deterministic scoring engine \u2014 no model, no inference \u2014 weighing stated preferences, swipe history, and flavor notes shared with past likes",
+      "Every recommendation carries a \u201cWhy this matches\u201d explanation and a drink pairing",
+      "Run the same ranking against a single lounge's inventory, so results are things in stock",
+      "Swipe discovery that learns from every like and pass",
+      "Digital humidor and a live taste profile built from swipe behavior",
+      "21 lounges across Dallas\u2013Fort Worth, Atlanta, Houston, and Indianapolis, with hours, amenities, events, and priced inventory",
+      "Lounge check-ins with an activity feed",
+      "Age gate that remembers a pass per device but deliberately never stores a refusal, so a mistyped year cannot lock someone out",
+      "Schema-stamped localStorage wrapper that survives private browsing, exhausted quota, and blocked site data without white-screening",
+      "Collections stored as ids and rehydrated from the catalog, so a saved humidor never carries stale blend data",
     ],
-    image: imgCigarMatch,
-    github: "",
-    live: "",
+    image: imgHumidorConnect,
+    github: "https://github.com/19awburris88/cigar-match",
+    live: "https://humidorconnect.com",
     featured: false,
   },
   {

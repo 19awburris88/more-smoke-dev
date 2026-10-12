@@ -1,3 +1,7 @@
+# Cigar Match was rebranded to Humidor Connect; keep the old case-study URL alive.
+/work/cigar-match     /work/humidor-connect/    301!
+/work/cigar-match/    /work/humidor-connect/    301!
+
 # Legacy path that used to redirect client-side to the homepage anchor.
 /contact      /    301!
 /contact/     /    301!
