@@ -9,7 +9,7 @@ export default function Footer() {
             <strong>More Smoke Dev</strong>
             <span>Dallas, Texas · serving Dallas–Fort Worth and remote clients nationwide</span>
             <a href="tel:+13172739330">(317) 273-9330</a>
-            <a href="mailto:19awburris88@gmail.com">19awburris88@gmail.com</a>
+            <a href="mailto:austin@moresmoke.dev">austin@moresmoke.dev</a>
           </address>
           <p>© {new Date().getFullYear()} More Smoke Dev. All rights reserved.</p>
         </div>
@@ -50,7 +50,7 @@ export default function Footer() {
             <a href="/resume/" className="footer-inline-link">View my résumé →</a>
           </p>
           <div className="footer-social">
-            <a href="mailto:19awburris88@gmail.com" aria-label="Email">
+            <a href="mailto:austin@moresmoke.dev" aria-label="Email">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
               </svg>

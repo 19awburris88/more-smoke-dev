@@ -5,7 +5,7 @@ export const profile = {
   title: "Full Stack Engineer · Product & Business Strategy",
   location: "Dallas, TX",
   phone: "317-273-9330",
-  email: "19awburris88@gmail.com",
+  email: "austin@moresmoke.dev",
   github: "https://github.com/19awburris88",
   githubLabel: "github.com/19awburris88",
   linkedin: "https://www.linkedin.com/in/austin-burris-33995048/",

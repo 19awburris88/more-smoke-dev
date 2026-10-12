@@ -5,7 +5,7 @@ export const SITE = {
   name: "More Smoke Dev",
   founder: "Austin Burris",
   phone: "+1-317-273-9330",
-  email: "19awburris88@gmail.com",
+  email: "austin@moresmoke.dev",
   city: "Dallas",
   region: "TX",
   country: "US",

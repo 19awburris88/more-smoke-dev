@@ -8,7 +8,7 @@ export default function Contact() {
     setStatus("sending");
     const data = Object.fromEntries(new FormData(e.target));
     try {
-      const res = await fetch("https://formsubmit.co/ajax/19awburris88@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/austin@moresmoke.dev", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(data),
@@ -40,7 +40,7 @@ export default function Contact() {
         <div className="contact-info">
           <div className="contact-item">
             <strong>Email</strong>
-            <a href="mailto:19awburris88@gmail.com">19awburris88@gmail.com</a>
+            <a href="mailto:austin@moresmoke.dev">austin@moresmoke.dev</a>
           </div>
           <div className="contact-item">
             <strong>LinkedIn</strong>
