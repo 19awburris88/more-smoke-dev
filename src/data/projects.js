@@ -4,6 +4,8 @@ import imgClub520 from "../assets/preview-club520.png";
 import imgFamilyTree from "../assets/preview-familytree.png";
 import imgBiteRight from "../assets/preview-biteright.png";
 import imgHumidorConnect from "../assets/preview-humidor-connect.png";
+import imgMoreSmokeOS from "../assets/preview-more-smoke-os.png";
+import imgTheGuide from "../assets/preview-the-guide.png";
 import imgMoreSmoke from "../assets/preview-moresmoke.png";
 import imgMoneyMill from "../assets/preview-the-money-mill.png";
 import imgPressedAged from "../assets/preview-pressed-aged-lounge.png";
@@ -43,7 +45,7 @@ export const projects = [
       "TanStack Query caching, Zod-validated forms, and a persisted Zustand auth store",
       "npm-workspaces monorepo; Helmet, CORS, and rate limiting on every route",
     ],
-    image: null,
+    image: imgMoreSmokeOS,
     github: "https://github.com/19awburris88/moresmokeos",
     live: "",
     featured: true,
@@ -178,28 +180,29 @@ export const projects = [
     featured: false,
   },
   {
-    id: "trips-pwa",
-    title: "Trips",
+    id: "the-guide",
+    title: "The Guide",
     type: "Frontend",
-    tagline: "Offline-First Installable Itinerary PWA",
+    tagline: "Personal Calendar, Weekly Planner & Travel Itinerary",
     role:
-      "Sole engineer — offline architecture, in-browser calendar generation, and share-merge logic.",
+      "Sole engineer \u2014 the whole application, written by hand with no framework and no build step.",
     description:
-      "An installable travel itinerary app with no build step and no dependencies — one HTML file, a service worker, and a manifest. Every trip lives as a data object; the app renders the day-by-day view, generates calendar files in the browser, and merges checklists shared between two phones.",
+      "A personal operating system for time, built as a single hand-written file. Five views: a concierge Today page, the week laid out like television programming across Work, Life, Wellness and Travel channels, a paper-style weekly list, local events, and day-by-day trip itineraries.",
     problem:
-      "Travel is exactly when connectivity fails. The service worker precaches the page, icons, and self-hosted fonts on install, so a single load on wifi is enough — and the app makes zero third-party requests after that.",
-    outcome:
-      "Live on GitHub Pages, installed and in use on the phones it was built for.",
-    tech: ["JavaScript", "Service Workers", "PWA", "Web Share API", "GitHub Pages"],
+      "Calendar apps show appointments but not shape \u2014 what is protected, what is actually next, what the week looks like at a glance. The Guide renders the week as a programme schedule with a live now-line, carries unfinished tasks into the following week, and keeps working with no connection at all.",
+    tech: ["JavaScript", "Service Workers", "PWA", "localStorage", "Web Share API", "GitHub Pages"],
     features: [
-      "Offline-first service worker precaching the app shell, icons, and 5 self-hosted woff2 subsets",
-      "In-browser .ics generation with real VTIMEZONE blocks, so multi-timezone flights stay correct",
-      "Stable calendar event IDs so re-importing updates events instead of duplicating them",
-      "Checklist sharing over the Web Share API, with newest-wins per-field merge on the receiving phone",
-      "Hash routing that opens straight to a trip that is in progress today",
-      "Zero dependencies and zero build step — push to main, Pages redeploys",
+      "The week as television programming \u2014 four channels on a shared timeline with a red now-line",
+      "Concierge Today view: On Now with a progress bar and leave-by, what\u2019s protected, and what\u2019s next",
+      "Weekly list that inherits its groups, carries unfinished tasks forward, and resets habits each week",
+      "Repeating events expanded on read rather than stored, so changing a series leaves no duplicates to clean up",
+      "In-browser .ics export with real VTIMEZONE blocks, so multi-timezone flights stay correct",
+      "Stable calendar event IDs, so re-importing updates events instead of duplicating them",
+      "Checklist sharing over the Web Share API with newest-wins per-field merge",
+      "Two themes from a single block of tokens, and offline support from a precaching service worker",
+      "~2,700 lines in one file: no framework, no dependencies, no build step",
     ],
-    image: null,
+    image: imgTheGuide,
     github: "https://github.com/19awburris88/itinerary",
     live: "https://19awburris88.github.io/itinerary/",
     featured: false,
