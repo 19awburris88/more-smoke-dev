@@ -6,6 +6,7 @@ import imgBiteRight from "../assets/preview-biteright.png";
 import imgHumidorConnect from "../assets/preview-humidor-connect.png";
 import imgMoreSmokeOS from "../assets/preview-more-smoke-os.png";
 import imgTheGuide from "../assets/preview-the-guide.png";
+import imgLoveLedger from "../assets/preview-love-ledger.png";
 import imgMoreSmoke from "../assets/preview-moresmoke.png";
 import imgMoneyMill from "../assets/preview-the-money-mill.png";
 import imgPressedAged from "../assets/preview-pressed-aged-lounge.png";
@@ -149,7 +150,7 @@ export const projects = [
       "Clerk-authenticated REST API with per-user data scoping",
       "Split deploy — Netlify frontend, Render API, Neon serverless Postgres",
     ],
-    image: null,
+    image: imgLoveLedger,
     github: "https://github.com/19awburris88/becoming",
     live: "",
     featured: true,
