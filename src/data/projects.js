@@ -2,7 +2,7 @@ import imgFitTogether from "../assets/preview-fittogether.png";
 import imgCRHS from "../assets/preview-crhs07.png";
 import imgClub520 from "../assets/preview-club520.png";
 import imgFamilyTree from "../assets/preview-familytree.png";
-import imgBiteRight from "../assets/preview-biteright.png";
+import imgCraveCompass from "../assets/preview-crave-compass.webp";
 import imgHumidorConnect from "../assets/preview-humidor-connect.png";
 import imgMoreSmokeOS from "../assets/preview-more-smoke-os.png";
 import imgTheGuide from "../assets/preview-the-guide.png";
@@ -209,26 +209,30 @@ export const projects = [
     featured: false,
   },
   {
-    id: "biteright",
-    title: "BiteRight",
+    id: "crave-compass",
+    title: "CraveCompass",
     type: "Full Stack",
-    tagline: "Restaurant & Food Discovery Platform",
+    tagline: "Swipe-Based Restaurant Discovery for Indianapolis",
     role:
-      "Full-stack developer — recommendation and filtering logic, backend APIs, and the swipe interface.",
+      "Sole engineer and product owner \u2014 the ranking logic, the API, authentication, the catalog pipeline, and the mobile interface.",
     description:
-      "A swipe-based discovery app that helps users quickly decide where to eat, reducing decision fatigue through real-time recommendations. Designed a Tinder-style interface with filtering logic to enhance user engagement and session time.",
+      "An installable mobile app that matches you to Indianapolis restaurants by what you actually want to eat. Swipe on dishes rather than answering a questionnaire; the app builds a taste profile from those swipes and ranks real restaurants against it, explaining every match.",
     problem:
-      "Deciding where to eat causes daily decision fatigue. BiteRight gamifies the process with a swipe interface that learns your preferences.",
-    tech: ["React", "Express", "PostgreSQL", "Material UI"],
+      "Deciding where to eat is a daily stall, and review scores answer the wrong question \u2014 they rate a restaurant, not whether you want what it serves tonight. CraveCompass reads intent from dish swipes and returns ranked restaurants with the reason attached, so the recommendation can be argued with rather than just trusted.",
+    tech: ["React 19", "Vite", "Material UI", "Framer Motion", "Express 5", "Prisma", "PostgreSQL", "PWA", "Railway"],
     features: [
-      "Tinder-style swipe interface for dish & restaurant discovery",
-      "Filtering logic for real-time personalized recommendations",
-      "Scalable backend APIs and structured data models",
-      "Match history and user preference tracking",
-      "Mobile-first responsive design",
+      "Swipe deck you can drag or tap, led by your favorite cuisines, filtered by dietary needs, with undo",
+      "Restaurants ranked against your taste profile, each carrying its reason \u2014 \u201cBecause you liked Birria Tacos\u201d",
+      "Match gate: swipe a few dishes before results unlock, so a ranking is never built on nothing",
+      "Restaurant pages with directions to Apple or Google Maps, call, website, share, and save",
+      "Email and password accounts with bcrypt and JWT; guest swipes carry over on sign-up, and accounts can be deleted",
+      "Mobile-only by design \u2014 desktop visitors get a scan-to-open hand-off rather than a cramped layout",
+      "Installable PWA whose service worker caches the app shell and food photography for offline use",
+      "Catalog seeded idempotently on every deploy; restaurants removed from the source file are deactivated, never deleted",
+      "Restaurant details verified against each restaurant's own website rather than scraped",
     ],
-    image: imgBiteRight,
-    github: "",
+    image: imgCraveCompass,
+    github: "https://github.com/19awburris88/biteright",
     live: "",
     featured: false,
   },
