@@ -50,6 +50,31 @@ function App() {
   );
 }
 
+/**
+ * vite-node resolves asset imports to their source path (/src/assets/x.png),
+ * which does not exist in the build output. Map those onto the hashed
+ * filenames Vite emitted so the prerendered HTML points at real files.
+ */
+const manifestPath = path.join(DIST, ".vite", "manifest.json");
+const assetMap = new Map();
+if (fs.existsSync(manifestPath)) {
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  for (const [key, entry] of Object.entries(manifest)) {
+    if (entry.file) assetMap.set(`/${key}`, `/${entry.file}`);
+  }
+}
+
+function rewriteAssetPaths(html) {
+  let out = html.replace(/\/src\/assets\/[A-Za-z0-9._-]+/g, (match) => {
+    const hashed = assetMap.get(match);
+    if (hashed) return hashed;
+    unresolved.add(match);
+    return match;
+  });
+  return out;
+}
+const unresolved = new Set();
+
 const esc = (s) =>
   String(s)
     .replace(/&/g, "&amp;")
@@ -105,9 +130,11 @@ for (const route of routes) {
     </MemoryRouter>
   );
 
-  const html = stripStaticMeta(template)
-    .replace("</head>", `${buildHead(seo, jsonLd)}\n  </head>`)
-    .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
+  const html = rewriteAssetPaths(
+    stripStaticMeta(template)
+      .replace("</head>", `${buildHead(seo, jsonLd)}\n  </head>`)
+      .replace('<div id="root"></div>', `<div id="root">${body}</div>`)
+  );
 
   const outDir =
     route.path === "/" ? DIST : path.join(DIST, route.path.replace(/^\//, ""));
@@ -180,4 +207,10 @@ Sitemap: ${SITE.url}/sitemap.xml
 `
 );
 
-console.log(`prerendered ${written} routes + sitemap.xml + robots.txt`);
+if (unresolved.size) {
+  console.error(`\nERROR: ${unresolved.size} asset path(s) had no manifest entry and would 404:`);
+  for (const u of unresolved) console.error(`  ${u}`);
+  process.exit(1);
+}
+
+console.log(`prerendered ${written} routes + sitemap.xml + robots.txt (${assetMap.size} assets mapped)`);

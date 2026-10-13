@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { featuredProjects, projects } from "../data/projects";
 import { highlights, pursuing } from "../data/resume";
 import { FAQS } from "../data/faqs";
-import heroImg from "../assets/hero.png";
+import heroImg from "../assets/hero.webp";
 
 
 
@@ -146,7 +146,15 @@ export default function Home() {
         </div>
 
         <div className="hero-center">
-          <img src={heroImg} alt="More Smoke Dev" className="hero-img" />
+          <img
+            src={heroImg}
+            alt="Dashboard, mobile app and workflow interfaces built by More Smoke Dev"
+            className="hero-img"
+            width="900"
+            height="900"
+            fetchPriority="high"
+            decoding="async"
+          />
         </div>
       </section>
 

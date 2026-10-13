@@ -205,9 +205,12 @@ main {
 
 .hero-img {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
+  /* height:auto is required because the img carries width/height attributes
+     (they reserve space and prevent layout shift); without it the height
+     attribute wins and object-fit crops the artwork. */
+  height: auto;
   border-radius: 20px;
-  object-fit: cover;
 }
 
 .intro-label {
@@ -627,6 +630,7 @@ main {
 }
 
 .service-card {
+  min-width: 0;
   background: #111;
   border: 1px solid #1e1e1e;
   border-radius: 16px;
@@ -2465,6 +2469,16 @@ main {
 }
 
 @media (max-width: 680px) {
+  /* The long pill ("assessment $250 - credited to the repair") cannot stay on
+     one line at phone widths without pushing the card past the viewport. */
+  .service-price {
+    white-space: normal;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+
   .support-band {
     padding: 24px;
   }
