@@ -38,17 +38,12 @@ const PAGES = {
   "/about": {
     title: "About Austin Burris — Full Stack Developer in Dallas",
     description:
-      "Full stack developer and MBA who ran a platform to 1M+ monthly users before writing software for clients. How I work, and who I build for.",
+      "Full stack developer and MBA who ran a platform to 1M+ monthly users before writing software for clients. How I work, who I build for, and contract availability.",
   },
   "/skills": {
     title: "Tech Stack — React, TypeScript, Node, PostgreSQL",
     description:
       "The stack behind More Smoke Dev: React and TypeScript, Node and Express, Python and FastAPI, PostgreSQL and Prisma, Stripe, AWS, and the Claude API.",
-  },
-  "/resume": {
-    title: "Austin Burris — Résumé | Full Stack Engineer",
-    description:
-      "Full stack engineer in Dallas with an MBA and a founder's track record. Experience, selected projects, education, and certifications. Open to full-time roles.",
   },
 };
 

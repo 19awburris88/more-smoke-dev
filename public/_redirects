@@ -1,3 +1,7 @@
+# The standalone resume page was removed; About carries the same history.
+/resume     /about/    301!
+/resume/    /about/    301!
+
 # BiteRight was rebranded to CraveCompass.
 /work/biteright     /work/crave-compass/    301!
 /work/biteright/    /work/crave-compass/    301!

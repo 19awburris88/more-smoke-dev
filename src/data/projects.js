@@ -3,6 +3,8 @@ import imgCRHS from "../assets/preview-crhs07.png";
 import imgClub520 from "../assets/preview-club520.png";
 import imgFamilyTree from "../assets/preview-familytree.png";
 import imgCraveCompass from "../assets/preview-crave-compass.webp";
+import imgArrive from "../assets/preview-arrive.webp";
+import imgDrydown from "../assets/preview-drydown.webp";
 import imgHumidorConnect from "../assets/preview-humidor-connect.png";
 import imgMoreSmokeOS from "../assets/preview-more-smoke-os.png";
 import imgTheGuide from "../assets/preview-the-guide.png";
@@ -50,6 +52,61 @@ export const projects = [
     github: "https://github.com/19awburris88/moresmokeos",
     live: "",
     featured: true,
+  },
+  {
+    id: "arrive",
+    title: "Arrive",
+    type: "Full Stack",
+    tagline: "Delivery Tracking Across Every Store and Carrier",
+    role:
+      "Sole engineer \u2014 architecture, the tracking pipeline, the data and security model, and the interface.",
+    description:
+      "A personal delivery-tracking app that answers one question: what\u2019s coming, when should it arrive, and does anything need me? Shipments from every store and carrier land in one inbox grouped by urgency, kept current by a server-side tracking worker.",
+    problem:
+      "Package tracking is scattered across carrier sites, retailer emails and apps that invent delivery dates to look helpful. Arrive consolidates them and refuses to guess: no invented ETAs, no fabricated carrier events, and a manual status is recorded as something you set rather than something a carrier reported.",
+    tech: ["Next.js", "TypeScript", "React", "Supabase", "PostgreSQL", "Zod", "Web Push", "PWA", "Vitest"],
+    features: [
+      "Inbox grouped by what matters \u2014 Needs attention, Arriving today, Arriving soon, On the way, Awaiting an estimate \u2014 with each shipment in exactly one group",
+      "Add by tracking number, tracking link, or a pasted shipping email, parsed locally with carriers offered as candidates you confirm",
+      "Server-side 17TRACK worker with verified webhooks, scheduled re-checks, and plain-language states when a carrier needs a postal code",
+      "Passwordless email sign-in via Supabase Auth, with every row owner-scoped behind row-level security",
+      "Foldable-aware layout: phone layout on the cover screen, list and detail side by side when unfolded, split at the hinge when the browser reports one",
+      "Installable PWA with an offline shell, a per-account snapshot that shows its age, and an update prompt that never discards a half-filled form",
+      "Credential-free demo in its own namespace that can never mix with a real account",
+      "JSON export and permanent account deletion",
+    ],
+    image: imgArrive,
+    github: "https://github.com/19awburris88/arrive",
+    live: "",
+    featured: true,
+  },
+  {
+    id: "drydown",
+    title: "Drydown",
+    type: "Frontend",
+    tagline: "Swipe-Based Fragrance Discovery",
+    role:
+      "Sole engineer and product owner \u2014 the taste engine, the catalog model, and the full interface.",
+    description:
+      "Most people cannot name scent notes but know whether they like a fragrance. Drydown has you swipe on bottles you already know, works out which accords you are drawn to, and produces a portable scent profile you can show at a fragrance counter.",
+    problem:
+      "Buying fragrance blind is expensive, and counter advice is inconsistent. Drydown reads preference from recognisable bottles rather than asking people to describe notes they have no vocabulary for, then explains every recommendation and flags accords you have disliked before.",
+    tech: ["React", "Vite", "Material UI", "Framer Motion", "localStorage", "QR / jsQR", "PWA"],
+    features: [
+      "Swipe deck with four outcomes \u2014 like, dislike, never smelled it, and I own it \u2014 by gesture, button or keyboard",
+      "\u201cNever smelled it\u201d never affects the profile and keeps that bottle eligible as a recommendation",
+      "Scoring weights the drydown most heavily, since base notes are the part you actually live with",
+      "\u201cWould I like this?\u201d lookup for the moment someone hands you a tester, by search or by scanning a store QR code",
+      "Verdicts carry their reasoning plus warnings for disliked accords, strength mismatches, and near-copies of a bottle you already own",
+      "Picks unlock only after enough swipes, so a ranking is never built on nothing",
+      "Shareable read-only profile card built for a store associate to act on",
+      "Printable tester-code sheets for partner stores",
+      "Runs entirely in the browser \u2014 no backend, no database, no account",
+    ],
+    image: imgDrydown,
+    github: "https://github.com/19awburris88/drydown",
+    live: "",
+    featured: false,
   },
   {
     id: "emerging100",
@@ -456,7 +513,7 @@ export const projects = [
     image: imgFamilyTree,
     github: "https://github.com/19awburris88/familytree",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     id: "benignity",

@@ -128,16 +128,13 @@ export default function Home() {
             I'm Austin Burris — a full stack engineer with an MBA and a
             founder's track record. More Smoke Dev builds websites, membership
             portals, and internal tools for small businesses, nonprofits, and
-            growing teams in Dallas–Fort Worth and remotely. I'm also open to
-            full-time roles.
+            growing teams in Dallas–Fort Worth and remotely. Project and
+            contract work both welcome.
           </p>
           <div className="hero-buttons">
             <a href="#contact" className="btn-primary">Start a Project →</a>
             <Link to="/work/" className="btn-outline">View My Work</Link>
           </div>
-          <p className="hero-tertiary">
-            Hiring instead? <Link to="/resume/">See my résumé →</Link>
-          </p>
           <ul className="hero-proof">
             <li><strong>{projects.length}</strong> projects shipped</li>
             <li><strong>1M+</strong> users reached</li>
@@ -391,14 +388,15 @@ export default function Home() {
           <div className="hiring-intro">
             <p className="section-label">
               <span className="hiring-dot" aria-hidden="true" />
-              OPEN TO OPPORTUNITIES
+              AVAILABLE FOR CONTRACT
             </p>
-            <h2>Hiring? Start Here.</h2>
+            <h2>Need an extra engineer?</h2>
             <p className="section-desc">
               {projects.length} shipped projects, an MBA, and ten years of
-              operating experience behind the code. I write the software and I
-              understand the business it has to serve — requirements,
-              stakeholders, roadmap, and revenue.
+              operating experience behind the code. Available for contract and
+              contract-to-hire work — overflow delivery for agencies, a
+              rescue on something half-finished, or a bounded build your team
+              does not have the hours for.
             </p>
             <div className="hiring-roles">
               {pursuing.map((role) => (
@@ -406,7 +404,7 @@ export default function Home() {
               ))}
             </div>
             <div className="hiring-actions">
-              <Link to="/resume/" className="btn-primary">View Résumé →</Link>
+              <a href="#contact" className="btn-primary">Check Availability →</a>
               <Link to="/skills/" className="btn-outline">Technical Skills</Link>
             </div>
           </div>
@@ -552,10 +550,10 @@ export default function Home() {
             <div>
               <h2>Hire Me or Work With Me</h2>
               <p className="section-desc">
-                Clients: book a call and we'll scope the work, talk budget
-                against the starting prices above, and agree a date. Recruiters
-                and hiring managers: same two options — I reply within 24
-                hours either way.
+                Book a call and we'll scope the work, talk budget against the
+                starting prices above, and agree a date. Contract and agency
+                overflow enquiries welcome — I reply within 24 hours either
+                way.
               </p>
             </div>
           </div>
@@ -590,7 +588,6 @@ export default function Home() {
                 <label htmlFor="project-type">Project Type</label>
                 <select id="project-type" name="project_type" required>
                   <option value="">What's this about?</option>
-                  <option value="Full-Time Role">Full-Time Role</option>
                   <option value="Contract / Contract-to-Hire">Contract / Contract-to-Hire</option>
                   <option value="New Web App">New Web App</option>
                   <option value="Website / Landing Page">Website / Landing Page</option>
@@ -603,7 +600,7 @@ export default function Home() {
                   Budget Range <span className="form-optional">(project work only)</span>
                 </label>
                 <select id="budget" name="budget_range">
-                  <option value="">Not applicable — I'm hiring</option>
+                  <option value="">Not sure / contract rate</option>
                   <option value="Support retainer ($1K/mo)">Support retainer ($1K/mo)</option>
                   <option value="Assessment first ($250)">Assessment first ($250)</option>
                   <option value="$3.5K – $7.5K">$3.5K – $7.5K</option>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { experience, education, certifications, pursuing } from "../data/resume";
 
 export default function About() {
@@ -13,8 +12,8 @@ export default function About() {
             and technology — with a track record that goes well beyond the IDE.
           </p>
           <div className="page-header-actions">
-            <Link to="/resume/" className="btn-primary">View Full Résumé →</Link>
-            <a href="/#contact" className="btn-outline">Get in Touch</a>
+            <a href="/#contact" className="btn-primary">Start a Conversation →</a>
+            <a href="/#services" className="btn-outline">What I Build</a>
           </div>
         </div>
       </section>
@@ -56,7 +55,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="about-section-label">OPEN TO OPPORTUNITIES IN</div>
+            <div className="about-section-label">WHERE I WORK</div>
             <div className="roles-grid">
               {pursuing.map((role) => (
                 <div key={role} className="role-tag">{role}</div>
@@ -139,11 +138,8 @@ export default function About() {
               </div>
             </div>
 
-            <Link to="/resume/" className="btn-primary" style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>
-              View Full Résumé →
-            </Link>
-            <a href="/#contact" className="btn-outline" style={{ display: "flex", justifyContent: "center" }}>
-              Get in Touch
+            <a href="/#contact" className="btn-primary" style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>
+              Start a Conversation →
             </a>
           </div>
         </div>

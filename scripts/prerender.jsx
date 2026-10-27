@@ -24,7 +24,6 @@ import About from "../src/pages/About.jsx";
 import Work from "../src/pages/Work.jsx";
 import CaseStudy from "../src/pages/CaseStudy.jsx";
 import Skills from "../src/pages/Skills.jsx";
-import Resume from "../src/pages/Resume.jsx";
 import { allRoutes, seoFor, jsonLdFor, canonicalUrl, SITE } from "../src/data/seo.js";
 import { FAQS } from "../src/data/faqs.js";
 
@@ -42,7 +41,6 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/work/:id" element={<CaseStudy />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/resume" element={<Resume />} />
         </Routes>
       </main>
       <Footer />

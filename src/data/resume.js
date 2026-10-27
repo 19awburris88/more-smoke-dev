@@ -1,20 +1,5 @@
 import { projects } from "./projects";
 
-export const profile = {
-  name: "Austin Burris",
-  title: "Full Stack Engineer · Product & Business Strategy",
-  location: "Dallas, TX",
-  phone: "317-273-9330",
-  email: "austin@moresmoke.dev",
-  github: "https://github.com/19awburris88",
-  githubLabel: "github.com/19awburris88",
-  linkedin: "https://www.linkedin.com/in/austin-burris-33995048/",
-  linkedinLabel: "linkedin.com/in/austin-burris-33995048",
-  site: "https://moresmoke.dev",
-  siteLabel: "moresmoke.dev",
-  summary:
-    "Full stack engineer with an MBA and a decade of operating experience. I build production web applications end to end — React and TypeScript on the front, Node, Express, Prisma and PostgreSQL on the back — including multi-tenant auth, Stripe billing, S3 file handling, and Claude-powered features. Before engineering I co-founded and ran a subscription media platform to 1M+ monthly users across 27 markets, so I read a roadmap and a P&L as fluently as a stack trace.",
-};
 
 export const highlights = [
   { stat: `${projects.length}`, label: "Shipped projects", detail: "Client work, platforms, and products currently live or in build" },
@@ -97,45 +82,15 @@ export const certifications = [
 ];
 
 export const pursuing = [
-  "Software Engineering",
-  "Business Analysis",
-  "Product Management",
-  "Business Development",
-  "Technology Consulting",
+  "Contract Engineering",
+  "Contract-to-Hire",
+  "Agency Overflow",
+  "Application Rescue",
+  "Membership & Workflow Portals",
+  "Technical Consulting",
   "Solutions Engineering",
-  "Customer Success",
-  "Technical Program Management",
-];
+  "Fractional Product & Delivery",
+]
 
-export const resumeSkills = [
-  {
-    category: "Languages & Frontend",
-    list: "TypeScript, JavaScript, Python, HTML, CSS, React, Vite, Tailwind CSS, Material UI, TanStack Query, Zustand, Zod",
-  },
-  {
-    category: "Backend & APIs",
-    list: "Node.js, Express, FastAPI, REST API design, JWT auth with token rotation, role-based access control, webhooks, rate limiting",
-  },
-  {
-    category: "Data",
-    list: "PostgreSQL, Prisma, Supabase, Neon, SQLite, schema design and migrations, row-level security, multi-tenant isolation",
-  },
-  {
-    category: "Platform & AI",
-    list: "Anthropic Claude API, Stripe (Checkout, Portal, webhooks), AWS S3 presigned URLs, Clerk, PWAs and service workers, npm workspaces, Netlify, Vercel, Render",
-  },
-  {
-    category: "Practice",
-    list: "Agile/Scrum, requirements gathering, technical documentation, code review, Git/GitHub, Postman, SEO and structured data",
-  },
-];
 
-/** Project ids from ../data/projects.js, in the order a hiring manager should see them. */
-export const resumeProjectIds = [
-  "more-smoke-os",
-  "open-court",
-  "crhs07",
-  "emerging100",
-  "familytree",
-  "trips-pwa",
-];
+
