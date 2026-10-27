@@ -2,15 +2,15 @@
 export const FAQS = [
   {
     q: "How much does a project cost?",
-    a: "Websites and redesigns start at $3,500. Portal and workflow applications start at $9,000. App rescues begin with a $250 assessment, credited toward the repair, and the repair is quoted once we know what we're looking at. Every project gets a fixed quote against a written scope before work starts — no hourly billing, no surprise invoices.",
+    a: "Websites and redesigns start at $1,000. App rescues begin with a $250 assessment, which comes off the repair; repairs start at $1,000 and are quoted once we know what we're looking at. Larger builds — membership portals, internal tools, custom workflow applications — are scoped and quoted individually. Every project gets a fixed quote against a written scope before work starts — no hourly billing, no surprise invoices.",
   },
   {
     q: "What does the $250 assessment get me?",
-    a: "A focused review of your codebase and setup, written findings, and a prioritized fix list — yours to keep and take anywhere, even if you never hire us. If the honest answer is \"don't fix this, rebuild it\" or \"you don't need me,\" that's what you'll get. If you do move forward, the $250 comes off the repair. It's priced to be an easy yes, and it stays a bounded review rather than open-ended consulting.",
+    a: "A focused review of your codebase and setup, written findings, and a prioritized fix list — yours to keep and take anywhere, even if you never hire us. If the honest answer is \"don't fix this, rebuild it\" or \"you don't need me,\" that's what you'll get. If you do move forward, the $250 comes off the repair, which starts at $1,000. It's priced to be an easy yes, and it stays a bounded review rather than open-ended consulting.",
   },
   {
     q: "How long does a project take?",
-    a: "A website or redesign is typically 3–5 weeks. A portal or workflow application runs 8–12 weeks to a first release. Rescues depend entirely on what the assessment finds. We give you a realistic date upfront and tell you early if it moves.",
+    a: "A website or redesign is typically 3–5 weeks. Rescues depend entirely on what the assessment finds. A larger build — a membership portal or an internal workflow application — runs 8–12 weeks to a first release. We give you a realistic date upfront and tell you early if it moves.",
   },
   {
     q: "Do I own the code when we're done?",
@@ -18,7 +18,7 @@ export const FAQS = [
   },
   {
     q: "Do you offer ongoing support?",
-    a: "Yes — $1,000/month for up to six combined service hours covering monitoring, small changes, and maintenance, with business-hours response. Most clients add it at launch. It's a written agreement with stated terms, not unlimited development and not 24/7 coverage.",
+    a: "Yes — plans start at $100/month covering monitoring, backups, security and dependency updates, and small content changes, with business-hours response. Larger plans add development hours for ongoing changes. Most clients add support at launch. It's a written agreement with stated terms, not unlimited development and not 24/7 coverage.",
   },
   {
     q: "What do you need from me to get started?",

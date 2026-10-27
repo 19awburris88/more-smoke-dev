@@ -166,7 +166,7 @@ const organization = {
         },
         priceSpecification: {
           "@type": "PriceSpecification",
-          price: 3500,
+          price: 1000,
           priceCurrency: "USD",
           valueAddedTaxIncluded: false,
         },
@@ -177,7 +177,7 @@ const organization = {
           "@type": "Service",
           name: "App Rescue & Integration",
           description:
-            "A paid technical review of an unfinished or unreliable application, written findings, and a fixed quote for the repair.",
+            "A paid technical review of an unfinished or unreliable application, written findings, and a fixed quote for the repair. The assessment fee is credited against the repair, which starts at $1,000.",
           serviceType: "Application rescue and systems integration",
         },
         priceSpecification: {
@@ -190,29 +190,14 @@ const organization = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Portal or Workflow Application",
-          description:
-            "A focused first release covering member access, intake flows, dashboards, or internal workflows.",
-          serviceType: "Custom software development",
-        },
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          price: 9000,
-          priceCurrency: "USD",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
           name: "Ongoing Support",
           description:
-            "Up to six combined service hours a month for monitoring, small changes, and maintenance, with business-hours response.",
+            "Monitoring, backups, security and dependency updates, and small content changes, with business-hours response. Plans scale with the hours required.",
           serviceType: "Website maintenance and support",
         },
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: 1000,
+          price: 100,
           priceCurrency: "USD",
           unitText: "MONTH",
         },

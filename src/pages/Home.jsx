@@ -162,7 +162,7 @@ export default function Home() {
           <p className="section-label">WHAT WE BUILD</p>
           <div className="section-header-row">
             <div>
-              <h2>Three Ways to Work Together</h2>
+              <h2>Two Ways to Work Together</h2>
               <p className="section-desc">
                 Bounded offers with a defined scope, a fixed quote, and a launch
                 date — for small businesses, nonprofits, membership
@@ -181,7 +181,7 @@ export default function Home() {
               </svg>
             </div>
             <h3>Website or Redesign</h3>
-            <p className="service-price">from <strong>$3,500</strong></p>
+            <p className="service-price">from <strong>$1,000</strong></p>
             <p>
               A bounded business site that earns its keep — for small
               businesses, nonprofits, and personal brands.
@@ -195,14 +195,14 @@ export default function Home() {
             <a href="#contact" className="link-green">Start a project →</a>
           </div>
 
-          <div className="service-card">
+          <div className="service-card service-card--highlight">
             <div className="service-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M14.7 6.3a4 4 0 0 1-5 5L4 17v3h3l5.7-5.7a4 4 0 0 0 5-5l-2.5 2.5-2.1-.6-.6-2.1z" />
               </svg>
             </div>
             <h3>App Rescue &amp; Integration</h3>
-            <p className="service-price">assessment <strong>$250</strong> · credited to the repair</p>
+            <p className="service-price">assessment <strong>$250</strong> · repairs from <strong>$1,000</strong></p>
             <p>
               Half-finished, inherited, or unreliable? We review it, tell you
               straight what it needs, then quote the repair.
@@ -210,43 +210,24 @@ export default function Home() {
             <ul className="service-list">
               <li>A focused review of your codebase and setup</li>
               <li>Written findings and a prioritized fix list you keep</li>
-              <li>A fixed quote for the repair, or an honest "don't"</li>
+              <li>A fixed quote for the repair, with the $250 taken off it</li>
               <li>Larger rebuilds scoped and quoted separately</li>
             </ul>
             <a href="#contact" className="link-green">Book an assessment →</a>
           </div>
 
-          <div className="service-card service-card--highlight">
-            <div className="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" />
-              </svg>
-            </div>
-            <h3>Portal or Workflow App</h3>
-            <p className="service-price">from <strong>$9,000</strong></p>
-            <p>
-              A focused first release for membership organizations and growing
-              teams — built to replace the spreadsheet everyone is tired of.
-            </p>
-            <ul className="service-list">
-              <li>Member access, intake flows, and dashboards</li>
-              <li>Internal workflows and admin tooling</li>
-              <li>Authentication and data access defined up front</li>
-              <li>Acceptance criteria agreed before quoting</li>
-            </ul>
-            <a href="#contact" className="link-green">Scope a build →</a>
-          </div>
         </div>
 
         <div className="support-band">
           <div className="support-band-main">
             <p className="support-band-label">AFTER LAUNCH</p>
-            <h3>Ongoing Support — $1,000/month</h3>
+            <h3>Ongoing Support — from $100/month</h3>
             <p>
-              Up to six combined service hours a month for monitoring, small
-              changes, and maintenance. Business-hours response and a named
-              point of contact. Not unlimited development and not 24/7 coverage
-              — the terms are written down before you sign.
+              Monitoring, backups, security and dependency updates, and small
+              content changes, with business-hours response and a named point
+              of contact. Plans scale up with the hours you need. Not unlimited
+              development and not 24/7 coverage — the terms are written down
+              before you sign.
             </p>
           </div>
           <a href="#contact" className="btn-primary support-band-cta">Add Support →</a>
@@ -254,9 +235,11 @@ export default function Home() {
 
         <p className="services-footnote">
           Starting prices, not quotes. Every project is scoped and fixed-quoted
-          before work begins. Production hosting, external API usage, and
-          third-party licenses are set up in your accounts and billed at cost,
-          approved in advance.
+          before work begins. Membership portals, internal tools, and custom
+          workflow applications are scoped and quoted individually — the case
+          studies show what those look like. Production hosting, external API
+          usage, and third-party licenses are set up in your accounts and
+          billed at cost, approved in advance.
         </p>
       </section>
 
@@ -610,11 +593,12 @@ export default function Home() {
                 </label>
                 <select id="budget" name="budget_range">
                   <option value="">Not sure / contract rate</option>
-                  <option value="Support retainer ($1K/mo)">Support retainer ($1K/mo)</option>
+                  <option value="Support plan ($100+/mo)">Support plan ($100+/mo)</option>
                   <option value="Assessment first ($250)">Assessment first ($250)</option>
-                  <option value="$3.5K – $7.5K">$3.5K – $7.5K</option>
-                  <option value="$7.5K – $15K">$7.5K – $15K</option>
-                  <option value="$15K+">$15K+</option>
+                  <option value="$1K – $2.5K">$1K – $2.5K</option>
+                  <option value="$2.5K – $5K">$2.5K – $5K</option>
+                  <option value="$5K – $10K">$5K – $10K</option>
+                  <option value="$10K+">$10K+</option>
                   <option value="Not sure yet">Not sure yet</option>
                 </select>
               </div>
