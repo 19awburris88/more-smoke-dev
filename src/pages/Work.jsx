@@ -6,12 +6,13 @@ export default function Work() {
     <>
       <section className="section section--light">
         <div className="page-header" style={{ marginBottom: 0 }}>
-          <p className="section-label">FEATURED WORK</p>
-          <h1>Projects I've Built</h1>
+          <p className="section-label">SELECTED WORK</p>
+          <h1>Case Studies</h1>
           <p className="page-desc">
-            A portfolio of applications spanning marketplaces, lifestyle brands,
-            faith-based tools, and client work. Each project is a real solution
-            to a real problem.
+            {projects.length} shipped applications spanning membership
+            platforms, marketplaces, nonprofit tools, lifestyle brands, and
+            client work. Each one starts with the problem it was built to
+            solve.
           </p>
         </div>
       </section>

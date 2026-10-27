@@ -33,7 +33,7 @@ export default function CaseStudy() {
           <p className="case-tagline">{project.tagline}</p>
           {project.role && (
             <p className="case-role">
-              <span className="case-role-label">My role</span>
+              <span className="case-role-label">Role</span>
               {project.role}
             </p>
           )}
@@ -51,7 +51,7 @@ export default function CaseStudy() {
             {!project.live && !project.github && (
               <p className="case-private">
                 Private build — code and deployment are the client's.{" "}
-                <a href="/#contact" className="link-green">Ask me for a walkthrough →</a>
+                <a href="/#contact" className="link-green">Ask us for a walkthrough →</a>
               </p>
             )}
           </div>

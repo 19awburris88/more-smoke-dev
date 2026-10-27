@@ -445,7 +445,7 @@ export const projects = [
     type: "Frontend",
     tagline: "Cigar Pre-Launch Landing Page",
     role:
-      "Designer and developer — countdown, lead capture, and launch page for my own brand.",
+      "Designer and developer — countdown, lead capture, and launch page for the studio's own cigar brand.",
     description:
       "A luxury pre-launch experience for the fifth cigar in the More Smoke portfolio. Built around anticipation — a live countdown to the September 2026 drop, blend reveal, and email capture connected to Google Sheets.",
     problem:

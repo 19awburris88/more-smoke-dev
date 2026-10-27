@@ -15,10 +15,11 @@ export default function Footer() {
         </div>
 
         <div className="footer-col">
-          <p className="footer-heading">ABOUT MORE SMOKE DEV</p>
+          <p className="footer-heading">ABOUT THE STUDIO</p>
           <p className="footer-body">
-            More Smoke Dev is the home for my engineering work — client
-            projects, my own products, and the portfolio behind my job search.
+            More Smoke Dev is a Dallas software studio building websites,
+            membership portals, and internal tools — for clients across
+            Dallas–Fort Worth and remotely, plus our own products.
           </p>
           <a href="/#contact" className="btn-outline footer-cta">
             Let's Work Together →
@@ -26,7 +27,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-col">
-          <p className="footer-heading">TECH I USE</p>
+          <p className="footer-heading">OUR STACK</p>
           <div className="footer-tech">
             <span>React</span>
             <span>Node.js</span>
@@ -45,8 +46,8 @@ export default function Footer() {
         <div className="footer-col">
           <p className="footer-heading">LET'S CONNECT</p>
           <p className="footer-body">
-            Open to new client projects and contract engineering work.
-            Let's build something great.
+            Taking on new client projects and contract engineering work.
+            Let's build something worth keeping.
           </p>
           <div className="footer-social">
             <a href="mailto:austin@moresmoke.dev" aria-label="Email">

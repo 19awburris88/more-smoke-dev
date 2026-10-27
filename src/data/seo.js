@@ -26,22 +26,22 @@ export function canonicalUrl(pathname) {
 /** Titles stay under ~60 chars, descriptions under ~155, so neither truncates in results. */
 const PAGES = {
   "/": {
-    title: "Custom Web Apps & Portals for Dallas Businesses",
+    title: "Custom Web Apps & Portals — Dallas Studio",
     description:
-      "More Smoke Dev builds websites, membership portals, and internal tools for small businesses, nonprofits, and growing teams in Dallas–Fort Worth. Fixed quotes.",
+      "More Smoke Dev builds websites, membership portals, and internal tools for Dallas–Fort Worth small businesses, nonprofits, and growing teams. Fixed quotes.",
   },
   "/work": {
-    title: "Case Studies — Web Apps, Portals & Nonprofit Platforms",
+    title: "Case Studies — Web Apps & Portals",
     description:
-      "24 shipped projects: membership platforms, registration systems, donation sites, and internal tools. The problem, what I built, and what it changed.",
+      `${projects.length} shipped projects: membership platforms, registration systems, donation sites, and internal tools. The problem, what we built, and what it changed.`,
   },
   "/about": {
-    title: "About Austin Burris — Full Stack Developer in Dallas",
+    title: "About the Studio — Web Apps & Portals",
     description:
-      "Full stack developer and MBA who ran a platform to 1M+ monthly users before writing software for clients. How I work, who I build for, and contract availability.",
+      "More Smoke Dev is a Dallas software studio founded by Austin Burris — engineer, MBA, and operator. How we work, who we build for, and availability.",
   },
   "/skills": {
-    title: "Tech Stack — React, TypeScript, Node, PostgreSQL",
+    title: "Tech Stack — React, Node & PostgreSQL",
     description:
       "The stack behind More Smoke Dev: React and TypeScript, Node and Express, Python and FastAPI, PostgreSQL and Prisma, Stripe, AWS, and the Claude API.",
   },
@@ -119,6 +119,8 @@ const organization = {
   "@id": `${SITE.url}/#organization`,
   name: SITE.name,
   url: SITE.url,
+  description:
+    "A Dallas software studio building websites, membership portals, and internal tools for small businesses, nonprofits, and growing teams — plus contract engineering for agencies and product teams.",
   image: SITE.image,
   logo: `${SITE.url}/msd-logo.png`,
   telephone: SITE.phone,
@@ -224,7 +226,7 @@ const person = {
   "@id": `${SITE.url}/#austin`,
   name: SITE.founder,
   url: canonicalUrl("/about"),
-  jobTitle: "Full Stack Engineer",
+  jobTitle: "Founder & Principal Engineer",
   email: SITE.email,
   telephone: SITE.phone,
   address: {

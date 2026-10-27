@@ -34,19 +34,19 @@ const PROCESS = [
     step: "01",
     name: "Discovery",
     body:
-      "We start with your goals, your users, and your constraints — not a feature list. I ask what the software has to accomplish and what happens today without it. Inherited or half-finished code starts with a paid technical review, because quoting what I haven't read helps neither of us.",
+      "We start with your goals, your users, and your constraints — not a feature list. We ask what the software has to accomplish and what happens today without it. Inherited or half-finished code starts with a paid technical review, because quoting what we haven't read helps neither of us.",
   },
   {
     step: "02",
     name: "Product Planning",
     body:
-      "I turn that conversation into scoped requirements, a build order, and a fixed quote with milestone billing. You see what's in, what's out, and what's deliberately deferred before any code is written.",
+      "We turn that conversation into scoped requirements, a build order, and a fixed quote with milestone billing. You see what's in, what's out, and what's deliberately deferred before any code is written.",
   },
   {
     step: "03",
     name: "UX Design",
     body:
-      "Structure before styling: the screens, the flows, and the decisions a user has to make. I design the path through the product, then make it look like your brand.",
+      "Structure before styling: the screens, the flows, and the decisions a user has to make. We design the path through the product, then make it look like your brand.",
   },
   {
     step: "04",
@@ -58,7 +58,7 @@ const PROCESS = [
     step: "05",
     name: "Launch",
     body:
-      "Deployment, domain, and hosting set up in your name from day one. I hand over the accounts, the repository, and documentation so nothing is locked to me.",
+      "Deployment, domain, and hosting set up in your name from day one. We hand over the accounts, the repository, and documentation so nothing is locked to us.",
   },
   {
     step: "06",
@@ -125,15 +125,15 @@ export default function Home() {
             <span>BETTER SOLUTIONS.</span>
           </h1>
           <p className="hero-sub">
-            I'm Austin Burris — a full stack engineer with an MBA and a
-            founder's track record. More Smoke Dev builds websites, membership
-            portals, and internal tools for small businesses, nonprofits, and
-            growing teams in Dallas–Fort Worth and remotely. Project and
-            contract work both welcome.
+            More Smoke Dev is a software studio in Dallas. We build websites,
+            membership portals, and internal tools for small businesses,
+            nonprofits, and growing teams across Dallas–Fort Worth and
+            remotely — on a written scope, a fixed quote, and an agreed launch
+            date. Project and contract work both welcome.
           </p>
           <div className="hero-buttons">
             <a href="#contact" className="btn-primary">Start a Project →</a>
-            <Link to="/work/" className="btn-outline">View My Work</Link>
+            <Link to="/work/" className="btn-outline">View Our Work</Link>
           </div>
           <ul className="hero-proof">
             <li><strong>{projects.length}</strong> projects shipped</li>
@@ -159,7 +159,7 @@ export default function Home() {
       {/* SERVICES */}
       <section className="section section--light" id="services">
         <div className="section-header">
-          <p className="section-label">WHAT I BUILD</p>
+          <p className="section-label">WHAT WE BUILD</p>
           <div className="section-header-row">
             <div>
               <h2>Three Ways to Work Together</h2>
@@ -204,8 +204,8 @@ export default function Home() {
             <h3>App Rescue &amp; Integration</h3>
             <p className="service-price">assessment <strong>$250</strong> · credited to the repair</p>
             <p>
-              Half-finished, inherited, or unreliable? I review it, tell you
-              honestly what it needs, then quote the repair.
+              Half-finished, inherited, or unreliable? We review it, tell you
+              straight what it needs, then quote the repair.
             </p>
             <ul className="service-list">
               <li>A focused review of your codebase and setup</li>
@@ -260,56 +260,65 @@ export default function Home() {
         </p>
       </section>
 
-      {/* ABOUT AUSTIN */}
+      {/* WHO YOU WORK WITH */}
       <section className="section section--alt">
         <div className="about-home-grid">
           <div className="about-home-text">
-            <p className="intro-label">HEY, I'M</p>
+            <p className="intro-label">WHO YOU WORK WITH</p>
             <h2 className="about-home-name">Austin Burris</h2>
-            <p className="about-home-role">Full Stack Engineer · Dallas, TX · Open to Remote</p>
+            <p className="about-home-role">Founder &amp; Principal Engineer · Dallas, TX</p>
             <p className="about-home-bio">
-              I'm a full-stack developer and entrepreneur. I build digital
-              experiences with real intent — and I've lived the founder journey
-              firsthand as the owner of More Smoke, a premium cigar lifestyle
-              brand I built from scratch. That experience gives me a perspective
-              most developers don't have: I know what it costs to build something
-              real, and I bring that same standard to every project I take on.
+              More Smoke Dev is deliberately small, and that is the point: the
+              person who scopes your project is the person who writes the code.
+              Austin founded the studio after a decade of operating his own
+              companies — scaling a subscription platform past a million
+              monthly users, then building More Smoke, the cigar brand this
+              studio takes its name from. That history is why we talk about
+              revenue and deadlines as readily as we talk about schemas.
             </p>
-            <Link to="/about/" className="btn-outline">More About Me →</Link>
+            <Link to="/about/" className="btn-outline">More About the Studio →</Link>
           </div>
           <div className="about-home-traits">
             <div className="trait-card">
-              <span className="trait-icon">🧩</span>
-              <strong>Problem Solver</strong>
-              <p>I enjoy tackling complex challenges and finding elegant solutions.</p>
+              <span className="trait-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42d36b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </span>
+              <strong>Fixed scope, fixed quote</strong>
+              <p>A written scope and a quote you can plan against — agreed before any code is written.</p>
             </div>
             <div className="trait-card">
               <span className="trait-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42d36b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                  <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                 </svg>
               </span>
-              <strong>Detail Oriented</strong>
-              <p>Clean code, thoughtful UI, and attention to the little things.</p>
+              <strong>You own everything</strong>
+              <p>Code, domain, and hosting in your accounts from day one. No lock-in, no licensing fees.</p>
             </div>
             <div className="trait-card">
-              <span className="trait-icon">🚀</span>
-              <strong>Always Learning</strong>
-              <p>I stay curious and constantly expand my skills and knowledge.</p>
+              <span className="trait-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42d36b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+              </span>
+              <strong>One point of contact</strong>
+              <p>No account manager relaying messages. You talk to the engineer doing the work.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* HOW I WORK */}
+      {/* HOW WE WORK */}
       <section className="section section--light" id="process">
         <div className="section-header">
-          <p className="section-label">HOW I WORK</p>
+          <p className="section-label">HOW WE WORK</p>
           <div className="section-header-row">
             <div>
               <h2>From Idea to Supported</h2>
               <p className="section-desc">
-                I lead every project through the same six stages — so you
+                Every project runs through the same six stages — so you
                 always know where we are, what's next, and what it costs.
               </p>
             </div>
@@ -331,16 +340,17 @@ export default function Home() {
       {/* FEATURED WORK */}
       <section className="section" id="work">
         <div className="section-header">
-          <p className="section-label">FEATURED WORK</p>
+          <p className="section-label">SELECTED WORK</p>
           <div className="section-header-row">
             <div>
-              <h2>Things I've Built</h2>
+              <h2>Selected Work</h2>
               <p className="section-desc">
-                A selection of projects I'm proud of. Each one represents a
-                challenge, a solution, and growth.
+                {featuredProjects.length} of the {projects.length} applications we
+                have shipped.
+                Each case study opens with the problem it was built to solve.
               </p>
             </div>
-            <Link to="/work/" className="btn-outline">View All Projects →</Link>
+            <Link to="/work/" className="btn-outline">All Case Studies →</Link>
           </div>
         </div>
 
@@ -392,9 +402,9 @@ export default function Home() {
             </p>
             <h2>Need an extra engineer?</h2>
             <p className="section-desc">
-              {projects.length} shipped projects, an MBA, and ten years of
-              operating experience behind the code. Available for contract and
-              contract-to-hire work — overflow delivery for agencies, a
+              {projects.length} shipped projects and ten years of operating
+              experience behind the code. More Smoke Dev takes contract and
+              contract-to-hire engagements — overflow delivery for agencies, a
               rescue on something half-finished, or a bounded build your team
               does not have the hours for.
             </p>
@@ -405,7 +415,7 @@ export default function Home() {
             </div>
             <div className="hiring-actions">
               <a href="#contact" className="btn-primary">Check Availability →</a>
-              <Link to="/skills/" className="btn-outline">Technical Skills</Link>
+              <Link to="/skills/" className="btn-outline">Our Stack</Link>
             </div>
           </div>
 
@@ -430,11 +440,10 @@ export default function Home() {
             <p className="brand-home-tagline">A premium cigar lifestyle brand built on culture, community, and craft.</p>
             <p className="brand-home-bio">
               Before More Smoke Dev, there was More Smoke — the premium cigar
-              lifestyle brand I founded and scaled in Dallas. I built it from
+              lifestyle brand our founder built and scaled in Dallas from
               scratch: the product line, the retail partnerships, the events,
-              and the identity. The same drive and entrepreneurial mindset
-              behind that brand is what powers this dev shop. Same name. Same
-              standard. Different industry.
+              and the identity. The same standard behind that brand is what
+              runs this studio. Same name. Same bar. Different industry.
             </p>
             <div className="brand-stats">
               <div className="brand-stat">
@@ -470,12 +479,12 @@ export default function Home() {
       {/* TESTIMONIALS */}
       <section className="section section--grey">
         <div className="section-header">
-          <p className="section-label">CLIENT LOVE</p>
+          <p className="section-label">CLIENTS</p>
           <div className="section-header-row">
             <div>
               <h2>What They're Saying</h2>
               <p className="section-desc">
-                Real feedback from people I've built for.
+                Feedback from the people we have built for.
               </p>
             </div>
           </div>
@@ -502,7 +511,7 @@ export default function Home() {
             <div>
               <h2>Common Questions</h2>
               <p className="section-desc">
-                Everything you're probably wondering before you reach out.
+                What most people want to know before they reach out.
               </p>
             </div>
           </div>
@@ -548,12 +557,12 @@ export default function Home() {
           <p className="section-label">LET'S TALK</p>
           <div className="section-header-row">
             <div>
-              <h2>Hire Me or Work With Me</h2>
+              <h2>Start a Conversation</h2>
               <p className="section-desc">
                 Book a call and we'll scope the work, talk budget against the
                 starting prices above, and agree a date. Contract and agency
-                overflow enquiries welcome — I reply within 24 hours either
-                way.
+                overflow enquiries welcome — we reply within one business day
+                either way.
               </p>
             </div>
           </div>
@@ -563,8 +572,8 @@ export default function Home() {
           <div className="contact-home-col">
             <h3 className="contact-home-subhead">Book a 30-min call</h3>
             <p className="contact-home-meta">
-              An intro conversation, a role walkthrough, or a project scoping
-              session — whichever you need. No commitment.
+              An intro conversation, a technical walkthrough, or a project
+              scoping session — whichever you need. No commitment.
             </p>
             <CalendlyEmbed />
           </div>
@@ -572,8 +581,8 @@ export default function Home() {
           <div className="contact-home-col">
             <h3 className="contact-home-subhead">Send a message</h3>
             <p className="contact-home-meta">
-              Prefer to write it out? Fill this out and I'll reply within 24
-              hours.
+              Prefer to write it out? Fill this out and we'll reply within one
+              business day.
             </p>
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
@@ -611,13 +620,13 @@ export default function Home() {
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows={5} placeholder="Tell me about your project..." required />
+                <textarea id="message" name="message" rows={5} placeholder="Tell us about your project..." required />
               </div>
               {formStatus === "success" && (
-                <p className="form-success">Message sent! I'll be in touch soon.</p>
+                <p className="form-success">Message sent — we'll be in touch shortly.</p>
               )}
               {formStatus === "error" && (
-                <p className="form-error">Something went wrong. Try emailing me directly.</p>
+                <p className="form-error">Something went wrong. Try emailing us directly.</p>
               )}
               <button type="submit" className="btn-primary" disabled={formStatus === "sending"}>
                 {formStatus === "sending" ? "Sending..." : "Send Message →"}

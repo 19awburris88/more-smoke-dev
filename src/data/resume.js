@@ -10,7 +10,7 @@ export const highlights = [
 
 export const experience = [
   {
-    role: "Full Stack Developer",
+    role: "Founder & Principal Engineer",
     company: "More Smoke Dev",
     period: "Apr 2024 – Present",
     location: "Remote (Dallas, TX)",
@@ -18,7 +18,7 @@ export const experience = [
       "Design, build, and ship production web applications end to end for founders, nonprofits, and small businesses — requirements through deployment and post-launch support",
       "Build React and TypeScript frontends against Node/Express APIs with Prisma and PostgreSQL, including JWT authentication with refresh-token rotation, role-based access control, and multi-tenant data isolation",
       "Integrate third-party platforms in production: Stripe Checkout and billing webhooks, AWS S3 presigned uploads, Supabase auth with row-level security, Clerk, and the Anthropic Claude API",
-      "Own technical decisions and trade-offs across the stack — schema design, caching strategy, deploy topology — and document them so clients can maintain what I hand over",
+      "Own technical decisions and trade-offs across the stack — schema design, caching strategy, deploy topology — and document them so clients can maintain what we hand over",
       "Translate non-technical stakeholder requirements into scoped, estimated work and deliver against committed timelines",
     ],
   },

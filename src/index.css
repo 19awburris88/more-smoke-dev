@@ -2403,6 +2403,9 @@ main {
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
+  /* inline-flex makes each text node a flex item, so the spaces around
+     <strong> collapse ("from$3,500"). The gap puts them back. */
+  gap: 0.3em;
   white-space: nowrap;
   font-size: 0.8rem;
   color: #2f7a47;

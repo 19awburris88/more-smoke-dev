@@ -48,11 +48,10 @@ export default function Skills() {
       <section className="section section--light">
         <div className="page-header" style={{ marginBottom: 0 }}>
           <p className="section-label">TECH STACK</p>
-          <h1>Tools I Use</h1>
+          <h1>The Stack</h1>
           <p className="page-desc">
-            Full-stack engineer with an MBA and a founder's track record.
-            Everything below is something I have shipped with — not something
-            I have read about. The projects on this site are where each of
+            Everything below is something we have shipped with — not something
+            we have read about. The case studies on this site are where each of
             these earned its place.
           </p>
         </div>

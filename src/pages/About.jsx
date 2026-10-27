@@ -5,15 +5,17 @@ export default function About() {
     <>
       <section className="section section--light">
         <div className="page-header" style={{ marginBottom: 0 }}>
-          <p className="section-label">ABOUT ME</p>
-          <h1>More Than Just Code</h1>
+          <p className="section-label">ABOUT</p>
+          <h1>A Software Studio in Dallas</h1>
           <p className="page-desc">
-            A builder at the intersection of business strategy, entrepreneurship,
-            and technology — with a track record that goes well beyond the IDE.
+            More Smoke Dev builds websites, membership portals, and internal
+            tools for small businesses, nonprofits, and growing teams — and
+            takes on contract engineering for agencies and product teams that
+            need another pair of hands.
           </p>
           <div className="page-header-actions">
             <a href="/#contact" className="btn-primary">Start a Conversation →</a>
-            <a href="/#services" className="btn-outline">What I Build</a>
+            <a href="/#services" className="btn-outline">What We Build</a>
           </div>
         </div>
       </section>
@@ -23,46 +25,66 @@ export default function About() {
           <div className="about-main">
             <div className="about-card">
               <p>
-                I'm a son, friend, follower of Christ, and entrepreneur who
-                believes success is measured not only by what we build, but by
-                how we serve others along the way. Originally from Indianapolis
-                and now based in Dallas, Texas, I strive to live a life rooted in
-                faith, meaningful relationships, continuous growth, and purposeful
-                work.
+                We are deliberately small, and that is the point. The person
+                who scopes your project is the person who writes the code, so
+                nothing is lost between the first call and the build, and there
+                is no account manager relaying messages in either direction.
               </p>
               <p>
-                Professionally, I bring a unique blend of business leadership,
-                entrepreneurship, and technology. With a Business degree, MBA,
-                Executive MBA in Digital Marketing, and software engineering
-                training from Fullstack Academy, I've spent my career solving
-                problems, building businesses, and creating experiences that
-                connect people.
+                Every engagement is bounded. You get a written scope, a fixed
+                quote with milestone billing, and a launch date agreed before
+                any code is written — not an hourly meter. We tell you what a
+                feature will cost before it is built and what we think should
+                be deferred out of a first release. Inherited or half-finished
+                code starts with a paid technical review rather than a guess,
+                because quoting what we have not read helps neither of us.
               </p>
               <p>
-                What makes me different is my ability to bridge the gap between
-                business and technology. I understand both the technical side of
-                building products and the business side of growing them — whether
-                that's gathering requirements, managing stakeholders, developing
-                software, launching products, or creating go-to-market strategies.
-                I thrive where business objectives and technology intersect.
+                We work where business objectives and technology meet. The
+                studio was built by an operator, so requirements get gathered
+                from the people who will actually use the software, and
+                trade-offs get explained in terms of revenue and deadlines
+                rather than architecture diagrams.
               </p>
               <p>
-                When I'm not coding or building businesses, you'll find me
-                studying Scripture, spending time with family and friends,
-                exploring great restaurants, enjoying a premium cigar, cheering on
-                my favorite sports teams, or investing in personal growth and
-                fitness.
+                Everything we hand over is yours. The code, the domain, and the
+                hosting accounts are set up in your name from day one, with no
+                lock-in and no licensing fees, and the documentation is written
+                so your own team can maintain what we built.
               </p>
             </div>
 
-            <div className="about-section-label">WHERE I WORK</div>
+            <div className="about-section-label">FOUNDER</div>
+            <div className="about-card">
+              <p>
+                More Smoke Dev was founded by <strong>Austin Burris</strong>, a
+                full stack engineer with a Business degree, an MBA, an Executive
+                MBA in Digital Marketing, and software engineering training from
+                Fullstack Academy at UT Dallas. Before writing software for
+                clients, he spent eight years co-founding EatHere, a
+                subscription media platform he scaled past a million monthly
+                users across 27 markets while serving as both CFO and CTO. He
+                still runs More Smoke, the premium cigar brand this studio takes
+                its name from.
+              </p>
+              <p>
+                Austin is a son, friend, and follower of Christ, originally from
+                Indianapolis and now based in Dallas, who believes success is
+                measured not only by what gets built but by how people are
+                served along the way. Outside the work you will find him
+                studying Scripture, with family and friends, chasing a good
+                restaurant, enjoying a premium cigar, or cheering on his teams.
+              </p>
+            </div>
+
+            <div className="about-section-label">HOW WE ENGAGE</div>
             <div className="roles-grid">
               {pursuing.map((role) => (
                 <div key={role} className="role-tag">{role}</div>
               ))}
             </div>
 
-            <div className="about-section-label" style={{ marginTop: "48px" }}>EXPERIENCE</div>
+            <div className="about-section-label" style={{ marginTop: "48px" }}>TRACK RECORD</div>
             <div className="timeline">
               {experience.map((job) => (
                 <div key={job.company} className="timeline-item">
@@ -109,7 +131,7 @@ export default function About() {
                       {c.name}
                       <span className="cert-issuer">
                         {c.issuer}
-                        {c.year ? ` \u00b7 ${c.year}` : ""}
+                        {c.year ? ` · ${c.year}` : ""}
                       </span>
                     </span>
                     {c.status === "in-progress" ? (
@@ -123,17 +145,17 @@ export default function About() {
             </div>
 
             <div className="credential-card">
-              <h3>TECHNICAL SKILLS</h3>
+              <h3>CAPABILITIES</h3>
               <div className="skills-inline">
                 <p className="skills-cat">Frontend</p>
-                <p className="skills-list">React, TypeScript, JavaScript, Vite, Tailwind CSS, Material UI, TanStack Query, Zustand, Framer Motion</p>
+                <p className="skills-list">React, TypeScript, JavaScript, Next.js, Vite, Tailwind CSS, Material UI, TanStack Query, Zustand, Framer Motion</p>
                 <p className="skills-cat">Backend</p>
                 <p className="skills-list">Node.js, Express, Python, FastAPI, REST APIs, JWT Auth &amp; Token Rotation, Webhooks</p>
                 <p className="skills-cat">Data</p>
                 <p className="skills-list">PostgreSQL, Prisma, Supabase, SQLite, Data Modeling, Row-Level Security, Multi-Tenant Architecture</p>
                 <p className="skills-cat">AI &amp; Platform</p>
                 <p className="skills-list">Claude API, AI Feature Design, Stripe, AWS S3, Clerk, PWAs &amp; Service Workers</p>
-                <p className="skills-cat">Tools &amp; Delivery</p>
+                <p className="skills-cat">Delivery</p>
                 <p className="skills-list">Git, GitHub, Postman, Netlify, Vercel, Render, Agile/Scrum, Stakeholder Management</p>
               </div>
             </div>
