@@ -154,7 +154,7 @@ export default function Home() {
             date. Project and contract work both welcome.
           </p>
           <div className="hero-buttons">
-            <a href="#contact" className="btn-primary">Start a Project →</a>
+            <Link to="/start/" className="btn-primary">Start a Project →</Link>
             <Link to="/work/" className="btn-outline">View Our Work</Link>
           </div>
           <ul className="hero-proof">
@@ -214,7 +214,7 @@ export default function Home() {
               <li>Contact forms and analytics setup</li>
               <li>Launch and handoff in your own accounts</li>
             </ul>
-            <a href="#contact" className="link-green">Start a project →</a>
+            <Link to="/start/" className="link-green">Start a project →</Link>
           </div>
 
           <div className="service-card service-card--highlight">

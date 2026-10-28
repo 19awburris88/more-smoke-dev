@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Work from "./pages/Work";
 import CaseStudy from "./pages/CaseStudy";
 import Skills from "./pages/Skills";
+import Start from "./pages/Start";
 import "./index.css";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/work/:id" element={<CaseStudy />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/start" element={<Start />} />
           <Route path="/contact" element={<Navigate to="/#contact" replace />} />
         </Routes>
       </main>

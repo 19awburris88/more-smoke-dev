@@ -24,6 +24,7 @@ import About from "../src/pages/About.jsx";
 import Work from "../src/pages/Work.jsx";
 import CaseStudy from "../src/pages/CaseStudy.jsx";
 import Skills from "../src/pages/Skills.jsx";
+import Start from "../src/pages/Start.jsx";
 import { allRoutes, seoFor, jsonLdFor, canonicalUrl, SITE } from "../src/data/seo.js";
 import { FAQS } from "../src/data/faqs.js";
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/work/:id" element={<CaseStudy />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/start" element={<Start />} />
         </Routes>
       </main>
       <Footer />
@@ -60,6 +62,18 @@ if (fs.existsSync(manifestPath)) {
   for (const [key, entry] of Object.entries(manifest)) {
     if (entry.file) assetMap.set(`/${key}`, `/${entry.file}`);
   }
+}
+
+/**
+ * React 19 emits the `encType` prop with its camelCase spelling intact, and
+ * writing `enctype` in JSX instead trips an "Invalid DOM property" warning.
+ * Browsers lowercase attribute names while parsing, so either spelling works
+ * at runtime — but Netlify reads these files directly to register forms, and
+ * the multipart hint on the intake form should not depend on how a third
+ * party normalises case.
+ */
+function normalizeAttrCase(html) {
+  return html.replace(/\sencType=/g, " enctype=");
 }
 
 function rewriteAssetPaths(html) {
@@ -128,10 +142,12 @@ for (const route of routes) {
     </MemoryRouter>
   );
 
-  const html = rewriteAssetPaths(
-    stripStaticMeta(template)
-      .replace("</head>", `${buildHead(seo, jsonLd)}\n  </head>`)
-      .replace('<div id="root"></div>', `<div id="root">${body}</div>`)
+  const html = normalizeAttrCase(
+    rewriteAssetPaths(
+      stripStaticMeta(template)
+        .replace("</head>", `${buildHead(seo, jsonLd)}\n  </head>`)
+        .replace('<div id="root"></div>', `<div id="root">${body}</div>`)
+    )
   );
 
   const outDir =

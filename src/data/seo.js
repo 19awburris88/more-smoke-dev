@@ -40,6 +40,11 @@ const PAGES = {
     description:
       "More Smoke Dev is a Dallas software studio founded by Austin Burris — engineer, MBA, and operator. How we work, who we build for, and availability.",
   },
+  "/start": {
+    title: "Start a Project \u2014 Website Intake",
+    description:
+      "Tell us about your business and we will build your site. About three minutes: your details, your offer, your photos, your brand colours.",
+  },
   "/skills": {
     title: "Tech Stack — React, Node & PostgreSQL",
     description:
@@ -81,7 +86,7 @@ export function allRoutes() {
   const routes = Object.entries(PAGES).map(([path, meta]) => ({
     path,
     changefreq: path === "/" ? "weekly" : "monthly",
-    priority: path === "/" ? 1.0 : path === "/work" ? 0.9 : 0.8,
+    priority: path === "/" ? 1.0 : path === "/work" || path === "/start" ? 0.9 : 0.8,
     ...meta,
   }));
 
