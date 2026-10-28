@@ -2276,13 +2276,12 @@ main {
   margin-top: 80px;
 }
 
+/* Heading and its supporting line stack on the left, matching
+   .section-header elsewhere. Pushing the line to the far right left it
+   floating in the corner, unattached to the heading. */
 .capabilities-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
+  max-width: 560px;
+  margin-bottom: 30px;
 }
 
 .capabilities-head h3 {
@@ -2291,11 +2290,11 @@ main {
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #0b0b0b;
+  margin-bottom: 12px;
 }
 
 .capabilities-head p {
   color: #555;
-  max-width: 430px;
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -2538,10 +2537,6 @@ main {
 
   .capability-body {
     grid-column: 2 / -1;
-  }
-
-  .capabilities-head {
-    align-items: flex-start;
   }
 }
 
