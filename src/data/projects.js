@@ -1,7 +1,5 @@
 import imgFitTogether from "../assets/preview-fittogether.png";
 import imgCRHS from "../assets/preview-crhs07.png";
-import imgClub520 from "../assets/preview-club520.png";
-import imgFamilyTree from "../assets/preview-familytree.png";
 import imgCraveCompass from "../assets/preview-crave-compass.webp";
 import imgArrive from "../assets/preview-arrive.webp";
 import imgDrydown from "../assets/preview-drydown.webp";
@@ -9,19 +7,13 @@ import imgHumidorConnect from "../assets/preview-humidor-connect.png";
 import imgMoreSmokeOS from "../assets/preview-more-smoke-os.png";
 import imgTheGuide from "../assets/preview-the-guide.png";
 import imgLoveLedger from "../assets/preview-love-ledger.png";
-import imgMoreSmoke from "../assets/preview-moresmoke.png";
-import imgMoneyMill from "../assets/preview-the-money-mill.png";
+import imgMoreSmoke from "../assets/preview-moresmoke.webp";
 import imgPressedAged from "../assets/preview-pressed-aged-lounge.png";
 import imgVirtualCare from "../assets/preview-virtualcarenow.png";
-import imgDFProfile from "../assets/preview-df-profile.png";
-import imgWheresmikeg from "../assets/preview-wheresmikeg.png";
 import imgSmokeCask from "../assets/preview-smoke-cask-barrel.png";
-import imgJordanColeman from "../assets/preview-jordan-coleman-campaign.png";
-import imgChickenBeer from "../assets/preview-chicken-beer-festival.png";
-import imgLastCall from "../assets/preview-last-call-landing.png";
 import imgBenignity from "../assets/preview-benignity.png";
 import imgEmerging100 from "../assets/preview-emerging100.png";
-import imgOpenCourt from "../assets/preview-open-court.png";
+import imgBuildBall from "../assets/preview-build-and-ball.webp";
 import imgHireLocal from "../assets/preview-hirelocal.png";
 import imgLavishRetreats from "../assets/preview-lavish-retreats.jpg";
 
@@ -136,14 +128,14 @@ export const projects = [
     featured: true,
   },
   {
-    id: "open-court",
-    title: "The Open Court",
+    id: "build-and-ball",
+    title: "Build & Ball",
     type: "Full Stack",
     tagline: "Basketball Runs & Wellness Registration Platform",
     role:
       "Sole developer and product partner — discovery with the founder, registration system, admin dashboard, and insights screen; scoped and reconciled the client's formal requirements document.",
     description:
-      "Marketing site and registration system for The Open Court \u2014 men's basketball runs and wellness pathways in Dallas. Public event pages drive sign-ups, while an authenticated admin dashboard gives the organizer roster visibility and registration insights.",
+      "Marketing site and registration system for Build & Ball \u2014 men's basketball runs and wellness pathways in Dallas. Public event pages drive sign-ups, while an authenticated admin dashboard gives the organizer roster visibility and registration insights.",
     problem:
       "Sign-ups, waivers, and emergency contacts were being collected ad hoc with no reliable roster. The platform captures registrations in one place and enforces access to that personal data at the database layer rather than in the frontend.",
     outcome:
@@ -157,9 +149,9 @@ export const projects = [
       "Registration insights and charts for the organizer",
       "Light/dark theme toggle and a published privacy policy",
     ],
-    image: imgOpenCourt,
+    image: imgBuildBall,
     github: "",
-    live: "",
+    live: "https://build-ball.netlify.app",
     featured: true,
   },
   {
@@ -320,7 +312,7 @@ export const projects = [
     image: imgHumidorConnect,
     github: "https://github.com/19awburris88/cigar-match",
     live: "https://humidorconnect.com",
-    featured: false,
+    featured: true,
   },
   {
     id: "fittogether",
@@ -350,116 +342,25 @@ export const projects = [
     id: "more-smoke",
     title: "More Smoke",
     type: "Frontend",
-    tagline: "Luxury Lifestyle Brand Platform",
+    tagline: "Boutique Cigar Brand & Collection Site",
     role:
       "Founder, designer, and developer.",
     description:
-      "The digital home for Austin's premium cigar brand. Focused on brand storytelling, product showcases, event promotion, and mobile-optimized experiences that match the premium feel of the product.",
+      "The brand site for More Smoke Cigars, rebuilt for the 2026 relaunch. A cinematic landing experience carries the five signature releases — Last Call, Tempus Fugit, Cowboy Caviar, Nile Queen, and Space Cowboy — each with its own size, wrapper, strength, and story, alongside retailer locations, wholesale enquiries, and an inner-circle email capture.",
     problem:
-      "The brand needed a digital presence that communicated its culture, craftsmanship, and story to a lifestyle-focused audience.",
-    tech: ["React", "Vite", "Netlify"],
+      "A boutique tobacco brand cannot advertise the way other lifestyle brands can, so the site has to do the selling: carry a premium feel on a phone, gate itself to adults, give retailers a reason to stock the line, and build a direct list the brand owns rather than renting an audience from a platform.",
+    tech: ["React", "Vite", "Framer Motion", "Netlify"],
     features: [
-      "Product showcases and brand storytelling",
-      "Event promotion and content",
-      "Customer acquisition funnels",
-      "Mobile-optimized responsive design",
+      "21+ age verification gate that remembers the visitor on return",
+      "Collection pages per release with size, wrapper, strength, and tasting notes",
+      "Lounge and retailer locator for a deliberately limited distribution footprint",
+      "Wholesale enquiry path for lounges and premium retail partners",
+      "Inner-circle email capture for drops and lounge events",
+      "Required Surgeon General warning and responsible-use notices throughout",
     ],
     image: imgMoreSmoke,
     github: "",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "jordan-coleman-campaign",
-    title: "Jordan Coleman Campaign",
-    type: "Frontend",
-    tagline: "Political Campaign Website",
-    role:
-      "Designer and developer, working directly with the candidate on messaging and build.",
-    description:
-      "A professional political campaign website for a local candidate featuring responsive design, donation integration, and community engagement tools to mobilize support.",
-    problem:
-      "The candidate needed a mission-driven digital presence that communicated platform messaging and mobilized community support.",
-    tech: ["React", "Responsive Design"],
-    features: [
-      "Responsive design for all devices",
-      "Candidate story and platform messaging",
-      "Donation integration",
-      "Community engagement and call-to-action sections",
-    ],
-    image: imgJordanColeman,
-    github: "https://github.com/19awburris88/jordan-coleman-campaign",
-    live: "https://jordan-coleman-campaign.netlify.app",
-    featured: false,
-  },
-  {
-    id: "chicken-beer-festival",
-    title: "Chicken & Beer Festival",
-    type: "Frontend",
-    tagline: "6th Annual Indy Event Website",
-    role:
-      "Designer and developer, working with the festival organizers — site build and ticketing integration.",
-    description:
-      "Official website for the 6th Annual Chicken & Beer Festival in Indianapolis — a summer celebration of bold flavor, cold drinks, local restaurants, live music, games, and community energy at University Park.",
-    problem:
-      "The festival needed a professional digital presence to drive ticket sales, communicate event details, and build community excitement ahead of the August 2026 event.",
-    tech: ["React", "Vite", "Material UI"],
-    features: [
-      "Event details: date, location, hours, and ticketing",
-      "Eventbrite ticket integration",
-      "Festival experience highlights (food, drink, music, games)",
-      "Social media integration (Instagram, TikTok, Facebook)",
-      "Mobile-first responsive design",
-      "Deployed on Netlify",
-    ],
-    github: "https://github.com/19awburris88/chicken-beer-festival-indy",
-    image: imgChickenBeer,
-    live: "https://chickenbeen.netlify.app",
-    featured: false,
-  },
-  {
-    id: "the-money-mill",
-    title: "The Money Mill",
-    type: "Frontend",
-    tagline: "Financial Education Platform",
-    role:
-      "Designer and developer — site build and lead-generation funnels.",
-    description:
-      "A business website focused on financial literacy, education, and entrepreneurship — built to establish authority, generate leads, and funnel visitors into educational resources.",
-    problem:
-      "The client needed a professional site that established authority in financial education and converted visitors into leads.",
-    tech: ["React", "Vite", "Netlify"],
-    features: [
-      "Lead generation and contact funnels",
-      "Service pages and educational resources",
-      "Clean UI focused on credibility and conversion",
-    ],
-    image: imgMoneyMill,
-    github: "",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "last-call-landing",
-    title: "The Last Call",
-    type: "Frontend",
-    tagline: "Cigar Pre-Launch Landing Page",
-    role:
-      "Designer and developer — countdown, lead capture, and launch page for the studio's own cigar brand.",
-    description:
-      "A luxury pre-launch experience for the fifth cigar in the More Smoke portfolio. Built around anticipation — a live countdown to the September 2026 drop, blend reveal, and email capture connected to Google Sheets.",
-    problem:
-      "The brand needed to generate buzz and collect leads before the product hit shelves, without a full e-commerce build.",
-    tech: ["React", "Vite", "Material UI", "Vercel", "Google Forms"],
-    features: [
-      "Live countdown timer to launch date",
-      "Email signup integrated with Google Forms / Sheets",
-      "Blend details and tasting profile reveal",
-      "Luxury dark aesthetic with responsive layout",
-    ],
-    github: "https://github.com/19awburris88/last-call-landing",
-    image: imgLastCall,
-    live: "https://last-call-landing.vercel.app",
+    live: "https://moresmoke.co",
     featured: false,
   },
   {
@@ -490,32 +391,6 @@ export const projects = [
     featured: true,
   },
   {
-    id: "familytree",
-    title: "Family Tree",
-    type: "Full Stack",
-    tagline: "Interactive Family Archive Platform",
-    role:
-      "Sole engineer — Python graph engine, FastAPI backend, and React frontend.",
-    description:
-      "A modern digital archive for the Burris family designed to feel like a social platform, not a genealogy database. Features a Python/FastAPI backend with a graph-based relationship engine, social memory feed, and visual family tree.",
-    problem:
-      "Traditional genealogy tools are cold and clinical. This platform makes family history feel alive — searchable, visual, and shareable across generations.",
-    tech: ["React", "Vite", "Python", "FastAPI", "SQLite", "React Router", "Lucide React"],
-    features: [
-      "Member profiles with relationship finder",
-      "Social-style memory feed with likes and categories",
-      "Visual family tree grouped by generation",
-      "Python BFS graph engine for computing exact relationships",
-      "Photo gallery with lightbox and filters",
-      "Family document vault (recipes, legal docs, etc.)",
-      "Chronological family timeline by decade",
-    ],
-    image: imgFamilyTree,
-    github: "https://github.com/19awburris88/familytree",
-    live: "",
-    featured: false,
-  },
-  {
     id: "benignity",
     title: "Benignity",
     type: "Full Stack",
@@ -539,31 +414,6 @@ export const projects = [
     github: "https://github.com/19awburris88/benignity",
     image: imgBenignity,
     live: "https://benignity.org",
-    featured: true,
-  },
-  {
-    id: "club520",
-    title: "Club 520 Podcast",
-    type: "Frontend",
-    tagline: "NBA Podcast Brand Website",
-    role:
-      "Designer and developer — RSS episode pipeline, player integrations, and the full interface.",
-    description:
-      "Official website for the Club 520 Podcast hosted by former NBA All-Star Jeff Teague, DJ Wells, and B Hen. Built for culture — live episode feeds, a sticky Spotify player, YouTube lightbox, sponsor grid, and a custom basketball cursor.",
-    problem:
-      "The show needed a digital home that matched its NBA-level energy, surfaced episodes easily, and gave sponsors and guests proper visibility.",
-    tech: ["React", "Vite", "YouTube RSS", "CSS", "Google Fonts"],
-    features: [
-      "YouTube RSS video feed with in-page lightbox player",
-      "Sticky Spotify podcast player",
-      "Notable guests grid and sponsor showcase",
-      "Custom basketball cursor with trailing glow",
-      "Parallax hero and scroll progress bar",
-      "Continuous marquee ticker and merch section",
-    ],
-    image: imgClub520,
-    github: "https://github.com/19awburris88/club520",
-    live: "",
     featured: true,
   },
   {
@@ -613,56 +463,6 @@ export const projects = [
     ],
     image: imgVirtualCare,
     github: "https://github.com/19awburris88/virtualcarenow",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "df-profile",
-    title: "Daniel Farr",
-    type: "Frontend",
-    tagline: "Executive Personal Brand Website",
-    role:
-      "Designer and developer, working directly with the client — positioning, content structure, and build.",
-    description:
-      "Premium personal brand website for Daniel Farr — Builder, Strategist, Servant Leader — serving as his digital headquarters for leadership positioning, community impact, and speaking opportunities in Atlanta and beyond.",
-    problem:
-      "An executive leader needed a high-credibility digital presence that communicated his story, highlighted community recognition, and generated speaking and partnership inquiries.",
-    tech: ["React", "Vite", "CSS", "Behold.so"],
-    features: [
-      "Full-viewport hero with executive bio",
-      "Leadership pillars and Emerging 100 of Atlanta highlights",
-      "Speaking topics with inquiry CTA",
-      "Instagram feed embed via Behold.so",
-      "Career and leadership timeline",
-      "Scroll-reveal animations with custom hook",
-    ],
-    image: imgDFProfile,
-    github: "https://github.com/19awburris88/df-profile",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "wheresmikeg",
-    title: "Where's Mike G",
-    type: "Frontend",
-    tagline: "Personal Brand Website",
-    role:
-      "Designer and developer — brand site, motion design, and build.",
-    description:
-      "Personal brand website for Mike Gillis, Indianapolis-based digital marketer, food and lifestyle content creator, and event host with 10+ years in the industry. Showcases collaborations, events, wine partnerships, and brand services.",
-    problem:
-      "A multi-hyphenate creator needed a single digital destination that surfaced all his work, partnerships, and services in one polished experience.",
-    tech: ["React", "Vite", "CSS", "Google Fonts"],
-    features: [
-      "Custom animated loader and scroll progress bar",
-      "Drag-to-scroll moments photo strip",
-      "Animated stats counter and marquee ticker",
-      "Floating CTA button and custom cursor with lag effect",
-      "Smooth scroll-reveal animations",
-      "Film grain texture overlay for premium aesthetic",
-    ],
-    image: imgWheresmikeg,
-    github: "https://github.com/19awburris88/wheresmikeg",
     live: "",
     featured: false,
   },

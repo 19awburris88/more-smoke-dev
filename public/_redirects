@@ -14,6 +14,29 @@
 /work/cigar-match     /work/humidor-connect/    301!
 /work/cigar-match/    /work/humidor-connect/    301!
 
+# The Open Court rebranded to Build & Ball.
+/work/open-court      /work/build-and-ball/    301!
+/work/open-court/     /work/build-and-ball/    301!
+
+# Retired case studies. These URLs were in the sitemap and are indexed, so they
+# send readers to the catalog rather than returning a 404 on a link that worked.
+/work/wheresmikeg               /work/    301!
+/work/wheresmikeg/              /work/    301!
+/work/club520                   /work/    301!
+/work/club520/                  /work/    301!
+/work/jordan-coleman-campaign   /work/    301!
+/work/jordan-coleman-campaign/  /work/    301!
+/work/df-profile                /work/    301!
+/work/df-profile/               /work/    301!
+/work/familytree                /work/    301!
+/work/familytree/               /work/    301!
+/work/last-call-landing         /work/    301!
+/work/last-call-landing/        /work/    301!
+/work/the-money-mill            /work/    301!
+/work/the-money-mill/           /work/    301!
+/work/chicken-beer-festival     /work/    301!
+/work/chicken-beer-festival/    /work/    301!
+
 # Legacy path that used to redirect client-side to the homepage anchor.
 /contact      /    301!
 /contact/     /    301!
