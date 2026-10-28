@@ -29,45 +29,66 @@ const TESTIMONIALS = [
   },
 ];
 
-const PROCESS = [
+const SPARK = [
   {
-    step: "01",
-    name: "Discovery",
+    letter: "S",
+    name: "Scope",
     body:
-      "We start with your goals, your users, and your constraints — not a feature list. We ask what the software has to accomplish and what happens today without it. Inherited or half-finished code starts with a paid technical review, because quoting what we haven't read helps neither of us.",
+      "Your goals, your users, your constraints \u2014 not a feature list. We ask what the software has to accomplish and what happens today without it. Inherited or half-finished code starts with a paid technical review.",
   },
   {
-    step: "02",
-    name: "Product Planning",
+    letter: "P",
+    name: "Plan",
     body:
-      "We turn that conversation into scoped requirements, a build order, and a fixed quote with milestone billing. You see what's in, what's out, and what's deliberately deferred before any code is written.",
+      "Scoped requirements, a build order, and a fixed quote with milestone billing. You see what's in, what's out, and what's deliberately deferred before any code is written.",
   },
   {
-    step: "03",
-    name: "UX Design",
+    letter: "A",
+    name: "Assemble",
     body:
-      "Structure before styling: the screens, the flows, and the decisions a user has to make. We design the path through the product, then make it look like your brand.",
+      "Structure before styling, then the full-stack build \u2014 interface, API, database, authentication, and integrations. You get working software to click through as it goes, not a reveal at the end.",
   },
   {
-    step: "04",
-    name: "Development",
-    body:
-      "Full-stack build — interface, API, database, authentication, and integrations. You get working software to click through as it goes, not a reveal at the end.",
-  },
-  {
-    step: "05",
-    name: "Launch",
+    letter: "R",
+    name: "Release",
     body:
       "Deployment, domain, and hosting set up in your name from day one. We hand over the accounts, the repository, and documentation so nothing is locked to us.",
   },
   {
-    step: "06",
-    name: "Support",
+    letter: "K",
+    name: "Keep",
     body:
-      "Updates, fixes, and new features after launch on a retainer that fits the project — or a clean handoff to your own team. Your call, either way.",
+      "Updates, fixes, and new features after launch on a plan that fits the project \u2014 or a clean handoff to your own team. Your call, either way.",
   },
 ];
 
+/** Work we take on but do not price on the card wall \u2014 these are quoted per build. */
+const CAPABILITIES = [
+  {
+    name: "Membership Portals",
+    body: "Member directories, access tiers, intake flows, and the dashboard an organiser actually runs the group from.",
+  },
+  {
+    name: "Internal Tools & Workflows",
+    body: "The thing that replaces the spreadsheet everyone is tired of \u2014 admin tooling, approvals, and reporting shaped around how your team already works.",
+  },
+  {
+    name: "Registration & Booking",
+    body: "Event pages, sign-ups, waivers, and payment, with the roster and the reporting waiting on the other side of it.",
+  },
+  {
+    name: "Integrations",
+    body: "Stripe billing, Supabase and Clerk auth, AWS S3, the Claude API, and the webhooks that keep two systems honest with each other.",
+  },
+  {
+    name: "Contract Engineering",
+    body: "Overflow delivery for agencies and product teams \u2014 a bounded build, a rescue, or an extra pair of hands on a date you have already committed to.",
+  },
+  {
+    name: "Technical Consulting",
+    body: "A second opinion before you commit: stack choices, build versus buy, or a read on a quote somebody else gave you.",
+  },
+];
 function CalendlyEmbed() {
   useEffect(() => {
     if (document.querySelector('script[src*="assets.calendly.com"]')) return;
@@ -235,12 +256,55 @@ export default function Home() {
 
         <p className="services-footnote">
           Starting prices, not quotes. Every project is scoped and fixed-quoted
-          before work begins. Membership portals, internal tools, and custom
-          workflow applications are scoped and quoted individually — the case
-          studies show what those look like. Production hosting, external API
-          usage, and third-party licenses are set up in your accounts and
-          billed at cost, approved in advance.
+          before work begins. Production hosting, external API usage, and
+          third-party licenses are set up in your accounts and billed at cost,
+          approved in advance.
         </p>
+
+        <div className="capabilities">
+          <div className="capabilities-head">
+            <h3>Beyond the two offers</h3>
+            <p>
+              Bigger builds are scoped and quoted individually rather than
+              sold off a price list. These are the shapes they usually take.
+            </p>
+          </div>
+
+          <ol className="capability-list">
+            {CAPABILITIES.map(({ name, body }, i) => (
+              <li className="capability-row" key={name}>
+                <span className="capability-num">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h4 className="capability-name">{name}</h4>
+                <p className="capability-body">{body}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* STATEMENT BAND */}
+      <section className="statement-band">
+        <div className="statement-grid">
+          <h2 className="statement-headline">
+            You have had the vague quote before.
+            <br />
+            This one is a number.
+          </h2>
+          <div className="statement-body">
+            <p>
+              A written scope, a fixed price against it, and a date. You know
+              what is in, what is out, and what it costs before anyone writes a
+              line of code.
+            </p>
+            <p>
+              If what you already have is half-finished, we read it first.
+              Quoting code we have not opened helps neither of us.
+            </p>
+            <a href="#contact" className="statement-link">Put a number on it</a>
+          </div>
+        </div>
       </section>
 
       {/* WHO YOU WORK WITH */}
@@ -299,20 +363,21 @@ export default function Home() {
           <p className="section-label">HOW WE WORK</p>
           <div className="section-header-row">
             <div>
-              <h2>From Idea to Supported</h2>
+              <h2>The S.P.A.R.K. Method.</h2>
               <p className="section-desc">
-                Every project runs through the same six stages — so you
-                always know where we are, what's next, and what it costs.
+                A clear path from the first conversation to software you own.
+                Five stages, so you always know where we are, what's next, and
+                what it costs.
               </p>
             </div>
-            <a href="#contact" className="btn-outline">Start at Step One →</a>
+            <a href="#contact" className="btn-outline">Start at Scope →</a>
           </div>
         </div>
 
-        <ol className="process-grid">
-          {PROCESS.map(({ step, name, body }) => (
-            <li className="process-card" key={step}>
-              <span className="process-step">{step}</span>
+        <ol className="spark-grid">
+          {SPARK.map(({ letter, name, body }) => (
+            <li className="spark-card" key={letter}>
+              <span className="spark-letter" aria-hidden="true">{letter}</span>
               <h3>{name}</h3>
               <p>{body}</p>
             </li>
@@ -487,50 +552,53 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="section section--light section--centered">
-        <div className="section-header">
-          <p className="section-label">FAQ</p>
-          <div className="section-header-row">
-            <div>
-              <h2>Common Questions</h2>
-              <p className="section-desc">
-                What most people want to know before they reach out.
-              </p>
-            </div>
-          </div>
-        </div>
+      <section className="section section--light" id="faq">
+        <div className="faq-layout">
+          <aside className="faq-aside">
+            <p className="section-label">A FEW THINGS TO KNOW</p>
+            <h2>Common questions.</h2>
+            <p className="section-desc">
+              What most people want to know before they reach out. Want to
+              talk through your own project instead?
+            </p>
+            <a href="#contact" className="statement-link faq-aside-link">
+              Ask us directly
+            </a>
+          </aside>
 
-        <div className="faq-list">
-          {FAQS.map((item, i) => (
-            <div
-              key={i}
-              className={`faq-item${openFaq === i ? " faq-item--open" : ""}`}
-            >
-              <button
-                className="faq-question"
-                onClick={() => toggleFaq(i)}
-                aria-expanded={openFaq === i}
+          <div className="faq-list">
+            {FAQS.map((item, i) => (
+              <div
+                key={i}
+                className={`faq-item${openFaq === i ? " faq-item--open" : ""}`}
               >
-                <span>{item.q}</span>
-                <svg
-                  className="faq-chevron"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <button
+                  className="faq-question"
+                  onClick={() => toggleFaq(i)}
+                  aria-expanded={openFaq === i}
                 >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </button>
-              {openFaq === i && (
-                <p className="faq-answer">{item.a}</p>
-              )}
-            </div>
-          ))}
+                  <span>{item.q}</span>
+                  <svg
+                    className="faq-sign"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="2" y1="9" x2="16" y2="9" />
+                    <line className="faq-sign-v" x1="9" y1="2" x2="9" y2="16" />
+                  </svg>
+                </button>
+                {openFaq === i && (
+                  <p className="faq-answer">{item.a}</p>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -819,18 +819,6 @@ main {
   color: #42d36b;
 }
 
-.faq-chevron {
-  flex-shrink: 0;
-  color: #555;
-  width: 20px;
-  height: 20px;
-  transition: transform 0.2s, color 0.2s;
-}
-
-.faq-item--open .faq-chevron {
-  transform: rotate(180deg);
-  color: #42d36b;
-}
 
 .faq-answer {
   background: #111;
@@ -858,10 +846,6 @@ main {
   margin-right: auto;
 }
 
-.section--centered .faq-list {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* ─── CONTACT + CALENDLY ──────────────────────────────── */
 
@@ -1621,6 +1605,7 @@ main {
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1676,6 +1661,7 @@ main {
   .brand-home-grid {
     grid-template-columns: 1fr;
   }
+
 
   .about-home-name {
     font-size: 3.2rem;
@@ -2282,52 +2268,281 @@ main {
 
 /* ─── HOW I WORK ──────────────────────────────────────── */
 
-.process-grid {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  counter-reset: none;
+/* ─── CAPABILITY LIST ─────────────────────────────────── */
+/* The card wall only prices two offers. This carries the work that is
+   quoted per build so portals and workflow apps still have a shelf. */
+
+.capabilities {
+  margin-top: 80px;
 }
 
-.process-card {
-  background: #fafafa;
-  border: 1px solid #e8e8e8;
-  border-radius: 14px;
-  padding: 28px;
-  position: relative;
-  transition: border-color 0.2s, transform 0.2s;
-}
-
-.process-card:hover {
-  border-color: #42d36b;
-  transform: translateY(-3px);
-}
-
-.process-step {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  color: #42d36b;
-  background: #eefaf1;
-  border: 1px solid #cfeeda;
-  border-radius: 20px;
-  padding: 4px 10px;
-  margin-bottom: 14px;
-}
-
-.process-card h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #111;
+.capabilities-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
-.process-card p {
+.capabilities-head h3 {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0b0b0b;
+}
+
+.capabilities-head p {
+  color: #555;
+  max-width: 430px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.capability-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.capability-row {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 30px 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+.capability-row:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.capability-num {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+  color: #42d36b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding-top: 6px;
+}
+
+.capability-name {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0b0b0b;
+}
+
+.capability-body {
+  font-family: var(--font-body);
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ─── STATEMENT BAND ──────────────────────────────────── */
+/* Full-bleed brand green. Text is near-black rather than white because
+   white on #42d36b fails contrast badly. */
+
+.statement-band {
+  background: #42d36b;
+  color: #0b0b0b;
+  padding: 108px 8%;
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.statement-headline {
+  font-family: var(--font-display);
+  font-size: 3.7rem;
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  color: #0b0b0b;
+}
+
+.statement-body p {
+  font-family: var(--font-body);
+  color: #0f2e1a;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 22px;
+  max-width: 460px;
+}
+
+.statement-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: inherit;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 7px;
+  transition: gap 0.2s;
+}
+
+.statement-link::after {
+  content: "→";
+}
+
+.statement-link:hover {
+  gap: 18px;
+}
+
+/* ─── S.P.A.R.K. METHOD ───────────────────────────────── */
+
+.spark-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.spark-card {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 26px;
+}
+
+.spark-letter {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 4.4rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #42d36b;
+  margin-bottom: 20px;
+}
+
+.spark-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0b0b0b;
+  margin-bottom: 10px;
+}
+
+.spark-card p {
+  font-family: var(--font-body);
   color: #555;
   font-size: 0.9rem;
-  line-height: 1.7;
+  line-height: 1.75;
+}
+
+/* ─── FAQ: TWO COLUMN ─────────────────────────────────── */
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.faq-aside h2 {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+
+.faq-aside .section-desc {
+  margin-bottom: 28px;
+  max-width: 360px;
+}
+
+.faq-aside-link {
+  color: #0b0b0b;
+}
+
+.faq-layout .faq-list {
+  max-width: none;
+}
+
+.faq-sign {
+  flex-shrink: 0;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.faq-sign-v {
+  transform-origin: center;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.faq-item--open .faq-sign {
+  color: #42d36b;
+}
+
+.faq-item--open .faq-sign-v {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+/* Responsive rules for the four blocks above live here rather than in the
+   shared breakpoints further up the file: those come earlier in source
+   order, so at equal specificity the base rules above would override them
+   and the grids would never collapse. */
+
+@media (max-width: 1024px) {
+  .spark-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .statement-grid,
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .statement-headline {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .spark-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .statement-band {
+    padding: 72px 6%;
+  }
+
+  .statement-headline {
+    font-size: 2.4rem;
+  }
+
+  .faq-aside h2 {
+    font-size: 2.4rem;
+  }
+
+  /* Number and title share a row; the description drops beneath both. */
+  .capability-row {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 10px 16px;
+  }
+
+  .capability-body {
+    grid-column: 2 / -1;
+  }
+
+  .capabilities-head {
+    align-items: flex-start;
+  }
 }
 
 /* ─── CASE STUDY: ROLE, OUTCOME, PRIVATE BUILDS ───────── */
@@ -2379,14 +2594,8 @@ main {
   text-decoration: underline;
 }
 
-@media (max-width: 1000px) {
-  .process-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 680px) {
-  .process-grid {
+  .spark-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2508,7 +2717,6 @@ h1, h2, h3, h4, h5, h6,
 .resume-bar-title,
 .timeline-role,
 .service-card h3,
-.process-card h3,
 .support-band-main h3,
 .testimonial-quote,
 .brand-quote {
@@ -2521,7 +2729,6 @@ h1, h2, h3, h4, h5, h6,
 .about-section-label,
 .resume-h,
 .support-band-label,
-.process-step,
 .skills-cat,
 .footer-heading,
 .cert-badge,
@@ -2574,7 +2781,6 @@ h2 {
 .page-desc,
 .faq-answer,
 .service-card > p,
-.process-card p,
 .support-band-main p,
 .about-card p,
 .about-home-bio,
