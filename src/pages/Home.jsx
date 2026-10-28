@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { featuredProjects, projects } from "../data/projects";
-import { highlights, pursuing } from "../data/resume";
+import { pursuing } from "../data/resume";
 import { FAQS } from "../data/faqs";
 import heroImg from "../assets/hero.webp";
 
@@ -465,16 +465,6 @@ export default function Home() {
               <a href="#contact" className="btn-primary">Check Availability →</a>
               <Link to="/skills/" className="btn-outline">Our Stack</Link>
             </div>
-          </div>
-
-          <div className="hiring-stats">
-            {highlights.map((h) => (
-              <div key={h.label} className="hiring-stat">
-                <span className="hiring-stat-num">{h.stat}</span>
-                <span className="hiring-stat-label">{h.label}</span>
-                <span className="hiring-stat-detail">{h.detail}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>

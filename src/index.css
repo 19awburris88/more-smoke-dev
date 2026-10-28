@@ -1699,10 +1699,7 @@ main {
 }
 
 .hiring-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 56px;
-  align-items: start;
+  max-width: 720px;
 }
 
 .hiring-intro h2 {
@@ -1721,41 +1718,6 @@ main {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 32px;
-}
-
-.hiring-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-
-.hiring-stat {
-  background: #111;
-  border: 1px solid #1e1e1e;
-  border-radius: 14px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.hiring-stat-num {
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: #42d36b;
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-
-.hiring-stat-label {
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.hiring-stat-detail {
-  color: #888;
-  font-size: 0.8rem;
-  line-height: 1.5;
 }
 
 /* ─── CREDENTIAL TWEAKS ───────────────────────────────── */
@@ -2098,7 +2060,6 @@ main {
 }
 
 @media (max-width: 900px) {
-  .hiring-grid,
   .resume-section--split {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -2730,7 +2691,6 @@ h1, h2, h3, h4, h5, h6,
 .badge,
 .tech-tag,
 .role-tag,
-.hiring-stat-label,
 .resume-stat-label {
   font-family: var(--font-display);
 }
@@ -2738,7 +2698,6 @@ h1, h2, h3, h4, h5, h6,
 /* Numerals: tabular + display face so prices and stats align and hit harder */
 .service-price,
 .hero-proof strong,
-.hiring-stat-num,
 .brand-stat-num,
 .resume-stat-num,
 .edu-year,

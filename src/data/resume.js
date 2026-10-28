@@ -1,13 +1,3 @@
-import { projects } from "./projects";
-
-
-export const highlights = [
-  { stat: `${projects.length}`, label: "Shipped projects", detail: "Client work, platforms, and products currently live or in build" },
-  { stat: "1M+", label: "Monthly users reached", detail: "EatHere subscription media platform across 27 markets" },
-  { stat: "357%", label: "YoY growth driven", detail: "As Co-Founder, CFO & CTO of EatHere" },
-  { stat: "10+", label: "Years operating", detail: "Founder-side product, revenue, and go-to-market ownership" },
-];
-
 export const experience = [
   {
     role: "Founder & Principal Engineer",
