@@ -7,13 +7,15 @@ import heroImg from "../assets/hero.webp";
 
 
 
-// Replace with real client quotes before publishing
+/* Drafted from each project's case study and awaiting the client's sign-off.
+   An endorsement has to be the endorser's own words, so these go to Daniel
+   and Laurice to approve or correct before they count as real quotes. */
 const TESTIMONIALS = [
   {
     quote:
-      "Austin built exactly what I needed — a site that communicates who I am and opens doors. The level of detail and care he brought was beyond what I expected.",
+      "Every committee kept its own documents in its own place, and whatever the outgoing chair knew left with them. Austin gave us one playbook the whole chapter actually uses \u2014 and the board updates it ourselves now, without going back to a developer.",
     name: "Daniel Farr",
-    role: "Builder · Strategist · Atlanta",
+    role: "President, Emerging 100 of Atlanta",
   },
   {
     quote:
@@ -23,12 +25,11 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "Austin captured my brand better than I could have described it. The animations, the vibe, the details — everything was on point.",
-    name: "Mike Gillis",
-    role: "Digital Creator · Indianapolis",
+      "We were taking sign-ups and waivers three different ways and still showing up to runs without a reliable roster. Now registration, waivers, and emergency contacts land in one place, and I know who is coming before I get to the gym.",
+    name: "Laurice Ivy",
+    role: "Owner, Build & Ball \u00b7 Dallas",
   },
 ];
-
 const SPARK = [
   {
     letter: "S",
