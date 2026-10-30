@@ -2832,6 +2832,65 @@ main {
   color: #888;
 }
 
+/* ── per-file upload status ──
+   Uploads now fire as files are picked rather than on submit, so each one
+   needs to report for itself; a failure that says nothing is worse than no
+   upload at all. */
+
+.intake-filelist {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.intake-filerow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  font-size: 0.82rem;
+  padding: 7px 12px;
+  background: #faf9f8;
+  border-radius: 8px;
+}
+
+.intake-filename {
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.intake-filestat {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #999;
+}
+
+.intake-filestat.is-done {
+  color: #1b7a3c;
+}
+
+.intake-filestat.is-failed {
+  color: #c13b3b;
+}
+
+.form-notice {
+  color: #8a6d1f;
+  background: #fdf7e3;
+  border: 1px solid #f0e2b4;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+}
+
 /* ── submit ── */
 
 .intake-submit {
