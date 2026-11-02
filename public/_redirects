@@ -37,6 +37,12 @@
 /work/chicken-beer-festival     /work/    301!
 /work/chicken-beer-festival/    /work/    301!
 
+# Retired case studies, second pass.
+/work/smoke-cask-barrel     /work/    301!
+/work/smoke-cask-barrel/    /work/    301!
+/work/pressed-aged-lounge   /work/    301!
+/work/pressed-aged-lounge/  /work/    301!
+
 # Legacy path that used to redirect client-side to the homepage anchor.
 /contact      /    301!
 /contact/     /    301!

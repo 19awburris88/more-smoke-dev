@@ -8,9 +8,7 @@ import imgMoreSmokeOS from "../assets/preview-more-smoke-os.png";
 import imgTheGuide from "../assets/preview-the-guide.png";
 import imgLoveLedger from "../assets/preview-love-ledger.png";
 import imgMoreSmoke from "../assets/preview-moresmoke.webp";
-import imgPressedAged from "../assets/preview-pressed-aged-lounge.png";
 import imgVirtualCare from "../assets/preview-virtualcarenow.png";
-import imgSmokeCask from "../assets/preview-smoke-cask-barrel.png";
 import imgBenignity from "../assets/preview-benignity.png";
 import imgEmerging100 from "../assets/preview-emerging100.png";
 import imgBuildBall from "../assets/preview-build-and-ball.webp";
@@ -417,31 +415,6 @@ export const projects = [
     featured: true,
   },
   {
-    id: "pressed-aged-lounge",
-    title: "Pressed & Aged",
-    type: "Frontend",
-    tagline: "Luxury Cigar & Vinyl Lounge",
-    role:
-      "Designer and developer — brand site, membership tiers, and reservation flow.",
-    description:
-      "Website for a luxury cigar and vinyl lounge in Nashville, TN. Communicates the full Pressed & Aged experience — curated humidor, vinyl programming, membership tiers, and signature recurring events — through a rich, scroll-driven design.",
-    problem:
-      "A premium lifestyle lounge needed a website as refined as the space itself, with clear pathways to membership and reservations.",
-    tech: ["React", "Vite", "FormSubmit", "CSS"],
-    features: [
-      "Three membership tiers (The Listener, The Collector, The Patron)",
-      "Curated humidor and cigar offerings showcase",
-      "Signature events: Vinyl & Vices, Smoke & Sinatra, Bourbon & B-Sides",
-      "Animated vinyl marquee ticker",
-      "Reservation request form via FormSubmit",
-      "Scroll-driven reveal animations",
-    ],
-    image: imgPressedAged,
-    github: "https://github.com/19awburris88/pressed-aged-lounge",
-    live: "",
-    featured: false,
-  },
-  {
     id: "virtualcarenow",
     title: "Virtual Care Now",
     type: "Frontend",
@@ -463,28 +436,6 @@ export const projects = [
     ],
     image: imgVirtualCare,
     github: "https://github.com/19awburris88/virtualcarenow",
-    live: "",
-    featured: false,
-  },
-  {
-    id: "smoke-cask-barrel",
-    title: "Smoke, Cask & Barrel",
-    type: "Frontend",
-    tagline: "Cigar & Spirits Lifestyle Brand",
-    role:
-      "Founder, designer, and developer.",
-    description:
-      "A brand website at the intersection of premium cigars and craft spirits — designed to capture the culture, community, and experience of pairing two of life's great pleasures.",
-    problem:
-      "The brand needed a digital home that communicated its identity and lifestyle positioning to an audience of enthusiasts.",
-    tech: ["React", "Vite"],
-    features: [
-      "Brand storytelling and lifestyle content",
-      "Product and pairing showcases",
-      "Mobile-optimized responsive design",
-    ],
-    image: imgSmokeCask,
-    github: "https://github.com/19awburris88/smoke-cask-barrel",
     live: "",
     featured: false,
   },
