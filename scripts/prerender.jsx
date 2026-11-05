@@ -25,6 +25,8 @@ import Work from "../src/pages/Work.jsx";
 import CaseStudy from "../src/pages/CaseStudy.jsx";
 import Skills from "../src/pages/Skills.jsx";
 import Start from "../src/pages/Start.jsx";
+import Campaign from "../src/pages/Campaign.jsx";
+import CampaignBanner from "../src/components/CampaignBanner.jsx";
 import { allRoutes, seoFor, jsonLdFor, canonicalUrl, SITE } from "../src/data/seo.js";
 import { FAQS } from "../src/data/faqs.js";
 
@@ -34,6 +36,7 @@ const template = fs.readFileSync(path.join(DIST, "index.html"), "utf8");
 function App() {
   return (
     <>
+      <CampaignBanner />
       <Navbar />
       <main>
         <Routes>
@@ -43,6 +46,7 @@ function App() {
           <Route path="/work/:id" element={<CaseStudy />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/start" element={<Start />} />
+          <Route path="/300" element={<Campaign />} />
         </Routes>
       </main>
       <Footer />

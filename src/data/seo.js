@@ -45,6 +45,11 @@ const PAGES = {
     description:
       "Tell us about your business and we will build your site. About three minutes: your details, your offer, your photos, your brand colours.",
   },
+  "/300": {
+    title: "$300 One-Page Websites \u2014 Dallas",
+    description:
+      "A professional one-page website for $300, built and previewed before you approve it. Limited run, November 9 2026 to January 28 2027.",
+  },
   "/skills": {
     title: "Tech Stack — React, Node & PostgreSQL",
     description:
@@ -86,7 +91,7 @@ export function allRoutes() {
   const routes = Object.entries(PAGES).map(([path, meta]) => ({
     path,
     changefreq: path === "/" ? "weekly" : "monthly",
-    priority: path === "/" ? 1.0 : path === "/work" || path === "/start" ? 0.9 : 0.8,
+    priority: path === "/" ? 1.0 : path === "/work" || path === "/start" || path === "/300" ? 0.9 : 0.8,
     ...meta,
   }));
 

@@ -8,12 +8,15 @@ import Work from "./pages/Work";
 import CaseStudy from "./pages/CaseStudy";
 import Skills from "./pages/Skills";
 import Start from "./pages/Start";
+import Campaign from "./pages/Campaign";
+import CampaignBanner from "./components/CampaignBanner";
 import "./index.css";
 
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <CampaignBanner />
       <Navbar />
       <main>
         <Routes>
@@ -23,6 +26,7 @@ export default function App() {
           <Route path="/work/:id" element={<CaseStudy />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/start" element={<Start />} />
+          <Route path="/300" element={<Campaign />} />
           <Route path="/contact" element={<Navigate to="/#contact" replace />} />
         </Routes>
       </main>

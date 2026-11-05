@@ -204,6 +204,9 @@ export default function Home() {
             </div>
             <h3>Website or Redesign</h3>
             <p className="service-price">from <strong>$1,000</strong></p>
+            <p className="service-promo">
+              <Link to="/300/">One page is $300 until January 28 →</Link>
+            </p>
             <p>
               A bounded business site that earns its keep — for small
               businesses, nonprofits, and personal brands.
