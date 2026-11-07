@@ -3,6 +3,7 @@ import imgZeroGuard from "../assets/preview-zero-guard.jpg";
 import imgSlowBlink from "../assets/preview-slow-blink.jpg";
 import imgJordanEllis from "../assets/preview-jordan-ellis.jpg";
 import imgHarvestGate from "../assets/preview-harvest-gate.jpg";
+import imgGoldenHour from "../assets/preview-golden-hour.jpg";
 import imgHeartOfAHustler from "../assets/preview-heart-of-a-hustler.jpg";
 
 /**
@@ -117,6 +118,14 @@ export const examples = [
     blurb: "A community church page with service times, sermons, prayer requests and ways to connect.",
     url: "https://harvestgatechurch.netlify.app",
     image: imgHarvestGate,
+  },
+  {
+    id: "golden-hour",
+    name: "Golden Hour by Marcus",
+    category: "Photographer",
+    blurb: "A portrait studio page with a portfolio, session packages and an inquiry form.",
+    url: "https://goldenhourmarcus.netlify.app",
+    image: imgGoldenHour,
   },
   {
     id: "heart-of-a-hustler",
