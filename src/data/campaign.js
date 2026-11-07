@@ -2,6 +2,7 @@ import imgCrownedByNia from "../assets/preview-crowned-by-nia.jpg";
 import imgZeroGuard from "../assets/preview-zero-guard.jpg";
 import imgSlowBlink from "../assets/preview-slow-blink.jpg";
 import imgJordanEllis from "../assets/preview-jordan-ellis.jpg";
+import imgHarvestGate from "../assets/preview-harvest-gate.jpg";
 import imgHeartOfAHustler from "../assets/preview-heart-of-a-hustler.jpg";
 
 /**
@@ -108,6 +109,14 @@ export const examples = [
     blurb: "A fragrance creator's reviews, media kit and partnership inquiry on one page.",
     url: "https://jordanfragrance.netlify.app",
     image: imgJordanEllis,
+  },
+  {
+    id: "harvest-gate",
+    name: "Harvest Gate",
+    category: "Church",
+    blurb: "A community church page with service times, sermons, prayer requests and ways to connect.",
+    url: "https://harvestgatechurch.netlify.app",
+    image: imgHarvestGate,
   },
   {
     id: "heart-of-a-hustler",

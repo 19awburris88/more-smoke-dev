@@ -148,9 +148,9 @@ export default function Campaign() {
             <h2>What ${CAMPAIGN.price} looks like.</h2>
             <p className="section-desc">
               Sample sites we built to show what yours could look like. The
-              salon, barbershop, lash studio and creator are fictional. Open
-              any of them on your phone — that is where most of your customers
-              will see yours.
+              salon, barbershop, lash studio, creator and church are fictional.
+              Open any of them on your phone — that is where most of your
+              customers will see yours.
             </p>
           </div>
           <div className="example-grid">
