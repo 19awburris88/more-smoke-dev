@@ -2,6 +2,7 @@ import imgCrownedByNia from "../assets/preview-crowned-by-nia.jpg";
 import imgZeroGuard from "../assets/preview-zero-guard.jpg";
 import imgSlowBlink from "../assets/preview-slow-blink.jpg";
 import imgJordanEllis from "../assets/preview-jordan-ellis.jpg";
+import imgHeartOfAHustler from "../assets/preview-heart-of-a-hustler.jpg";
 
 /**
  * The $300 one-page website campaign.
@@ -72,8 +73,8 @@ export function daysLeft(now = new Date()) {
  * The section hides itself while this is empty, so the page ships without it
  * rather than showing an empty shelf.
  *
- * These are fictional demo businesses, and the section copy says so. Keep that
- * line accurate if real client builds are ever mixed in.
+ * The section copy names which examples are fictional. Heart of A Hustler is
+ * not one of them, so keep that line accurate when this list changes.
  */
 export const examples = [
   {
@@ -107,6 +108,14 @@ export const examples = [
     blurb: "A fragrance creator's reviews, media kit and partnership inquiry on one page.",
     url: "https://jordanfragrance.netlify.app",
     image: imgJordanEllis,
+  },
+  {
+    id: "heart-of-a-hustler",
+    name: "Heart of A Hustler",
+    category: "Clothing Brand",
+    blurb: "A streetwear brand built out as a full site with a shop. The $300 version is one page of it.",
+    url: "https://heart-of-a-hustler.ddsites.co",
+    image: imgHeartOfAHustler,
   },
 ];
 
