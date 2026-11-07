@@ -1,3 +1,8 @@
+import imgCrownedByNia from "../assets/preview-crowned-by-nia.jpg";
+import imgZeroGuard from "../assets/preview-zero-guard.jpg";
+import imgSlowBlink from "../assets/preview-slow-blink.jpg";
+import imgJordanEllis from "../assets/preview-jordan-ellis.jpg";
+
 /**
  * The $300 one-page website campaign.
  *
@@ -66,8 +71,44 @@ export function daysLeft(now = new Date()) {
  *
  * The section hides itself while this is empty, so the page ships without it
  * rather than showing an empty shelf.
+ *
+ * These are fictional demo businesses, and the section copy says so. Keep that
+ * line accurate if real client builds are ever mixed in.
  */
-export const examples = [];
+export const examples = [
+  {
+    id: "crowned-by-nia",
+    name: "Crowned by Nia",
+    category: "Hair Stylist",
+    blurb: "A natural hair studio page for protective styles, locs and silk presses, with an appointment request form.",
+    url: "https://crownedbynia.netlify.app",
+    image: imgCrownedByNia,
+  },
+  {
+    id: "zero-guard",
+    name: "Zero Guard",
+    category: "Barber",
+    blurb: "A barbershop page with a clear price board for fades, line-ups and beard work.",
+    url: "https://zeroguard.netlify.app",
+    image: imgZeroGuard,
+  },
+  {
+    id: "slow-blink",
+    name: "Slow Blink",
+    category: "Lash Artist",
+    blurb: "A lash studio page with a tappable menu of classic, hybrid and volume sets.",
+    url: "https://blinkslow.netlify.app",
+    image: imgSlowBlink,
+  },
+  {
+    id: "jordan-ellis",
+    name: "Jordan Ellis",
+    category: "Content Creator",
+    blurb: "A fragrance creator's reviews, media kit and partnership inquiry on one page.",
+    url: "https://jordanfragrance.netlify.app",
+    image: imgJordanEllis,
+  },
+];
 
 /* ─── Reading the date safely in a prerendered page ──────────────────
  *

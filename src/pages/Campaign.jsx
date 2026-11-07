@@ -144,11 +144,12 @@ export default function Campaign() {
       {examples.length > 0 && (
         <section className="section">
           <div className="section-header">
-            <p className="section-label">EXAMPLES</p>
+            <p className="section-label">DEMO SITES</p>
             <h2>What ${CAMPAIGN.price} looks like.</h2>
             <p className="section-desc">
-              Real one-page builds. Open any of them on your phone — that is
-              where most of your customers will see yours.
+              One-page sites we built for fictional businesses. Open any of
+              them on your phone — that is where most of your customers will
+              see yours.
             </p>
           </div>
           <div className="example-grid">
@@ -156,7 +157,7 @@ export default function Campaign() {
               <article className="example-card" key={ex.id}>
                 <div className="example-shot">
                   {ex.image
-                    ? <img src={ex.image} alt={`${ex.name} one-page website`} loading="lazy" />
+                    ? <img src={ex.image} alt={`${ex.name} demo site`} loading="lazy" />
                     : <span className="project-placeholder">{ex.name[0]}</span>}
                 </div>
                 <div className="example-body">
