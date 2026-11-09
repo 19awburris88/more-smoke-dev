@@ -148,9 +148,9 @@ export default function Campaign() {
             <h2>What ${CAMPAIGN.price} looks like.</h2>
             <p className="section-desc">
               Sample sites we built to show what yours could look like. Every
-              business here is fictional except Heart of A Hustler and The
-              Money Mill. Open any of them on your phone — that is where most
-              of your customers will see yours.
+              business here is fictional except Heart of A Hustler. Open any of
+              them on your phone — that is where most of your customers will
+              see yours.
             </p>
           </div>
           <div className="example-grid">

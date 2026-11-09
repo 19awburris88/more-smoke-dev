@@ -80,8 +80,8 @@ export function daysLeft(now = new Date()) {
  * The section hides itself while this is empty, so the page ships without it
  * rather than showing an empty shelf.
  *
- * The section copy names the examples that are not fictional (Heart of A
- * Hustler and The Money Mill). Keep that line accurate when this list changes.
+ * The section copy names the one example that is not fictional (Heart of A
+ * Hustler). Keep that line accurate when this list changes.
  */
 export const examples = [
   {
@@ -165,22 +165,20 @@ export const examples = [
     image: imgLegacyLedger,
   },
   {
+    id: "foilhouse",
+    name: "Foilhouse",
+    category: "Trading Cards",
+    blurb: "A trading card shop built out as a full store with product pages and preorders. The $300 version is one page, without the store.",
+    url: "https://foilhouse.netlify.app",
+    image: imgFoilhouse,
+  },
+  {
     id: "heart-of-a-hustler",
     name: "Heart of A Hustler",
     category: "Clothing Brand",
     blurb: "A streetwear brand built out as a full site with a shop. The $300 version is one page of it.",
     url: "https://heart-of-a-hustler.ddsites.co",
     image: imgHeartOfAHustler,
-  },
-  {
-    // Live site still shows The Money Mill, a real shop. Rename, reshoot and
-    // drop it from the intro's exception line once the fictional version is up.
-    id: "foilhouse",
-    name: "The Money Mill",
-    category: "Trading Cards",
-    blurb: "A trading card shop built out as a full store with a cart. The $300 version is one page, without the store.",
-    url: "https://foilhouse.netlify.app",
-    image: imgFoilhouse,
   },
 ];
 
