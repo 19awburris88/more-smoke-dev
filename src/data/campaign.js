@@ -6,6 +6,7 @@ import imgHarvestGate from "../assets/preview-harvest-gate.jpg";
 import imgGoldenHour from "../assets/preview-golden-hour.jpg";
 import imgWhitmores from "../assets/preview-whitmores.jpg";
 import imgAfterHours from "../assets/preview-after-hours-indy.jpg";
+import imgRaices from "../assets/preview-raices-counseling.jpg";
 import imgHeartOfAHustler from "../assets/preview-heart-of-a-hustler.jpg";
 
 /**
@@ -144,6 +145,14 @@ export const examples = [
     blurb: "A family bakery built out as a full site with menu and catering pages. The $300 version is one page of it.",
     url: "https://whitsmores.netlify.app",
     image: imgWhitmores,
+  },
+  {
+    id: "raices-counseling",
+    name: "Raíces Counseling",
+    category: "Therapist",
+    blurb: "A bilingual therapy practice page with sessions, an FAQ and a consultation request form.",
+    url: "https://carmencounseling.netlify.app",
+    image: imgRaices,
   },
   {
     id: "heart-of-a-hustler",
