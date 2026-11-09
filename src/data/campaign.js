@@ -7,6 +7,7 @@ import imgGoldenHour from "../assets/preview-golden-hour.jpg";
 import imgWhitmores from "../assets/preview-whitmores.jpg";
 import imgAfterHours from "../assets/preview-after-hours-indy.jpg";
 import imgRaices from "../assets/preview-raices-counseling.jpg";
+import imgLegacyLedger from "../assets/preview-legacy-ledger.jpg";
 import imgHeartOfAHustler from "../assets/preview-heart-of-a-hustler.jpg";
 
 /**
@@ -78,8 +79,8 @@ export function daysLeft(now = new Date()) {
  * The section hides itself while this is empty, so the page ships without it
  * rather than showing an empty shelf.
  *
- * The section copy names which examples are fictional. Heart of A Hustler is
- * not one of them, so keep that line accurate when this list changes.
+ * The section copy names the one example that is not fictional (Heart of A
+ * Hustler). Keep that line accurate when this list changes.
  */
 export const examples = [
   {
@@ -153,6 +154,14 @@ export const examples = [
     blurb: "A bilingual therapy practice page with sessions, an FAQ and a consultation request form.",
     url: "https://carmencounseling.netlify.app",
     image: imgRaices,
+  },
+  {
+    id: "legacy-ledger",
+    name: "Legacy Ledger",
+    category: "Tax Preparer",
+    blurb: "A tax practice page with services, pricing, an FAQ and a consult booking form.",
+    url: "https://legacyledgertax.netlify.app",
+    image: imgLegacyLedger,
   },
   {
     id: "heart-of-a-hustler",
