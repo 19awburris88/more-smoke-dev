@@ -4,6 +4,8 @@ import imgSlowBlink from "../assets/preview-slow-blink.jpg";
 import imgJordanEllis from "../assets/preview-jordan-ellis.jpg";
 import imgHarvestGate from "../assets/preview-harvest-gate.jpg";
 import imgGoldenHour from "../assets/preview-golden-hour.jpg";
+import imgWhitmores from "../assets/preview-whitmores.jpg";
+import imgAfterHours from "../assets/preview-after-hours-indy.jpg";
 import imgHeartOfAHustler from "../assets/preview-heart-of-a-hustler.jpg";
 
 /**
@@ -126,6 +128,22 @@ export const examples = [
     blurb: "A portrait studio page with a portfolio, session packages and an inquiry form.",
     url: "https://goldenhourmarcus.netlify.app",
     image: imgGoldenHour,
+  },
+  {
+    id: "after-hours-indy",
+    name: "After Hours Indy",
+    category: "Event Promoter",
+    blurb: "A nightlife brand's upcoming nights, recaps, partnerships and a guest list request form.",
+    url: "https://afterhoursindy.netlify.app",
+    image: imgAfterHours,
+  },
+  {
+    id: "whitmores-bakehouse",
+    name: "Whitmore's Bakehouse",
+    category: "Bakery",
+    blurb: "A family bakery built out as a full site with menu and catering pages. The $300 version is one page of it.",
+    url: "https://whitsmores.netlify.app",
+    image: imgWhitmores,
   },
   {
     id: "heart-of-a-hustler",

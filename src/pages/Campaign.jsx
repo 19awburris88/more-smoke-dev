@@ -147,10 +147,10 @@ export default function Campaign() {
             <p className="section-label">DEMO SITES</p>
             <h2>What ${CAMPAIGN.price} looks like.</h2>
             <p className="section-desc">
-              Sample sites we built to show what yours could look like. The
-              salon, barbershop, lash studio, creator, church and photographer
-              are fictional. Open any of them on your phone — that is where
-              most of your customers will see yours.
+              Sample sites we built to show what yours could look like. Every
+              business here is fictional except Heart of A Hustler. Open any of
+              them on your phone — that is where most of your customers will
+              see yours.
             </p>
           </div>
           <div className="example-grid">
