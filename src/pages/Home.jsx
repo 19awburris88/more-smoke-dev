@@ -318,6 +318,13 @@ export default function Home() {
             <p className="intro-label">WHO YOU WORK WITH</p>
             <h2 className="about-home-name">Austin Burris</h2>
             <p className="about-home-role">Founder &amp; Principal Engineer · Dallas, TX</p>
+            <blockquote className="founder-quote">
+              <p>
+                &ldquo;I&rsquo;m not in the business of building websites.
+                I&rsquo;m in the business of helping people build their
+                businesses.&rdquo;
+              </p>
+            </blockquote>
             <p className="about-home-bio">
               More Smoke Dev is deliberately small, and that is the point: the
               person who scopes your project is the person who writes the code.

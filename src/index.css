@@ -899,6 +899,21 @@ main {
   margin-bottom: 28px;
 }
 
+.founder-quote {
+  margin: 0 0 32px;
+  padding-left: 22px;
+  border-left: 3px solid #42d36b;
+  max-width: 540px;
+}
+
+.founder-quote p {
+  color: #f2f2f2;
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
 .about-home-bio {
   color: #aaa;
   font-size: 1.1rem;
